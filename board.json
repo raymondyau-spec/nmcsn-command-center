@@ -1,5 +1,5 @@
 {
- "asOf": "2026-09-13T10:42:00-06:00",
+ "asOf": "2026-09-13",
  "owner": {
   "name": "Ray Yau",
   "role": "Owner · clinical signer (interventional cardiology) · Hey Ray's original"
@@ -47,7 +47,7 @@
    "domain": "Science & publications",
    "purpose": "Get the rural cardiogenic shock evidence into print — the JSCAI revision, the AMICS transfer paper section, the JW ECMO case report.",
    "state": "active",
-   "lastTouched": "2026-09-10",
+   "lastTouched": "2026-09-13",
    "color": "teal"
   },
   {
@@ -56,7 +56,7 @@
    "domain": "Speaking & conferences",
    "purpose": "Deliver Ray's speaking obligations — SCAI SHOCK St. Louis on Sep 18 first — and run the conference/travel automation behind them.",
    "state": "sprint",
-   "lastTouched": "2026-09-10",
+   "lastTouched": "2026-09-13",
    "color": "teal"
   },
   {
@@ -65,7 +65,7 @@
    "domain": "Funding, governance & legal",
    "purpose": "Land recurring state money for the network — now primarily a legislative appropriation worked through Sen. Muñoz and the LFC.",
    "state": "active",
-   "lastTouched": "2026-09-11",
+   "lastTouched": "2026-09-13",
    "color": "teal"
   },
   {
@@ -74,7 +74,7 @@
    "domain": "Funding, governance & legal",
    "purpose": "Paper the organisation and settle who owns what — bylaws, COI, NDAs, board seats, the ONE CALL IP and the company question.",
    "state": "active",
-   "lastTouched": "2026-09-12",
+   "lastTouched": "2026-09-13",
    "color": "teal"
   },
   {
@@ -83,7 +83,7 @@
    "domain": "NMCSN",
    "purpose": "Keep the public site partner-ready and truthful — routing, model, language, map and the clinical tools.",
    "state": "backlog",
-   "lastTouched": "2026-08-30",
+   "lastTouched": "2026-09-13",
    "color": "teal"
   },
   {
@@ -101,7 +101,7 @@
    "domain": "Science & publications",
    "purpose": "Teach clinicians to use AI safely — the tiered mastery curriculum and its ethics module.",
    "state": "backlog",
-   "lastTouched": "2026-05-15",
+   "lastTouched": "2026-09-13",
    "color": "teal"
   },
   {
@@ -119,7 +119,7 @@
    "domain": "NMCSN",
    "purpose": "Run the network itself — statewide meetings, the CS QI committee, the roster, onboarding and the rollout.",
    "state": "active",
-   "lastTouched": "2026-09-09",
+   "lastTouched": "2026-09-13",
    "color": "teal"
   },
   {
@@ -128,7 +128,7 @@
    "domain": "Science & publications",
    "purpose": "Everything clinical-research that is not a manuscript in flight — sponsored trials at the site, the teaching cases, and the literature scan.",
    "state": "active",
-   "lastTouched": "2026-09-10",
+   "lastTouched": "2026-09-13",
    "color": "teal"
   },
   {
@@ -139,6 +139,15 @@
    "state": "backlog",
    "lastTouched": "2026-09-13",
    "color": "teal"
+  },
+  {
+   "id": "hhnm-program",
+   "name": "Heart Hospital shock program (day job)",
+   "color": "teal",
+   "domain": "Clinical program",
+   "purpose": "Ray's program-director work at Heart Hospital of New Mexico / Lovelace: the CVICU and CVSL workgroups, LVAD and CHIP heart-team meetings, and the Lovelace cardiogenic-shock expansion (two campuses, one shock call).",
+   "state": "active",
+   "lastTouched": "2026-09-13"
   }
  ],
  "teams": [
@@ -299,7 +308,7 @@
    "kind": "human",
    "job": "Owner · clinical signer",
    "status": "blocked-on",
-   "now": "See Mine",
+   "now": "Approve the chain sheet · ER panel names · Ardent agreement · Ryan Drive access",
    "element": "Fire Snake (1977) · owner and signer"
   },
   {
@@ -308,7 +317,7 @@
    "kind": "human",
    "job": "Counsel",
    "status": "idle",
-   "now": "",
+   "now": "Counsel email sent 2026-09-09; structure rethink pending",
    "element": "Metal · counsel"
   },
   {
@@ -317,7 +326,7 @@
    "kind": "human",
    "job": "Developer partner",
    "status": "idle",
-   "now": "",
+   "now": "Has handoff v9 link; Drive access request pending",
    "element": "Wood · builder partner"
   },
   {
@@ -326,7 +335,7 @@
    "kind": "human",
    "job": "Referring-physician stand-ins and testers for every pack (rural NM first)",
    "status": "sprint",
-   "now": "",
+   "now": "To be recruited: 3–5 ER physicians from Level 3 sites",
    "element": "Earth · the ground truth"
   },
   {
@@ -857,6 +866,48 @@
        ]
       }
      ]
+    },
+    {
+     "id": "M325",
+     "title": "Workspace and document governance carried from Notion (provisional, confirm)",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P327",
+       "title": "Carried items",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T354",
+         "title": "Deploy 2FA for all workspace users (Notion and Google Drive)",
+         "owner": "steward",
+         "state": "backlog",
+         "src": "notion"
+        },
+        {
+         "id": "T355",
+         "title": "Document naming convention across tracks — [Track]-[DocType]-[Description]-[YYYY-MM-DD]-v[X.X]",
+         "owner": "scribe",
+         "state": "backlog",
+         "src": "notion"
+        },
+        {
+         "id": "T356",
+         "title": "Onboarding packet for new members (8-item checklist: NDA, accounts, 2FA, training)",
+         "owner": "scribe",
+         "state": "backlog",
+         "src": "notion"
+        },
+        {
+         "id": "T357",
+         "title": "Evaluate the Notion plan level for the 4-tier clearance model — and whether Notion stays at all now that the Command Center holds the board",
+         "owner": "ray",
+         "state": "backlog",
+         "src": "notion"
+        }
+       ]
+      }
+     ]
     }
    ]
   },
@@ -1150,6 +1201,48 @@
        ]
       }
      ]
+    },
+    {
+     "id": "M322",
+     "title": "Manuscripts and abstracts carried from the Notion weekly list (May 2026; provisional, confirm)",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P324",
+       "title": "Carried items",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T343",
+         "title": "JSCAI submission — World Shock paper (under review by Sandeep Nathan)",
+         "owner": "ray",
+         "state": "active",
+         "src": "notion"
+        },
+        {
+         "id": "T344",
+         "title": "Review Vicente Jiménez-Franco's JSCAI paper (JSCAI-D-26-00064R1, TecSalud CS program)",
+         "owner": "ray",
+         "state": "active",
+         "src": "notion"
+        },
+        {
+         "id": "T345",
+         "title": "STEMI-DTU API TCT abstract — you are first author (J&J / Rick Alleman analysis); disclosure form done; decision pending",
+         "owner": "ray",
+         "state": "active",
+         "src": "notion"
+        },
+        {
+         "id": "T346",
+         "title": "ECMO consensus statement with Ramses (Northwell cardiology fellow)",
+         "owner": "ray",
+         "state": "backlog",
+         "src": "notion"
+        }
+       ]
+      }
+     ]
     }
    ],
    "files": [
@@ -1171,7 +1264,7 @@
    "milestones": [
     {
      "id": "M14",
-     "title": "SCAI SHOCK 2026, St. Louis · Sep 18",
+     "title": "SCAI SHOCK 2026, St. Louis · Sep 16–20 (fly Sep 16 UA 652; Hyatt at the Arch; ECMO workshop you chair Fri Sep 18 5:15–6:45 CT)",
      "state": "sprint",
      "projects": [
       {
@@ -1220,6 +1313,37 @@
          "id": "T61",
          "title": "Build the slides once the storyboard is approved",
          "owner": "producer",
+         "state": "backlog"
+        }
+       ]
+      },
+      {
+       "id": "P202",
+       "title": "ECMO satellite 'hot potato' debate and speaker logistics",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T212",
+         "title": "Assign the four debate topics (Dupont, Brozzi, Afzal, Hockstein) and tell Rachel Pham",
+         "owner": "ray",
+         "state": "sprint"
+        },
+        {
+         "id": "T213",
+         "title": "Resend the speaker template to Rachel as native .pptx",
+         "owner": "producer",
+         "state": "sprint"
+        },
+        {
+         "id": "T214",
+         "title": "Book the gap night: Hyatt checkout Sat 9/19, flight Sun 9/20 (free-cancel clock)",
+         "owner": "ray",
+         "state": "sprint"
+        },
+        {
+         "id": "T215",
+         "title": "Verify SCAI SHOCK registration receipt",
+         "owner": "steward",
          "state": "backlog"
         }
        ]
@@ -1279,44 +1403,6 @@
      ]
     },
     {
-     "id": "M202",
-     "title": "SCAI Shock 2026 · St. Louis · 17–19 Sep",
-     "state": "active",
-     "projects": [
-      {
-       "id": "P202",
-       "title": "ECMO satellite 'hot potato' debate and speaker logistics",
-       "state": "active",
-       "tasks": [
-        {
-         "id": "T212",
-         "title": "Assign the four debate topics (Dupont, Brozzi, Afzal, Hockstein) and tell Rachel Pham",
-         "owner": "ray",
-         "state": "sprint"
-        },
-        {
-         "id": "T213",
-         "title": "Resend the speaker template to Rachel as native .pptx",
-         "owner": "producer",
-         "state": "sprint"
-        },
-        {
-         "id": "T214",
-         "title": "Book the gap night: Hyatt checkout Sat 9/19, flight Sun 9/20 (free-cancel clock)",
-         "owner": "ray",
-         "state": "sprint"
-        },
-        {
-         "id": "T215",
-         "title": "Verify SCAI SHOCK registration receipt",
-         "owner": "steward",
-         "state": "backlog"
-        }
-       ]
-      }
-     ]
-    },
-    {
      "id": "M203",
      "title": "ABQ Cardiopulmonary Symposium · 23 Sep",
      "state": "sprint",
@@ -1369,6 +1455,167 @@
          "title": "Beijing United Family Hospital virtual case series — pick a date after SCAI",
          "owner": "growth",
          "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M312",
+     "title": "The AI Conference 2026, San Francisco · Sep 28–Oct 1 (attending; abstract not accepted Apr 18; flight UA 4652 Sep 28 and hotel #40056888 booked)",
+     "state": "sprint",
+     "projects": [
+      {
+       "id": "P312",
+       "title": "Before you go",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T314",
+         "title": "Confirm PTO Sep 28–Oct 2 and clinical coverage at HHNM for that week (Notion had both as not started)",
+         "owner": "ray",
+         "state": "sprint",
+         "src": "notion"
+        },
+        {
+         "id": "T315",
+         "title": "Pick Option 1 or Option 2 for the Abiomed / J&J Heart Recovery Q3 educator session — both sit on your calendar Sep 29, during the conference",
+         "owner": "ray",
+         "state": "sprint",
+         "src": "calendar"
+        },
+        {
+         "id": "T316",
+         "title": "Save the hotel receipt (conf #40056888) when the stay is paid — none on file",
+         "owner": "steward",
+         "state": "backlog",
+         "src": "notion"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M313",
+     "title": "TecSalud Cardiogenic Shock LATAM Symposium, Playa del Carmen · Oct 1–3 (topic letter received Aug 27; flight proposed SFO→CUN Oct 1 8:51a, NOT ticketed as of Aug 27)",
+     "state": "sprint",
+     "projects": [
+      {
+       "id": "P313",
+       "title": "Get it ticketed and prepared",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T317",
+         "title": "Ask TecSalud (Anapaula Molina Esparza) for the eTicket — nothing received since you sent your passport Aug 11",
+         "owner": "ray",
+         "state": "sprint",
+         "src": "notion"
+        },
+        {
+         "id": "T318",
+         "title": "Build the talk for the topic assigned in the Aug 27 letter",
+         "owner": "producer",
+         "state": "backlog",
+         "src": "notion"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M314",
+     "title": "STICC Symposium, McAllen TX · Oct 16–17 — keynote \"Cardiogenic Shock in 2026: MCS focus\" (welcome cocktail Oct 16)",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P314",
+       "title": "Travel and deck",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T319",
+         "title": "Book flights and hotel for McAllen — nothing booked; Notion had this as an unnamed Oct 12 conference, the calendar resolves it",
+         "owner": "ray",
+         "state": "sprint",
+         "src": "calendar"
+        },
+        {
+         "id": "T320",
+         "title": "Build the McAllen keynote deck from the SCAI Shock chair deck and the figure library",
+         "owner": "producer",
+         "state": "backlog",
+         "src": "calendar"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M315",
+     "title": "TCT 2026, San Diego · Oct 31–Nov 3 — TENTATIVE, pending the STEMI-DTU API abstract (you are first author; disclosure done; Abiomed said it would book)",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P315",
+       "title": "Hold",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T321",
+         "title": "Do not book until the abstract decision arrives; watch for the Abiomed ticket",
+         "owner": "steward",
+         "state": "backlog",
+         "src": "notion"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M316",
+     "title": "SCAI Fellows Course, Miami · Dec 9–13 — faculty (Meet the Mentor Dec 9 6:45 PM; exhibit-hall tours Dec 10 and 11); Hyatt stay Dec 8 on the calendar",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P316",
+       "title": "Accept and book",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T322",
+         "title": "Accept your Speaker Center assignments — still not accepted per your own calendar note",
+         "owner": "ray",
+         "state": "sprint",
+         "src": "notion"
+        },
+        {
+         "id": "T323",
+         "title": "Book flights to Miami (hotel Dec 8 is already on the calendar)",
+         "owner": "ray",
+         "state": "backlog",
+         "src": "calendar"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M317",
+     "title": "Delivered in 2026 — the record",
+     "state": "done",
+     "projects": [
+      {
+       "id": "P317",
+       "title": "Done",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T324",
+         "title": "ACC.26 New Orleans \"Hearts in Freefall\" (Mar 28–30) · Taiwan East Meets West (Apr 8) · SCAI Montréal OASIS-AMI and ECMO lab (Apr 22–26) · ACEP talk (May 14) · HK Roadshow and Bangkok Hemodynamic Bootcamp APAC II, co-director (Jul 8–11; honorarium form submitted Jul 15)",
+         "owner": "ray",
+         "state": "done",
+         "src": "notion"
         }
        ]
       }
@@ -1503,6 +1750,76 @@
          "title": "Decide whether RHIF stays alive under the pivot",
          "owner": "ray",
          "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M320",
+     "title": "Funding pipeline (Notion) — every source and where it stands",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P321",
+       "title": "Live",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T331",
+         "title": "NM Health Care Authority — Rural Health Transformation / Healthy Horizons, $1.5M over 5 years: concept paper for Secretary Kari Armijo is FINAL — review it before anyone submits (Notion: \"do not submit until Ray reviews\")",
+         "owner": "ray",
+         "state": "active",
+         "src": "notion"
+        },
+        {
+         "id": "T332",
+         "title": "Rural Health Transformation subgrant ($211.5M to NM, Q3) — target identified, no owner named",
+         "owner": "growth",
+         "state": "backlog",
+         "src": "notion"
+        },
+        {
+         "id": "T333",
+         "title": "Presbyterian internal, $100–150K/yr — initial outreach; leadership meeting never scheduled (target was Apr 3)",
+         "owner": "ray",
+         "state": "backlog",
+         "src": "notion"
+        },
+        {
+         "id": "T334",
+         "title": "UNM HSC — FTE plus in-kind, engagement started; Mike Richards (EVP HSC / CEO UNM Health) meeting is the ask for site #2, IRB and REDCap host",
+         "owner": "ray",
+         "state": "active",
+         "src": "notion"
+        },
+        {
+         "id": "T335",
+         "title": "AHA Cardiogenic Shock Registry — enrollment open, in-kind data, all hubs",
+         "owner": "steward",
+         "state": "backlog",
+         "src": "notion"
+        },
+        {
+         "id": "T336",
+         "title": "AHRQ R03 (UNM PI, $100–150K, year 2) and foundations (scoping) — future",
+         "owner": "growth",
+         "state": "backlog",
+         "src": "notion"
+        }
+       ]
+      },
+      {
+       "id": "P322",
+       "title": "Secured",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T337",
+         "title": "Ardent / HHNM $150–200K per year — first check deposited Mar 26, 2026; contract review was pending",
+         "owner": "ray",
+         "state": "done",
+         "src": "notion"
         }
        ]
       }
@@ -1690,6 +2007,55 @@
        ]
       }
      ]
+    },
+    {
+     "id": "M321",
+     "title": "Open legal items carried from Notion (Mar–Jun 2026; provisional, confirm)",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P323",
+       "title": "Carried items",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T338",
+         "title": "Procure Directors & Officers, general liability and cyber liability insurance — Notion flagged D&O as required before signing the Ardent agreement (Apr 30)",
+         "owner": "ray",
+         "state": "active",
+         "src": "notion"
+        },
+        {
+         "id": "T339",
+         "title": "Finalize the NDA template with counsel, then execute NDAs with the administrative-pathway members (Garcia, R. Mitchell, Eggins)",
+         "owner": "ray",
+         "state": "active",
+         "src": "notion"
+        },
+        {
+         "id": "T340",
+         "title": "Circulate the Bylaws Amendment (Chair term and retention vote) for Board ratification — 14-day notice, 2/3 vote; draft dated Mar 22",
+         "owner": "ray",
+         "state": "backlog",
+         "src": "notion"
+        },
+        {
+         "id": "T341",
+         "title": "Collect COI disclosure forms from all board members — annual; overdue since January per Notion",
+         "owner": "ray",
+         "state": "active",
+         "src": "notion"
+        },
+        {
+         "id": "T342",
+         "title": "Complete the IP ownership documentation — NMCSN-owned vs open IP per Blueprint section 11",
+         "owner": "counsel-prep",
+         "state": "backlog",
+         "src": "notion"
+        }
+       ]
+      }
+     ]
     }
    ],
    "files": [
@@ -1792,6 +2158,41 @@
          "title": "Reconcile 56 hospitals (vision board) against 55 (website tiers)",
          "owner": "scribe",
          "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M324",
+     "title": "Marketing items carried from Notion (provisional, confirm)",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P326",
+       "title": "Carried items",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T351",
+         "title": "Update nmcsn.org with Year 1 outcomes (59.4% confirmed, JSCAI D-26-00469, N=313) — coordinate with the Research Director",
+         "owner": "producer",
+         "state": "backlog",
+         "src": "notion"
+        },
+        {
+         "id": "T352",
+         "title": "Establish LinkedIn (priority) and X presence — all posts need Chair pre-approval",
+         "owner": "growth",
+         "state": "backlog",
+         "src": "notion"
+        },
+        {
+         "id": "T353",
+         "title": "Branded materials package — logo files, letterhead, PowerPoint and one-pager templates",
+         "owner": "producer",
+         "state": "backlog",
+         "src": "notion"
         }
        ]
       }
@@ -1924,6 +2325,27 @@
          "title": "Use the factory bots and the Systems Builder method as the Tier 3–4 worked example",
          "owner": "retro",
          "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M326",
+     "title": "AI and the registry — Eddie Brown and Ashley Long (Notion weekly list)",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P328",
+       "title": "Carried",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T358",
+         "title": "Work with Eddie Brown and Ashley Long on AI and the registry — scope and next meeting",
+         "owner": "ray",
+         "state": "backlog",
+         "src": "notion"
         }
        ]
       }
@@ -2067,6 +2489,48 @@
          "title": "Move the next spoke through the onboarding playbook — Cibola first",
          "owner": "growth",
          "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M323",
+     "title": "Carried from Notion and the calendar (provisional, confirm)",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P325",
+       "title": "Carried items",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T347",
+         "title": "NMCSN weekly tactical — Mondays from Sep 28 (16 holds on the calendar, \"no guests yet\"): confirm the cadence replaces the biweekly Board task update",
+         "owner": "ray",
+         "state": "sprint",
+         "src": "calendar"
+        },
+        {
+         "id": "T348",
+         "title": "EMS: contact Kyle Thornton (NM DOH EMS Bureau Chief) and draft the NMCSN EMS shock recognition and transfer protocol — Notion items from April, never started",
+         "owner": "ray",
+         "state": "backlog",
+         "src": "notion"
+        },
+        {
+         "id": "T349",
+         "title": "ACEP: briefing document and meeting request to ACEP President L. Anthony Cirillo — Notion items from March, never started",
+         "owner": "growth",
+         "state": "backlog",
+         "src": "notion"
+        },
+        {
+         "id": "T350",
+         "title": "Follow up Bree — Lovelace new shock protocols (Notion weekly list)",
+         "owner": "ray",
+         "state": "backlog",
+         "src": "notion"
         }
        ]
       }
@@ -2318,6 +2782,91 @@
     "nmcsn/rollout-roadmap.md",
     "nmcsn/HHNM-5-year-roadmap.md"
    ]
+  },
+  {
+   "id": "E_hhnm-program",
+   "engine": "hhnm-program",
+   "title": "hhnm-program",
+   "milestones": [
+    {
+     "id": "M318",
+     "title": "Standing clinical meetings · Sep 17–30 (from your calendar)",
+     "state": "sprint",
+     "projects": [
+      {
+       "id": "P318",
+       "title": "This fortnight",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T325",
+         "title": "Sep 17 CVSL Quality & Safety workgroup · Sep 22 Cardiogenic shock meeting · Sep 22 CHIP heart team / HRPCI working group (virtual) · Sep 23 LVAD patient selection · Sep 23 Team HF huddle · Sep 24 CVSL IV workgroup · Sep 24 CVICU workgroup (×2) · Sep 26 Annual LVAD celebration · Sep 30 start-up meeting, community recognition of cardiogenic shock",
+         "owner": "ray",
+         "state": "sprint",
+         "src": "calendar"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M319",
+     "title": "Lovelace CS working group — dual-campus expansion (Notion action items, Mar–Sep 2026; provisional, confirm)",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P319",
+       "title": "Your items",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T326",
+         "title": "Pilot SCAI Stage B patients at Lovelace (2 beds, 3–6 month trial) — Notion due Sep 30",
+         "owner": "ray",
+         "state": "active",
+         "src": "notion"
+        },
+        {
+         "id": "T327",
+         "title": "Secure CMO / CNO / CFO sign-off on the expansion plan (go/no-go criteria in Notion) — was due May 15",
+         "owner": "ray",
+         "state": "backlog",
+         "src": "notion"
+        },
+        {
+         "id": "T328",
+         "title": "ICU Infrastructure Assessment Questionnaire (29 pp) — distributed? Notion still says in progress since Mar 31",
+         "owner": "ray",
+         "state": "backlog",
+         "src": "notion"
+        },
+        {
+         "id": "T329",
+         "title": "Unified shock call system triaging to the available bed at either campus — Notion due Dec 31 (this is ONE CALL in-house)",
+         "owner": "ray",
+         "state": "backlog",
+         "src": "notion"
+        }
+       ]
+      },
+      {
+       "id": "P320",
+       "title": "Team items (owners in Notion: Mitchell, Everett, Mazer, Shackelford, CNO)",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T330",
+         "title": "Diversion data · nursing FTEs · Lovelace ICU capacity · PAC/MCS capability gaps · credentialing barriers · financial business case · MCS nurse training (8→12) · post-op IMC offload pathway · PAC kits — 12 items, none started in Notion",
+         "owner": "steward",
+         "state": "backlog",
+         "src": "notion",
+         "note": "Steward asks the owners for status; nothing here waits on Ray"
+        }
+       ]
+      }
+     ]
+    }
+   ]
   }
  ],
  "thread": [
@@ -2537,6 +3086,11 @@
    "text": "STEMI pack signed: approved_by Ray Yau, all sixteen defaults kept; signature recomputed; v0.24.1 published."
   },
   {
+   "t": "2026-09-13 07:10",
+   "who": "ray",
+   "text": "Not a fan of the color tones — calm water elements; I'm a Fire Snake, 1977. Bring in elements that help me succeed, including the right agents and bots."
+  },
+  {
    "t": "2026-09-13 07:30",
    "who": "builder",
    "text": "Command center recolored: deep water, silver ink, sea-glass accent, sand for what waits on a person. Roster gains Pacer (Water), Steward (Earth·Metal), Growth (Wood); every bot now carries its element."
@@ -2634,5 +3188,71 @@
    "owner": "scribe",
    "text": "board.json updated; floor artifact republished"
   }
+ ],
+ "rayDecisions": [
+  {
+   "text": "Answer the 16 STEMI pack signing decisions — the pack stays unsigned until the sheet is answered; Ray is the clinical signer.",
+   "file": "nmcsn/2026-09-12_nmcsn-one-call_STEMI-pack_signing-sheet.md"
+  },
+  {
+   "text": "Build / partner / buy for ONE CALL, plus the bed-reporting interval and the sync question — open since 2026-09-06, Ray: 'definitely need to think it out.'",
+   "file": "nmcsn/nmcsn-one-call_HUB.md"
+  },
+  {
+   "text": "Set the ownership and company structure with counsel — 'that is not where i'm going, we need to rethink with counsel'; the backer/structure documents are options, not Ray's position.",
+   "file": "nmcsn/nmcsn-one-call_HUB.md"
+  },
+  {
+   "text": "Fill the 8-row Muñoz terms-capture table — who committed, in what form, at what figure, what NMCSN owes next; still 8 of 8 blank.",
+   "file": "nmcsn/2026-09-08_nmcsn-munoz_doh-secretary-meeting.md"
+  },
+  {
+   "text": "Go / no-go on the Rural Health Data Hub Administrator RFP before Sep 21, 17:00 MDT.",
+   "file": "nmcsn/2026-09-09_nmcsn-funding_rh-data-hub-rfp-open.md"
+  },
+  {
+   "text": "Reply to Henry Valdez's unsolicited Executive Director / Chief of Staff proposal — unanswered since Sep 4, counsel cc'd.",
+   "file": "nmcsn/2026-09-08_nmcsn-governance_valdez-executive-director-proposal.md"
+  },
+  {
+   "text": "Fill the blanks and make the three decisions in Ward's NDA package, then release it for circulation.",
+   "file": "nmcsn/2026-09-09_nmcsn-governance_nda-review.md"
+  },
+  {
+   "text": "Execute the bylaws and commission a standalone COI policy — the 'Final' v2.0 signature blocks are blank and no independent review body exists.",
+   "file": "nmcsn/2026-08-30_nmcsn-governance_bylaws-coi-nda-appraisal.md"
+  },
+  {
+   "text": "Confirm the wording of beats 6 and 7 and supply the personal vision board file for the Rowing in Rhythm talk.",
+   "file": "nmcsn/2026-09-08_scai-rowing-rhythm_storyboard-v5-8min.md"
+  },
+  {
+   "text": "Answer SCAI on the debate topic assignments — the public program agenda is wrong and SCAI is blocked on Ray with the session six days out.",
+   "file": "nmcsn/2026-09-08_scai-shock-ecmo-symposium_faculty-topic-capture.md"
+  },
+  {
+   "text": "Four SCAI debate topic assignments",
+   "file": "Week-Ops-Session-2026-09-08"
+  },
+  {
+   "text": "Thailand webinar yes/no; ABQ talk topic",
+   "file": "Week-Ops-Session-2026-09-08"
+  },
+  {
+   "text": "Send the Ward governance email; refill or redesign the Ambassador tier",
+   "file": "NMCSN-Governance-Session-2026-09-08"
+  },
+  {
+   "text": "Check the Ardent agreement before naming or forming NewCo; build vs partner vs buy by early December",
+   "file": "2026-09-08_ai-health-company_strategy-record"
+  },
+  {
+   "text": "Establish the revocable living trust",
+   "file": "estate-plan-status"
+  }
+ ],
+ "inventoryNotes": [
+  "Written by the scribe run of 2026-09-12 from index.md, log.md and the first ~40 lines of each classified note. Caveats: (1) File mtimes are unreliable — a bulk Baalda resync stamped many notes 2026-09-12 11:14, so every lastTouched is taken from the note's own frontmatter/content date, not the filesystem. (2) log.md stops at 2026-09-09 while files dated 09-10 through 09-13 exist, so the log lags the vault by three to four days; ONE CALL, funding and governance activity after 09-09 is sourced from the notes themselves. (3) No ECMO book chapter exists anywhere in the vault or the saved listing — that item in the brief could not be confirmed and is not represented. (4) 2026-08-29_nmcsn-registry_irb-protocol-draft is listed in index.md but the file is not present in the vault; T39 covers that. (5) The 'documents' engine (E2) and 'process' engine (E3) already on the board absorb the strategy documents (master plan, board prospectus, backer brief, global roadmap, pitch decks, decision roadmap) and the factory/floor/systems-builder/Baalda work respectively — those files are deliberately not duplicated into new engines here, though several governance and funding items cross-reference them. (6) States are judged from dates and explicit status lines; where a note carried no status the state is inferred from the latest dated activity and should be treated as provisional — this applies especially to education (backlog, nothing since May 2026), website (backlog, nothing since 08-30) and the AMICS transfer paper milestone (backlog, nothing since 08-16). (7) Missoula is marked done because the talk was delivered 2026-08-24 and the projects index carrying it was archived, but whether the relationship continues is an open Ray decision (T109). (8) Owner assignments are suggestions mapped from each item's nature onto the roster; only items that the record itself says require Ray are given owner 'ray'.",
+  "2026-09-13 audit: Notion (NMCSN workspace — Action Items, Funding Pipeline, Conference Travel Plans, Lovelace CS Action Items, Weekly To-Do, personal pages), Google Calendar Sep 12 – Jan 15, and both vaults compared with the board. Items marked src=notion were last edited Mar–Jun 2026 and are provisional until Ray confirms; tasks owned by other people stay in Notion. Clinical shift entries (HH-IV, NMHI, ELM clinic) deliberately not imported."
  ]
 }
