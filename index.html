@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@400;500;600&display=swap">
 <style>
 /* Adapted from Ryan Kohler's "Self Driving" monitor (2026-09-12): near-black, one red, bots as glowing nodes, a tour, a feed. Single committed look, painted explicitly. */
-:root{ --bg:#E4EEF2; --panel:#F7FBFC; --panel-2:#D9E6ED; --line:#B4C8D4; --ink:#143044; --muted:#4E6878; --dim:#7A93A3; --red:#3A9CA8; --red-2:#2E7F8A; --green:#2F8A62; --yellow:#C4964A; --magenta:#C4964A; --white:#F7FBFC; --grey:#6E8798; }
+:root{ --bg:#F6FAFC; --panel:#FFFFFF; --panel-2:#EEF4F7; --line:#D0DDE4; --ink:#143044; --muted:#4E6878; --dim:#7A93A3; --red:#3A9CA8; --red-2:#2E7F8A; --green:#2F8A62; --yellow:#C4964A; --magenta:#C4964A; --white:#FFFFFF; --grey:#6E8798; }
 /* Water and Metal for a Fire Snake (1977): deep water ground, silver ink, sea-glass as the one accent, sand for what waits on a person. No red. */
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--ink);font:13.5px/1.45 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
@@ -24,7 +24,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 #hdr .av{width:26px;height:26px;border-radius:50%;background:var(--red);display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;margin-right:8px}
 
 /* ticker */
-#tick{height:30px;overflow:hidden;position:relative;border-bottom:1px solid var(--line);background:#D5E4EB}
+#tick{height:30px;overflow:hidden;position:relative;border-bottom:1px solid var(--line);background:#E8F1F5}
 #tick .track{position:absolute;white-space:nowrap;animation:tick 80s linear infinite;line-height:30px;font-size:12px;color:var(--muted)}
 #tick .track span{margin-right:56px} #tick .track b{color:var(--ink);font-weight:600}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -45,7 +45,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .note{color:var(--muted);font-size:12px}
 
 /* waiting card + detail card */
-.card{background:rgba(247,251,252,.96);border:1px solid var(--line);border-radius:12px;padding:14px 16px;backdrop-filter:blur(6px)}
+.card{background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:12px;padding:14px 16px;backdrop-filter:blur(6px)}
 .wait{position:absolute;left:22px;top:92px;max-width:420px;z-index:3}
 .wait .k{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:6px}
 .wait div.item{font-size:13px;padding:3px 0}
@@ -59,9 +59,9 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .pill.live{background:rgba(111,207,159,.18);color:var(--green)} .pill.score{background:rgba(217,183,122,.2);color:var(--yellow)} .pill.human{background:rgba(217,183,122,.28);color:var(--magenta)} .pill.red{background:rgba(79,179,191,.18);color:var(--red-2)} .pill.grey{background:var(--panel-2);color:var(--muted)}
 
 /* graph */
-#graph{flex:1;width:100%;min-height:440px;border-radius:14px;background:radial-gradient(1200px 600px at 60% 40%,#C9DCE6 0%,#E4EEF2 70%);animation:tide 18s ease-in-out infinite alternate}
+#graph{flex:1;width:100%;min-height:440px;border-radius:14px;background:radial-gradient(1200px 600px at 60% 40%,#DEEAF0 0%,#F6FAFC 70%);animation:tide 18s ease-in-out infinite alternate}
 @keyframes tide{from{background-position:0 0}to{background-position:40px 20px}}
-#graph text{font-family:Inter,sans-serif;fill:#EAF2F6;font-size:11px;font-weight:600}
+#graph text{font-family:Inter,sans-serif;fill:#F4F8FA;font-size:11px;font-weight:600}
 #graph .lab2{fill:#9DB6C6;font-size:9.5px;font-weight:500}
 .legend{display:flex;gap:16px;font-size:11.5px;color:var(--muted)} .legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
 
@@ -91,7 +91,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .setup label{display:flex;gap:10px;align-items:center;padding:9px 12px;background:var(--panel);border-radius:9px;margin-bottom:6px;font-size:13px}
 
 /* Hey Ray console */
-#hey{border-bottom:1px solid var(--line);padding:12px 14px;display:grid;gap:8px;background:#D5E4EB}
+#hey{border-bottom:1px solid var(--line);padding:12px 14px;display:grid;gap:8px;background:#E8F1F5}
 #hey .t{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700}
 #hey textarea{width:100%;min-height:64px;background:var(--panel);border:1px solid var(--line);border-radius:10px;color:var(--ink);font:inherit;font-size:13px;padding:9px 10px;resize:vertical}
 #hey .row{display:flex;gap:8px;align-items:center}
@@ -110,7 +110,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .ecard .n{font-weight:700;font-size:14.5px;display:flex;justify-content:space-between;gap:8px;align-items:center}
 .ecard .p{font-size:12px;color:var(--muted)}
 .ecard .m{display:flex;gap:6px;flex-wrap:wrap}
-.ecard .next{font-size:12.5px;color:#D5E1E8;border-top:1px solid var(--line);padding-top:6px}
+.ecard .next{font-size:12.5px;color:#E8F1F5;border-top:1px solid var(--line);padding-top:6px}
 .ecard .next b{color:var(--red-2);font-weight:600}
 .ecard.private{border-style:dashed}
 /* mine */
@@ -127,7 +127,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .hit{background:var(--panel);border-radius:10px;padding:10px 12px;cursor:pointer;border:1px solid transparent}
 .hit:hover,.hit.on{border-color:var(--red)}
 .hit .t{font-weight:600;font-size:13.5px} .hit .p{font-size:11px;color:var(--muted);font-family:"Inter Tight",Inter,sans-serif}
-.note{background:var(--panel);border-radius:12px;padding:18px 20px;overflow:auto;max-height:78vh;font-size:14px;line-height:1.55;color:#D5E1E8}
+.note{background:var(--panel);border-radius:12px;padding:18px 20px;overflow:auto;max-height:78vh;font-size:14px;line-height:1.55;color:#E8F1F5}
 .note h1,.note h2,.note h3{color:var(--ink);margin:14px 0 6px} .note h1{font-size:20px}.note h2{font-size:16px}.note h3{font-size:14px}
 .note p{margin:0 0 10px} .note code{background:var(--panel-2);padding:1px 5px;border-radius:4px;font-size:12.5px} .note li{margin:2px 0}
 .note table{border-collapse:collapse;font-size:12.5px;margin:8px 0} .note td,.note th{border:1px solid var(--line);padding:4px 8px;vertical-align:top}
@@ -140,7 +140,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .post .av{width:26px;height:26px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700}
 .post.human .av{background:var(--yellow);color:#143044}
 .post .n{font-size:12.5px;font-weight:600} .post .n small{color:var(--dim);font-weight:400;margin-left:6px;font-size:10.5px}
-.post p{margin:2px 0 0;font-size:12.5px;color:#C7D6DF;line-height:1.4}
+.post p{margin:2px 0 0;font-size:12.5px;color:#D8E4EB;line-height:1.4}
 </style>
 
 <header id="hdr">
@@ -208,7 +208,7 @@ function simStep(k){ for(let i=0;i<NODES.length;i++){ const a=NODES[i]; for(let 
   for(const n of NODES){ n.vx+=(500-n.x)*0.0025*k; n.vy+=(310-n.y)*0.0025*k; n.vx*=0.82; n.vy*=0.82; n.x+=n.vx; n.y+=n.vy; n.x=Math.max(30,Math.min(970,n.x)); n.y=Math.max(30,Math.min(590,n.y)); } }
 function drawGraph(){ const g=$('#graph'); if(!g) return; simStep(0.15); simT++; if(simT%2) for(const n of NODES) if(n.glow){ n.x+=Math.sin(simT/40+n.r)*0.15; n.y+=Math.cos(simT/50+n.r)*0.15; }
   vb.x+=(vbT.x-vb.x)*0.08; vb.y+=(vbT.y-vb.y)*0.08; vb.w+=(vbT.w-vb.w)*0.08; vb.h+=(vbT.h-vb.h)*0.08; g.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
-  const col=n=>n.kind==='engine'?'#4FB3BF':n.kind==='project'?'#3C7D9C':n.kind==='process'?'#6E8798':n.kind==='human'?'none':'#F4F7F9';
+  const col=n=>n.kind==='engine'?'#4FB3BF':n.kind==='project'?'#3C7D9C':n.kind==='process'?'#6E8798':n.kind==='human'?'none':'#FBFCFD';
   const dim=n=>focus&&focus.id!==n.id&&!EDGES.some(([a,b])=>(a===focus&&b===n)||(b===focus&&a===n));
   g.innerHTML=`<defs><filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="glowr" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>`+
     EDGES.map(([a,b])=>a&&b?`<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="${(focus&&(a===focus||b===focus))?'#4FB3BF':'#1C3447'}" stroke-opacity="${(focus&&(a===focus||b===focus))?.9:.7}" stroke-width="${(focus&&(a===focus||b===focus))?1.6:1}"/>`:'').join('')+
@@ -231,7 +231,7 @@ function graphView(title, red, sub, kind){ const humans=TASKS.filter(t=>t.state!
   ${kind==='team'&&humans.length?`<div class="card wait"><div class="k">Waiting on you</div>${humans.slice(0,5).map(t=>`<div class="item">${esc(t.title)} <span class="pill human">${esc(ag(t.owner).name.split(' ')[0])}</span></div>`).join('')}</div>`:''}
   <svg id="graph" viewBox="0 0 1000 620" role="img" aria-label="Live graph of bots, engines and projects"></svg>
   <div class="card detail" id="detail" hidden></div>
-  <div class="legend"><span><i style="background:#F4F7F9"></i>bot</span><span><i style="background:none;border:2px solid #9DB6C6;width:7px;height:7px"></i>person</span><span><i style="background:#4FB3BF"></i>engine</span><span><i style="background:#3C7D9C"></i>project</span><span><i style="background:#6E8798"></i>process</span><span class="note">· scores are evaluated work done, nothing invented</span></div>`; }
+  <div class="legend"><span><i style="background:#FBFCFD"></i>bot</span><span><i style="background:none;border:2px solid #9DB6C6;width:7px;height:7px"></i>person</span><span><i style="background:#4FB3BF"></i>engine</span><span><i style="background:#3C7D9C"></i>project</span><span><i style="background:#6E8798"></i>process</span><span class="note">· scores are evaluated work done, nothing invented</span></div>`; }
 function team(){ const n=B.agents.length, live=B.agents.filter(a=>a.status==='active').length, wait=TASKS.filter(t=>t.state!=='done'&&ag(t.owner).kind==='human').length; return graphView('Team is','moving',`NMCSN house · ${n} on the team · ${live} live · ${wait} waiting on a person · ${esc(B.sprint.name)}`,'team'); }
 function engines(){ return graphView(B.engines.length===3?'Three':B.engines.length,'engines','Click a cluster to zoom. Scores are evaluated work done, nothing invented.','engines'); }
 function projects(){ return graphView('Projects','and processes',`${PROJECTS.filter(p=>p.state!=='backlog').length} projects live · ${B.routines.length} processes · scores are milestones and work done`,'projects'); }
