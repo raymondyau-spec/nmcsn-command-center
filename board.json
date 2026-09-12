@@ -218,7 +218,7 @@
    "kind": "bot",
    "job": "Founder clone: spec, split, delegate",
    "status": "idle",
-   "now": "Waiting for the next directive",
+   "now": "SCAI SHOCK talks — conferences sprint",
    "element": "Fire · the spark, kept in check by Water"
   },
   {
@@ -245,7 +245,7 @@
    "kind": "bot",
    "job": "Doses, blocked calls, thresholds vs source",
    "status": "idle",
-   "now": "Re-review delivered: PASS-WITH-FIXES; all three required fixes verified by the Builder",
+   "now": "T58 timed read-through of the chair deck plus DOI verification",
    "element": "Metal · standards"
   },
   {
@@ -263,7 +263,7 @@
    "kind": "bot",
    "job": "Dialogue JSON → neural voices → video",
    "status": "idle",
-   "now": "Scenario P rendered (1:59)",
+   "now": "T213 resend speaker template to Rachel as native .pptx",
    "element": "Wood · show"
   },
   {
@@ -308,7 +308,7 @@
    "kind": "human",
    "job": "Owner · clinical signer",
    "status": "blocked-on",
-   "now": "Approve the chain sheet · ER panel names · Ardent agreement · Ryan Drive access",
+   "now": "T56 then T59 (SCAI SHOCK)",
    "element": "Fire Snake (1977) · owner and signer"
   },
   {
@@ -344,7 +344,7 @@
    "kind": "bot",
    "job": "Sequence the work; guard the drumbeat and Ray's energy; say stop",
    "status": "sprint",
-   "now": "First run: trim the waiting-on-Ray list to the three that matter this week",
+   "now": "SCAI sequence locked — Ray T56→T59, team T213/T215/T58, T61 after T59",
    "element": "Water · temper"
   },
   {
@@ -353,7 +353,7 @@
    "kind": "bot",
    "job": "Money, contracts, dates, obligations; nothing in a deck that is not in the record",
    "status": "sprint",
-   "now": "First run: one page of what NMCSN owes and is owed (State, DOH, CAG LLC, partners)",
+   "now": "T215 verify SCAI SHOCK registration receipt",
    "element": "Earth · Metal · ground and hold"
   },
   {
@@ -3174,6 +3174,11 @@
    "t": "2026-09-12 17:10",
    "who": "hey-ray",
    "text": "Directive on conferences / SCAI SHOCK 2026 St. Louis (M14). Team: T58 chair-deck timed read + DOI check to sprint; T213 speaker template already sprint; T215 registration receipt to sprint. Ray-only still open: T56 answer SCAI (agenda wrong, SCAI blocked), T59 confirm storyboard v5 beats 6 and 7, T60 vision-board file, T57 call Dupont. T61 slides stay backlog until T59. T212 and T214 already done. Freeze holds: no new bots. Removed messageToHeyRay after acting."
+  },
+  {
+   "t": "2026-09-12 17:10",
+   "who": "pacer",
+   "text": "Sequence locked. Ray T56 then T59. Team T213/T215/T58. T61 after T59. Hold T57, ABQ, RFP, counsel, continuum. Freeze holds."
   }
  ],
  "sprint": {
