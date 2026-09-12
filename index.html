@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@400;500;600&display=swap">
 <style>
 /* Adapted from Ryan Kohler's "Self Driving" monitor (2026-09-12): near-black, one red, bots as glowing nodes, a tour, a feed. Single committed look, painted explicitly. */
-:root{ --bg:#08141F; --panel:#0F2233; --panel-2:#153046; --line:#22415A; --ink:#EAF2F6; --muted:#9DB6C6; --dim:#5F7A8C; --red:#4FB3BF; --red-2:#7FD3D9; --green:#6FCF9F; --yellow:#D9B77A; --magenta:#D9B77A; --white:#F4F7F9; --grey:#6E8798; }
+:root{ --bg:#E4EEF2; --panel:#F7FBFC; --panel-2:#D9E6ED; --line:#B4C8D4; --ink:#143044; --muted:#4E6878; --dim:#7A93A3; --red:#3A9CA8; --red-2:#2E7F8A; --green:#2F8A62; --yellow:#C4964A; --magenta:#C4964A; --white:#F7FBFC; --grey:#6E8798; }
 /* Water and Metal for a Fire Snake (1977): deep water ground, silver ink, sea-glass as the one accent, sand for what waits on a person. No red. */
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--ink);font:13.5px/1.45 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
@@ -24,7 +24,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 #hdr .av{width:26px;height:26px;border-radius:50%;background:var(--red);display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;margin-right:8px}
 
 /* ticker */
-#tick{height:30px;overflow:hidden;position:relative;border-bottom:1px solid var(--line);background:#0B1B29}
+#tick{height:30px;overflow:hidden;position:relative;border-bottom:1px solid var(--line);background:#D5E4EB}
 #tick .track{position:absolute;white-space:nowrap;animation:tick 80s linear infinite;line-height:30px;font-size:12px;color:var(--muted)}
 #tick .track span{margin-right:56px} #tick .track b{color:var(--ink);font-weight:600}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -45,7 +45,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .note{color:var(--muted);font-size:12px}
 
 /* waiting card + detail card */
-.card{background:rgba(19,19,26,.92);border:1px solid var(--line);border-radius:12px;padding:14px 16px;backdrop-filter:blur(6px)}
+.card{background:rgba(247,251,252,.96);border:1px solid var(--line);border-radius:12px;padding:14px 16px;backdrop-filter:blur(6px)}
 .wait{position:absolute;left:22px;top:92px;max-width:420px;z-index:3}
 .wait .k{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:6px}
 .wait div.item{font-size:13px;padding:3px 0}
@@ -59,7 +59,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .pill.live{background:rgba(111,207,159,.18);color:var(--green)} .pill.score{background:rgba(217,183,122,.2);color:var(--yellow)} .pill.human{background:rgba(217,183,122,.28);color:var(--magenta)} .pill.red{background:rgba(79,179,191,.18);color:var(--red-2)} .pill.grey{background:var(--panel-2);color:var(--muted)}
 
 /* graph */
-#graph{flex:1;width:100%;min-height:440px;border-radius:14px;background:radial-gradient(1200px 600px at 60% 40%,#0F2A3C 0%,#08141F 70%);animation:tide 18s ease-in-out infinite alternate}
+#graph{flex:1;width:100%;min-height:440px;border-radius:14px;background:radial-gradient(1200px 600px at 60% 40%,#C9DCE6 0%,#E4EEF2 70%);animation:tide 18s ease-in-out infinite alternate}
 @keyframes tide{from{background-position:0 0}to{background-position:40px 20px}}
 #graph text{font-family:Inter,sans-serif;fill:#EAF2F6;font-size:11px;font-weight:600}
 #graph .lab2{fill:#9DB6C6;font-size:9.5px;font-weight:500}
@@ -91,7 +91,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .setup label{display:flex;gap:10px;align-items:center;padding:9px 12px;background:var(--panel);border-radius:9px;margin-bottom:6px;font-size:13px}
 
 /* Hey Ray console */
-#hey{border-bottom:1px solid var(--line);padding:12px 14px;display:grid;gap:8px;background:#0C1D2C}
+#hey{border-bottom:1px solid var(--line);padding:12px 14px;display:grid;gap:8px;background:#D5E4EB}
 #hey .t{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700}
 #hey textarea{width:100%;min-height:64px;background:var(--panel);border:1px solid var(--line);border-radius:10px;color:var(--ink);font:inherit;font-size:13px;padding:9px 10px;resize:vertical}
 #hey .row{display:flex;gap:8px;align-items:center}
@@ -117,7 +117,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .mine{display:grid;gap:10px;max-width:760px}
 .mine .it{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;background:var(--panel);border-radius:12px;padding:14px 16px;border-left:4px solid var(--yellow)}
 .mine .it .t{font-weight:600;font-size:15px} .mine .it .w{font-size:12.5px;color:var(--muted);margin-top:2px}
-.mine .it a,.mine .it button{background:var(--red);color:#062026;border-radius:9px;padding:9px 12px;font-weight:600;font-size:13px;text-decoration:none;white-space:nowrap}
+.mine .it a,.mine .it button{background:var(--red);color:#143044;border-radius:9px;padding:9px 12px;font-weight:600;font-size:13px;text-decoration:none;white-space:nowrap}
 .mine .empty{color:var(--muted);padding:20px}
 /* record (Baalda vault, read-only) */
 .rec{display:grid;grid-template-columns:minmax(260px,.9fr) minmax(0,1.4fr);gap:14px;flex:1;min-height:0}
@@ -138,7 +138,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .post{display:grid;grid-template-columns:26px minmax(0,1fr);gap:10px;padding:8px 6px;border-radius:8px}
 .post.lead{background:var(--panel)}
 .post .av{width:26px;height:26px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700}
-.post.human .av{background:var(--yellow);color:#111}
+.post.human .av{background:var(--yellow);color:#143044}
 .post .n{font-size:12.5px;font-weight:600} .post .n small{color:var(--dim);font-weight:400;margin-left:6px;font-size:10.5px}
 .post p{margin:2px 0 0;font-size:12.5px;color:#C7D6DF;line-height:1.4}
 </style>
