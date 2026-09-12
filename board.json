@@ -1,0 +1,2638 @@
+{
+ "asOf": "2026-09-13T10:42:00-06:00",
+ "owner": {
+  "name": "Ray Yau",
+  "role": "Owner · clinical signer (interventional cardiology) · Hey Ray's original"
+ },
+ "engines": [
+  {
+   "id": "onecall",
+   "name": "ONE CALL engine & packs",
+   "color": "teal",
+   "domain": "ONE CALL & packs",
+   "purpose": "The ONE CALL engine and its packs: shock live, STEMI signed, stroke/trauma/OB/sepsis next.",
+   "state": "active",
+   "lastTouched": "2026-09-13"
+  },
+  {
+   "id": "documents",
+   "name": "Documents & strategy",
+   "color": "amber",
+   "domain": "NMCSN",
+   "purpose": "Roadmaps, plans, prospectus, decks, briefs, legal prep.",
+   "state": "active",
+   "lastTouched": "2026-09-13"
+  },
+  {
+   "id": "process",
+   "name": "Process engine (skills, board, floor)",
+   "color": "violet",
+   "domain": "Process",
+   "purpose": "The factory itself: skills, board, command center.",
+   "state": "active",
+   "lastTouched": "2026-09-13"
+  },
+  {
+   "id": "registry",
+   "name": "Registry & REDCap",
+   "domain": "NMCSN",
+   "purpose": "Turn the NMCSN cohort into a governed multi-site REDCap registry with an IRB, data rights and a State reporting line.",
+   "state": "active",
+   "lastTouched": "2026-09-09",
+   "color": "teal"
+  },
+  {
+   "id": "publications",
+   "name": "Publications",
+   "domain": "Science & publications",
+   "purpose": "Get the rural cardiogenic shock evidence into print — the JSCAI revision, the AMICS transfer paper section, the JW ECMO case report.",
+   "state": "active",
+   "lastTouched": "2026-09-10",
+   "color": "teal"
+  },
+  {
+   "id": "conferences",
+   "name": "Conferences & talks",
+   "domain": "Speaking & conferences",
+   "purpose": "Deliver Ray's speaking obligations — SCAI SHOCK St. Louis on Sep 18 first — and run the conference/travel automation behind them.",
+   "state": "sprint",
+   "lastTouched": "2026-09-10",
+   "color": "teal"
+  },
+  {
+   "id": "funding",
+   "name": "Funding & the State",
+   "domain": "Funding, governance & legal",
+   "purpose": "Land recurring state money for the network — now primarily a legislative appropriation worked through Sen. Muñoz and the LFC.",
+   "state": "active",
+   "lastTouched": "2026-09-11",
+   "color": "teal"
+  },
+  {
+   "id": "governance",
+   "name": "Governance, legal & IP",
+   "domain": "Funding, governance & legal",
+   "purpose": "Paper the organisation and settle who owns what — bylaws, COI, NDAs, board seats, the ONE CALL IP and the company question.",
+   "state": "active",
+   "lastTouched": "2026-09-12",
+   "color": "teal"
+  },
+  {
+   "id": "website",
+   "name": "nmcsn.org website",
+   "domain": "NMCSN",
+   "purpose": "Keep the public site partner-ready and truthful — routing, model, language, map and the clinical tools.",
+   "state": "backlog",
+   "lastTouched": "2026-08-30",
+   "color": "teal"
+  },
+  {
+   "id": "staffing",
+   "name": "Staffing & the Executive Director",
+   "domain": "NMCSN",
+   "purpose": "Design the first paid NMCSN workforce and fill the leadership roles the network has never had.",
+   "state": "active",
+   "lastTouched": "2026-09-08",
+   "color": "teal"
+  },
+  {
+   "id": "education",
+   "name": "AI physician education",
+   "domain": "Science & publications",
+   "purpose": "Teach clinicians to use AI safely — the tiered mastery curriculum and its ethics module.",
+   "state": "backlog",
+   "lastTouched": "2026-05-15",
+   "color": "teal"
+  },
+  {
+   "id": "partnerships",
+   "name": "Partnerships & policy",
+   "domain": "NMCSN",
+   "purpose": "Bring institutions into the network — UNM, Presbyterian, IHS/tribal — and serve the out-of-state programs that ask for the model.",
+   "state": "active",
+   "lastTouched": "2026-09-09",
+   "color": "teal"
+  },
+  {
+   "id": "network-ops",
+   "name": "Network operations",
+   "domain": "NMCSN",
+   "purpose": "Run the network itself — statewide meetings, the CS QI committee, the roster, onboarding and the rollout.",
+   "state": "active",
+   "lastTouched": "2026-09-09",
+   "color": "teal"
+  },
+  {
+   "id": "research-trials",
+   "name": "Trials, cases & literature",
+   "domain": "Science & publications",
+   "purpose": "Everything clinical-research that is not a manuscript in flight — sponsored trials at the site, the teaching cases, and the literature scan.",
+   "state": "active",
+   "lastTouched": "2026-09-10",
+   "color": "teal"
+  },
+  {
+   "id": "continuum",
+   "name": "Continuum of care · recover, transition, follow up, thrive",
+   "domain": "ONE CALL & packs",
+   "purpose": "The river after the acute call: recovery, transition home, follow-up, cardiac rehab, diet and medication coaching, survivor network. Three packs. Rural first. Tabled by Ray 2026-09-13; resume on his word.",
+   "state": "backlog",
+   "lastTouched": "2026-09-13",
+   "color": "teal"
+  }
+ ],
+ "teams": [
+  {
+   "id": "founder",
+   "name": "Founder",
+   "agents": [
+    "hey-ray",
+    "pacer"
+   ]
+  },
+  {
+   "id": "build",
+   "name": "Build team",
+   "agents": [
+    "scaffolder",
+    "builder"
+   ]
+  },
+  {
+   "id": "review",
+   "name": "Review team",
+   "agents": [
+    "clinical-reviewer",
+    "code-reviewer"
+   ]
+  },
+  {
+   "id": "delivery",
+   "name": "Delivery team",
+   "agents": [
+    "producer",
+    "scribe"
+   ]
+  },
+  {
+   "id": "strategy",
+   "name": "Strategy team",
+   "agents": [
+    "landscaper",
+    "counsel-prep",
+    "steward",
+    "growth"
+   ]
+  },
+  {
+   "id": "process",
+   "name": "Process team",
+   "agents": [
+    "retro"
+   ]
+  },
+  {
+   "id": "humans",
+   "name": "People who sign",
+   "agents": [
+    "ray",
+    "ward",
+    "ryan",
+    "er-panel"
+   ]
+  }
+ ],
+ "agents": [
+  {
+   "id": "hey-ray",
+   "name": "Hey Ray",
+   "kind": "bot",
+   "job": "Founder clone: spec, split, delegate",
+   "status": "idle",
+   "now": "Waiting for the next directive",
+   "element": "Fire · the spark, kept in check by Water"
+  },
+  {
+   "id": "scaffolder",
+   "name": "Scaffolder",
+   "kind": "bot",
+   "job": "Intake → pack.json, scenarios, test list",
+   "status": "idle",
+   "now": "STEMI scaffold folded into the build (retro flagged it)",
+   "element": "Earth · form"
+  },
+  {
+   "id": "builder",
+   "name": "Builder",
+   "kind": "bot",
+   "job": "Rules, conversation, screens, demos",
+   "status": "active",
+   "now": "v0.24 publishing; chain sheet page",
+   "element": "Fire · make"
+  },
+  {
+   "id": "clinical-reviewer",
+   "name": "Clinical Safety Reviewer",
+   "kind": "bot",
+   "job": "Doses, blocked calls, thresholds vs source",
+   "status": "idle",
+   "now": "Re-review delivered: PASS-WITH-FIXES; all three required fixes verified by the Builder",
+   "element": "Metal · standards"
+  },
+  {
+   "id": "code-reviewer",
+   "name": "Code & Test Reviewer",
+   "kind": "bot",
+   "job": "Parsers, order-of-answer, state leaks, boundary tests",
+   "status": "idle",
+   "now": "Re-review delivered: BLOCK → all seven new bugs fixed by the Builder",
+   "element": "Metal · standards"
+  },
+  {
+   "id": "producer",
+   "name": "Producer",
+   "kind": "bot",
+   "job": "Dialogue JSON → neural voices → video",
+   "status": "idle",
+   "now": "Scenario P rendered (1:59)",
+   "element": "Wood · show"
+  },
+  {
+   "id": "scribe",
+   "name": "Scribe",
+   "kind": "bot",
+   "job": "Hub, tests, handoff, vault, artifacts",
+   "status": "active",
+   "now": "Recording the signature; handoff v15",
+   "element": "Earth · record"
+  },
+  {
+   "id": "landscaper",
+   "name": "Landscaper",
+   "kind": "bot",
+   "job": "Competitors, regulators, precedents",
+   "status": "sprint",
+   "now": "Next: FDA-cleared AI STEMI ECG readers — vendors, clearance dates, adapter feasibility",
+   "element": "Wood · see the field"
+  },
+  {
+   "id": "counsel-prep",
+   "name": "Counsel-prep",
+   "kind": "bot",
+   "job": "Open questions, disclosure log, status audit",
+   "status": "idle",
+   "now": "Open-questions page for Ward drafted 2026-09-12; awaiting Ardent agreement",
+   "element": "Metal · boundaries"
+  },
+  {
+   "id": "retro",
+   "name": "Retro / Skill-Forge",
+   "kind": "bot",
+   "job": "Improve the skills from each run",
+   "status": "idle",
+   "now": "Retro done; skill templates updated (parser test-first, ask-order, system design)",
+   "element": "Water · reflect"
+  },
+  {
+   "id": "ray",
+   "name": "Ray Yau",
+   "kind": "human",
+   "job": "Owner · clinical signer",
+   "status": "blocked-on",
+   "now": "See Mine",
+   "element": "Fire Snake (1977) · owner and signer"
+  },
+  {
+   "id": "ward",
+   "name": "Vincent J. Ward",
+   "kind": "human",
+   "job": "Counsel",
+   "status": "idle",
+   "now": "",
+   "element": "Metal · counsel"
+  },
+  {
+   "id": "ryan",
+   "name": "Ryan (Refer.io)",
+   "kind": "human",
+   "job": "Developer partner",
+   "status": "idle",
+   "now": "",
+   "element": "Wood · builder partner"
+  },
+  {
+   "id": "er-panel",
+   "name": "ER physician panel",
+   "kind": "human",
+   "job": "Referring-physician stand-ins and testers for every pack (rural NM first)",
+   "status": "sprint",
+   "now": "",
+   "element": "Earth · the ground truth"
+  },
+  {
+   "id": "pacer",
+   "name": "Pacer",
+   "kind": "bot",
+   "job": "Sequence the work; guard the drumbeat and Ray's energy; say stop",
+   "status": "sprint",
+   "now": "First run: trim the waiting-on-Ray list to the three that matter this week",
+   "element": "Water · temper"
+  },
+  {
+   "id": "steward",
+   "name": "Steward",
+   "kind": "bot",
+   "job": "Money, contracts, dates, obligations; nothing in a deck that is not in the record",
+   "status": "sprint",
+   "now": "First run: one page of what NMCSN owes and is owed (State, DOH, CAG LLC, partners)",
+   "element": "Earth · Metal · ground and hold"
+  },
+  {
+   "id": "growth",
+   "name": "Growth",
+   "kind": "bot",
+   "job": "Partners, sites, states; outreach in Ray's voice for his review",
+   "status": "sprint",
+   "now": "First run: enrollment map and the next three sites",
+   "element": "Wood · grow"
+  }
+ ],
+ "epics": [
+  {
+   "id": "E1",
+   "engine": "onecall",
+   "title": "ONE CALL engine and its packs",
+   "milestones": [
+    {
+     "id": "M1",
+     "title": "Cardiogenic shock pack · v0.21",
+     "state": "done",
+     "projects": [
+      {
+       "id": "P1",
+       "title": "Companion conversation, arrest lane, neural voice",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T1",
+         "title": "Conversation flow + parsers",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "browser run",
+          "result": "pass",
+          "at": "2026-09-10"
+         }
+        },
+        {
+         "id": "T2",
+         "title": "Scenarios A–H narrated videos",
+         "owner": "producer",
+         "state": "done",
+         "evaluation": {
+          "by": "frame check",
+          "result": "pass",
+          "at": "2026-09-10"
+         }
+        }
+       ]
+      },
+      {
+       "id": "P2",
+       "title": "In-house activation and in-town ground",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T3",
+         "title": "internalTeam, escalateToTransfer, eligibleCrews",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "acceptance tests",
+          "result": "pass",
+          "at": "2026-09-10"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M2",
+     "title": "STEMI pack · v0.22",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P3",
+       "title": "System design: STEMI designations, entry piece, ECG reader",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T4",
+         "title": "Designations PCI 24/7 · PCI limited hours · referring with/without lytics (declared at enrollment)",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "board column + rules",
+          "result": "pass",
+          "at": "2026-09-12"
+         }
+        },
+        {
+         "id": "T5",
+         "title": "Entry piece: non-PCI physician ↔ interventionalist paged first when lytics indicated",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "browser run I",
+          "result": "pass",
+          "at": "2026-09-12"
+         }
+        },
+        {
+         "id": "T6",
+         "title": "ECG reader registry (prototype model · FDA-cleared adapter stub · own model)",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "More screen",
+          "result": "pass",
+          "at": "2026-09-12"
+         }
+        }
+       ]
+      },
+      {
+       "id": "P4",
+       "title": "Rules, conversation, tests",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T7",
+         "title": "stemiTier / stemiTiming (≤120 transfer · >120 lytics · PCI here · contraindications · no lytics on site)",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "17 rule + parse tests",
+          "result": "pass",
+          "at": "2026-09-12"
+         }
+        },
+        {
+         "id": "T8",
+         "title": "COMP_STEMI flow with out-of-order absorption; pack chaining to shock",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "scenarios I and J in browser",
+          "result": "pass after 3 fixes",
+          "at": "2026-09-12"
+         }
+        },
+        {
+         "id": "T9",
+         "title": "Adversarial: lytic dose refused; 'no need to activate' refused",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "ADVERSARIAL set",
+          "result": "pass",
+          "at": "2026-09-12"
+         }
+        }
+       ]
+      },
+      {
+       "id": "P5",
+       "title": "Review and fix",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T10",
+         "title": "Clinical safety review of v022.js",
+         "owner": "clinical-reviewer",
+         "state": "done",
+         "evaluation": {
+          "by": "Clinical Safety Reviewer bot",
+          "result": "BLOCK → 3 blockers, 15 should-fix, 9 notes; report review-clinical.md",
+          "at": "2026-09-12"
+         }
+        },
+        {
+         "id": "T11",
+         "title": "Code & test review of v022.js",
+         "owner": "code-reviewer",
+         "state": "done",
+         "evaluation": {
+          "by": "Code & Test Reviewer bot",
+          "result": "BLOCK → 16 bugs, 14 risks, 9 nits; report review-code.md + node harnesses",
+          "at": "2026-09-12"
+         }
+        },
+        {
+         "id": "T12",
+         "title": "Apply fixes; answer every finding",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "Builder · browser run",
+          "result": "all blockers and bugs fixed; 45 rule/parse tests, 3 adversarial, scenarios I J K L M pass; evaluation.json answers every finding",
+          "at": "2026-09-12"
+         }
+        }
+       ]
+      },
+      {
+       "id": "P6",
+       "title": "Produce and record",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T13",
+         "title": "Scenario I video (re-render with contraindication exchange)",
+         "owner": "producer",
+         "state": "active"
+        },
+        {
+         "id": "T14",
+         "title": "Scenario J video (STEMI → shock pack chaining)",
+         "owner": "producer",
+         "state": "done",
+         "evaluation": {
+          "by": "frame check",
+          "result": "2:22, hand-off visible",
+          "at": "2026-09-12"
+         }
+        },
+        {
+         "id": "T15",
+         "title": "Hub entry, acceptance tests, handoff v10, vault, Downloads",
+         "owner": "scribe",
+         "state": "sprint"
+        }
+       ]
+      },
+      {
+       "id": "P7",
+       "title": "Sign",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T16",
+         "title": "Signer confirms thresholds, contraindication list, when-in-doubt sentence, designations",
+         "owner": "ray",
+         "state": "done",
+         "evaluation": {
+          "by": "Ray Yau (signer) via the signing sheet",
+          "result": "all 16 decisions kept; signed",
+          "at": "2026-09-13"
+         }
+        },
+        {
+         "id": "T29",
+         "title": "Clinical re-review of v0.22.1 (post-fix) before signing",
+         "owner": "clinical-reviewer",
+         "state": "done",
+         "evaluation": {
+          "by": "Clinical Safety Reviewer bot",
+          "result": "PASS-WITH-FIXES → R1–R3 fixed and pinned by tests (review-clinical-2.md)",
+          "at": "2026-09-12"
+         }
+        },
+        {
+         "id": "T30",
+         "title": "Code re-review of v0.22.2",
+         "owner": "code-reviewer",
+         "state": "done",
+         "evaluation": {
+          "by": "Code & Test Reviewer bot",
+          "result": "BLOCK → N1–N7 + B2 + R1 fixed; 60 tests; Demo I and J as scripted (review-code-2.md)",
+          "at": "2026-09-12"
+         }
+        },
+        {
+         "id": "T31",
+         "title": "Signing sheet (16 decisions) answered by Ray → approved_by set, signature recomputed",
+         "owner": "ray",
+         "state": "done",
+         "evaluation": {
+          "by": "Ray Yau (signer) via the signing sheet",
+          "result": "all 16 decisions kept; signed",
+          "at": "2026-09-13"
+         }
+        }
+       ]
+      },
+      {
+       "id": "P17",
+       "title": "Interaction models: Scribe (default) · Guided (opt-in) · Express pathway",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T32",
+         "title": "INTERACTION_MODELS, per-site declaration, per-case switch, p2p flow (story → code → connect), scribe mode, guideline-read card, Demo P",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "browser run",
+          "result": "100 tests; P, switch B→A, A→B, shock in model B all pass",
+          "at": "2026-09-13"
+         }
+        },
+        {
+         "id": "T33",
+         "title": "Connector card: the five things, both screens, both models",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "browser run",
+          "result": "card renders with all five; 101 tests",
+          "at": "2026-09-13"
+         }
+        },
+        {
+         "id": "T35",
+         "title": "Scribe default; Express by voice or tap; ECG read → dial; scribe listening; Demos P, Q",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "browser run",
+          "result": "104 tests, 6 adversarial; express from first words; code status recorded after connect",
+          "at": "2026-09-13"
+         }
+        }
+       ]
+      },
+      {
+       "id": "P18",
+       "title": "ER physician panel plays the referring physician through Scenarios I, J, P",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T34",
+         "title": "Recruit 3–5 NM ER physicians (Level 3 sites); schedule a 60-min session",
+         "owner": "ray",
+         "state": "backlog"
+        }
+       ]
+      },
+      {
+       "id": "P19",
+       "title": "The chain: players, needs, rollout stages, notifications (Systems Builder)",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T36",
+         "title": "CHAIN config for STEMI and shock; notifyChain on events; chain panel; rollout stage selector",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "browser run",
+          "result": "108 tests; stage 1/2/3 notification tests pass",
+          "at": "2026-09-13"
+         }
+        },
+        {
+         "id": "T37",
+         "title": "Approve the STEMI chain on the chain sheet (tap page)",
+         "owner": "ray",
+         "state": "sprint"
+        },
+        {
+         "id": "T38",
+         "title": "Answer the 16 signing decisions on the signing sheet (tap page)",
+         "owner": "ray",
+         "state": "done",
+         "evaluation": {
+          "by": "Ray Yau (signer) via the signing sheet",
+          "result": "all 16 decisions kept; signed",
+          "at": "2026-09-13"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M3",
+     "title": "Stroke pack (LVO / thrombectomy routing)",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P8",
+       "title": "Intake with a stroke neurologist signer",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T17",
+         "title": "Name the signer; source protocol; designations (CSC · TSC · PSC · referring)",
+         "owner": "hey-ray",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M4",
+     "title": "Trauma · OB · Sepsis packs",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P9",
+       "title": "One intake per condition, in the order the State funds",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T18",
+         "title": "Order and signers",
+         "owner": "hey-ray",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E2",
+   "engine": "documents",
+   "title": "Launch, governance, structure",
+   "milestones": [
+    {
+     "id": "M5",
+     "title": "Strategy set (roadmap · master plan · landscape · prospectus · brief · decks · decision roadmap)",
+     "state": "done",
+     "projects": [
+      {
+       "id": "P10",
+       "title": "Ten documents",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T19",
+         "title": "Published as artifacts; vault + Downloads copies",
+         "owner": "scribe",
+         "state": "done",
+         "evaluation": {
+          "by": "owner read",
+          "result": "accepted as options, not positions",
+          "at": "2026-09-12"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M6",
+     "title": "Counsel and IP",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P11",
+       "title": "Structure rethink with Ward",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T20",
+         "title": "Pull the Ardent employment agreement (inventions clause unknown)",
+         "owner": "ray",
+         "state": "sprint"
+        },
+        {
+         "id": "T21",
+         "title": "Open-questions page for Ward",
+         "owner": "counsel-prep",
+         "state": "done",
+         "evaluation": {
+          "by": "owner",
+          "result": "pending review",
+          "at": "2026-09-12"
+         }
+        },
+        {
+         "id": "T22",
+         "title": "Disclosure log (Ryan 2026-09-10 · Ward 2026-09-09)",
+         "owner": "counsel-prep",
+         "state": "done",
+         "evaluation": {
+          "by": "scribe",
+          "result": "logged",
+          "at": "2026-09-10"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M7",
+     "title": "Developer partner",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P12",
+       "title": "Handoff to Ryan (Refer.io)",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T23",
+         "title": "Handoff v9 sent via Drive link",
+         "owner": "scribe",
+         "state": "done",
+         "evaluation": {
+          "by": "email sent",
+          "result": "delivered",
+          "at": "2026-09-10"
+         }
+        },
+        {
+         "id": "T24",
+         "title": "Approve Ryan's Drive access request",
+         "owner": "ray",
+         "state": "sprint"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E3",
+   "engine": "process",
+   "title": "The factory itself",
+   "milestones": [
+    {
+     "id": "M8",
+     "title": "Skills",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P13",
+       "title": "systems-of-care-pack skill",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T25",
+         "title": "8-step method + 4 templates",
+         "owner": "retro",
+         "state": "done",
+         "evaluation": {
+          "by": "used on STEMI",
+          "result": "worked; 3 gaps found",
+          "at": "2026-09-12"
+         }
+        }
+       ]
+      },
+      {
+       "id": "P14",
+       "title": "nmcsn-factory skill (roster, routines, board, workflow)",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T26",
+         "title": "SKILL.md, 10 role cards, routines, workflow script, board.json",
+         "owner": "retro",
+         "state": "done",
+         "evaluation": {
+          "by": "files exist",
+          "result": "v1",
+          "at": "2026-09-12"
+         }
+        }
+       ]
+      },
+      {
+       "id": "P15",
+       "title": "Factory floor page (TV view, sprint, teams, engines, thread, commentator)",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T27",
+         "title": "Build and publish the floor page (v2: console style after Ray's video of Ryan's panel)",
+         "owner": "builder",
+         "state": "done",
+         "evaluation": {
+          "by": "Ray (video) + browser look",
+          "result": "v3 rebuilt to Ryan's monitor; published",
+          "at": "2026-09-12"
+         }
+        }
+       ]
+      },
+      {
+       "id": "P16",
+       "title": "Retro on the STEMI build → skill edits",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T28",
+         "title": "retro.md + additive template edits",
+         "owner": "retro",
+         "state": "done",
+         "evaluation": {
+          "by": "Retro bot",
+          "result": "retro.md; SKILL.md + 4 templates edited additively (parser test-first, ask-order, system design, late-requirements log)",
+          "at": "2026-09-12"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E_registry",
+   "engine": "registry",
+   "title": "Registry & REDCap",
+   "milestones": [
+    {
+     "id": "M9",
+     "title": "IRB protocol and multi-site reliance structure",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P20",
+       "title": "IRB protocol 0.1 to submission (UNM reviewing IRB, sites by reliance)",
+       "state": "sprint",
+       "tasks": [
+        {
+         "id": "T39",
+         "title": "Locate or rebuild IRB protocol draft 0.1 — index.md lists it, the file is not in the vault",
+         "owner": "scribe",
+         "state": "backlog"
+        },
+        {
+         "id": "T40",
+         "title": "Answer the 12 open decisions in the IRB draft",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T41",
+         "title": "Name the independent statistician and adjudication path for the PI conflict (PI founded the sponsor and practises at the hub)",
+         "owner": "counsel-prep",
+         "state": "backlog"
+        }
+       ]
+      },
+      {
+       "id": "P21",
+       "title": "Data-rights term sheet, DUAs and BAAs",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T42",
+         "title": "Keep the 2026-08-29 data-rights sheet and the ONE CALL MOU term sheet in step (the ↔ markers)",
+         "owner": "counsel-prep",
+         "state": "backlog"
+        },
+        {
+         "id": "T43",
+         "title": "Draft the DUA/BAA pack for the first two sites",
+         "owner": "counsel-prep",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M10",
+     "title": "REDCap build-out and the data-hub decision",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P22",
+       "title": "Rural Health Data Hub Administrator RFP — go / no-go",
+       "state": "sprint",
+       "tasks": [
+        {
+         "id": "T44",
+         "title": "Put the RFP decision in front of Ray before Sep 21, 17:00 MDT",
+         "owner": "pacer",
+         "state": "active"
+        },
+        {
+         "id": "T45",
+         "title": "If go: assemble the administrator proposal",
+         "owner": "scribe",
+         "state": "backlog"
+        }
+       ]
+      },
+      {
+       "id": "P23",
+       "title": "Registry hygiene and the cohort of record",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T46",
+         "title": "Retire every N=331 / N=317 reference; N=313 is the cohort of record",
+         "owner": "scribe",
+         "state": "active"
+        },
+        {
+         "id": "T47",
+         "title": "Refresh registry-index (v9.12) against the current REDCap build",
+         "owner": "steward",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "files": [
+    "nmcsn/2026-08-29_nmcsn-registry_execution-roadmap.html",
+    "nmcsn/registry-index.md",
+    "nmcsn/REDCap-5-year-roadmap.md",
+    "nmcsn/2026-09-09_nmcsn-funding_rh-data-hub-rfp-open.md",
+    "nmcsn/2026-09-08_nmcsn-one-call_participation-mou-term-sheet.md"
+   ]
+  },
+  {
+   "id": "E_publications",
+   "engine": "publications",
+   "title": "Publications",
+   "milestones": [
+    {
+     "id": "M11",
+     "title": "JSCAI-D-26-00469 — conditionally accepted, revision due Oct 3",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P24",
+       "title": "R1 package to submission",
+       "state": "sprint",
+       "tasks": [
+        {
+         "id": "T48",
+         "title": "Confirm whether the 9/10 R1 package was submitted or is sitting in the corresponding author's queue",
+         "owner": "scribe",
+         "state": "active"
+        },
+        {
+         "id": "T49",
+         "title": "Chase Truesdell and Basir for the feedback they still owe on Robyn's 9/8 send",
+         "owner": "pacer",
+         "state": "active"
+        },
+        {
+         "id": "T50",
+         "title": "Hold the Oct 3 journal deadline on the drumbeat",
+         "owner": "pacer",
+         "state": "active"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M12",
+     "title": "JW bloodless VA-ECMO case report",
+     "state": "sprint",
+     "projects": [
+      {
+       "id": "P25",
+       "title": "Recover the materials and set authorship",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T51",
+         "title": "Locate or rebuild the draft manuscript, fellow source packet and patient consent — none resolve in Drive or the vault",
+         "owner": "scribe",
+         "state": "backlog"
+        },
+        {
+         "id": "T52",
+         "title": "Written authorship agreement — Charlie lead, Ramses senior, order signed by all three",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T53",
+         "title": "Confirm Charlie's chart access at HHNM, or Chip's path to get it",
+         "owner": "ray",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M13",
+     "title": "AMICS transfer paper — Section 7 (Ray's contribution, Mark primary)",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P26",
+       "title": "Full-manuscript reference audit and figure corrections",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T54",
+         "title": "Run the full-manuscript reference audit still listed open since 8/16",
+         "owner": "clinical-reviewer",
+         "state": "backlog"
+        },
+        {
+         "id": "T55",
+         "title": "Apply the NM map figure corrections — 59.4% / 52.4%, drop the zero-geographic-gap tile",
+         "owner": "builder",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "files": [
+    "nmcsn/2026-09-10_jscai-n469_resubmission-feedback-owed.md",
+    "nmcsn/JSCAI-D-26-00236 MASTER RECORD.md",
+    "nmcsn/JSCAI Resubmission Status (N=313).md",
+    "nmcsn/JSCAI Reference & Review Status.md",
+    "nmcsn/2026-09-03_jscai-rural-cs_revision-hub.html",
+    "nmcsn/AMICS-Transfer-Paper-Status.md",
+    "nmcsn/jw-ecmo-case_HUB.html",
+    "nmcsn/2026-08-22_jw-ecmo-case_publication-roadmap.html",
+    "wiki/sources/Yau Truesdell 2026 - NMCSN Rural Network.md"
+   ]
+  },
+  {
+   "id": "E_conferences",
+   "engine": "conferences",
+   "title": "Conferences & talks",
+   "milestones": [
+    {
+     "id": "M14",
+     "title": "SCAI SHOCK 2026, St. Louis · Sep 18",
+     "state": "sprint",
+     "projects": [
+      {
+       "id": "P27",
+       "title": "ECMO satellite symposium (Ray chairs)",
+       "state": "sprint",
+       "tasks": [
+        {
+         "id": "T56",
+         "title": "Answer SCAI on the debate topic assignments — the published agenda is wrong and SCAI is blocked on Ray",
+         "owner": "ray",
+         "state": "active"
+        },
+        {
+         "id": "T57",
+         "title": "Call Allison Dupont to close what the lost Aug 31 prep-call recording left open",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T58",
+         "title": "Timed read-through of the chair deck plus reference DOI verification",
+         "owner": "clinical-reviewer",
+         "state": "backlog"
+        }
+       ]
+      },
+      {
+       "id": "P28",
+       "title": "Rowing in Rhythm — 8-minute talk, Fri 8:30 AM",
+       "state": "sprint",
+       "tasks": [
+        {
+         "id": "T59",
+         "title": "Confirm the wording of beats 6 and 7 in storyboard v5",
+         "owner": "ray",
+         "state": "active"
+        },
+        {
+         "id": "T60",
+         "title": "Supply the personal vision board file the storyboard depends on",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T61",
+         "title": "Build the slides once the storyboard is approved",
+         "owner": "producer",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M15",
+     "title": "NMCSN inaugural conference · Nov 13, 2026",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P29",
+       "title": "Venue, funding and committee",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T62",
+         "title": "Name the second committee lead (Dennis suggested at the house meeting)",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T63",
+         "title": "Lock the venue and the conference grant — Hart Foundation committed to funding",
+         "owner": "growth",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M16",
+     "title": "Conference & travel automation (Chief of Staff jobs)",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P30",
+       "title": "Daily scan and weekly digest",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T64",
+         "title": "Finish the receipt-forwarding rules — awaiting Ray's hands",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T65",
+         "title": "Keep the hub and companion notes regenerated each Monday",
+         "owner": "scribe",
+         "state": "active"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M202",
+     "title": "SCAI Shock 2026 · St. Louis · 17–19 Sep",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P202",
+       "title": "ECMO satellite 'hot potato' debate and speaker logistics",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T212",
+         "title": "Assign the four debate topics (Dupont, Brozzi, Afzal, Hockstein) and tell Rachel Pham",
+         "owner": "ray",
+         "state": "sprint"
+        },
+        {
+         "id": "T213",
+         "title": "Resend the speaker template to Rachel as native .pptx",
+         "owner": "producer",
+         "state": "sprint"
+        },
+        {
+         "id": "T214",
+         "title": "Book the gap night: Hyatt checkout Sat 9/19, flight Sun 9/20 (free-cancel clock)",
+         "owner": "ray",
+         "state": "sprint"
+        },
+        {
+         "id": "T215",
+         "title": "Verify SCAI SHOCK registration receipt",
+         "owner": "steward",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M203",
+     "title": "ABQ Cardiopulmonary Symposium · 23 Sep",
+     "state": "sprint",
+     "projects": [
+      {
+       "id": "P203",
+       "title": "Talk and slides",
+       "state": "sprint",
+       "tasks": [
+        {
+         "id": "T216",
+         "title": "Confirm the assigned talk topic with Erin Davis",
+         "owner": "ray",
+         "state": "sprint"
+        },
+        {
+         "id": "T217",
+         "title": "Slides due EOB Mon 21 Sep, 16:9; accept the Box folder invite",
+         "owner": "producer",
+         "state": "sprint"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M204",
+     "title": "Other invitations",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P204",
+       "title": "Reply or decline",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T218",
+         "title": "J&J Thailand webinar 24 Sep — yes or no",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T219",
+         "title": "Supira TCT dinner 1 Nov — RSVP by 28 Sep",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T220",
+         "title": "Beijing United Family Hospital virtual case series — pick a date after SCAI",
+         "owner": "growth",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "files": [
+    "presentations/SCAI-SHOCK-2026-ECMO-Workshop.md",
+    "presentations/2026-09-07_scai-shock-stl_chair-deck.md",
+    "nmcsn/2026-09-01_scai-ecmo-symposium_debate-speaker-template.html",
+    "nmcsn/2026-09-01_scai-ecmo-symposium_hot-potato-debate-prep-notes.html",
+    "nmcsn/2026-09-08_scai-shock-ecmo-symposium_faculty-topic-capture.md",
+    "nmcsn/scai-rowing-rhythm_HUB.md",
+    "nmcsn/2026-09-08_scai-rowing-rhythm_storyboard-v5-8min.md",
+    "nmcsn/2026-09-03_scai-rowing-rhythm_storyboard_v4.html",
+    "nmcsn/2026-09-03_nmcsn-vision-board_corrected-n313.html",
+    "nmcsn/nmcsn-inaugural-conference-nov13-2026.md",
+    "nmcsn/conference-travel-planner_HUB.md",
+    "presentations/ACEP-Talk-Cheat-Sheet.md",
+    "wiki/conferences/ACEP - CS in Rural America.md",
+    "nmcsn/SCAI-Fellows-Course-2026.md",
+    "Yau-Vault/NMCSN-personal/_Claude/Week-Ops-Session-2026-09-08.md",
+    "Yau-Vault/NMCSN-personal/perplexity/14 - Conferences 2026.md"
+   ]
+  },
+  {
+   "id": "E_funding",
+   "engine": "funding",
+   "title": "Funding & the State",
+   "milestones": [
+    {
+     "id": "M17",
+     "title": "State appropriation via Muñoz and the LFC (Track C, primary since 2026-09-09)",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P31",
+       "title": "Capture the terms of the Aug 28–29 win",
+       "state": "sprint",
+       "tasks": [
+        {
+         "id": "T66",
+         "title": "Fill the 8-row terms-capture table — who committed, in what form, at what figure, what NMCSN owes next",
+         "owner": "ray",
+         "state": "active"
+        },
+        {
+         "id": "T67",
+         "title": "Confirm the appropriation vehicle with Ward (HB2 / junior bill to an agency, then contract)",
+         "owner": "counsel-prep",
+         "state": "backlog"
+        },
+        {
+         "id": "T68",
+         "title": "Verify the 2027 session calendar and FY start against LFC's published dates",
+         "owner": "landscaper",
+         "state": "backlog"
+        }
+       ]
+      },
+      {
+       "id": "P32",
+       "title": "DOH as the contracting agency",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T69",
+         "title": "File the outcome of the Fri Sep 11 DOH Secretary and Richards meetings",
+         "owner": "scribe",
+         "state": "active"
+        },
+        {
+         "id": "T70",
+         "title": "Bridge funding for the Sep–Dec 2026 build phase — the appropriation is ~10 months out",
+         "owner": "ray",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M18",
+     "title": "The Arkansas playbook and a Shock System Act",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P33",
+       "title": "Model Act and the interim LHHS presentation",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T71",
+         "title": "Draft the model Shock System Act around the six Arkansas components",
+         "owner": "counsel-prep",
+         "state": "backlog"
+        },
+        {
+         "id": "T72",
+         "title": "Call Maxson/Kalkwarf at UAMS for the unwritten lessons and a letter of support",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T73",
+         "title": "Start the quarterly Preventable Shock Mortality Review inside the monthly QI meeting",
+         "owner": "steward",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M19",
+     "title": "The other tracks (RHIF, RHT, foundations, industry)",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P34",
+       "title": "Keep the deprioritised tracks honest",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T74",
+         "title": "Apply the 2026-09-09 strategy change to the HTML funding hub — the primary still reflects the old strategy",
+         "owner": "scribe",
+         "state": "active"
+        },
+        {
+         "id": "T75",
+         "title": "Decide whether RHIF stays alive under the pivot",
+         "owner": "ray",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "files": [
+    "nmcsn/nmcsn-funding_HUB.md",
+    "nmcsn/nmcsn-munoz_HUB.md",
+    "nmcsn/2026-08-29_nmcsn-munoz_state-prospectus.md",
+    "nmcsn/2026-08-29_nmcsn-munoz_prospectus-vet.md",
+    "nmcsn/2026-08-24_nmcsn-munoz_senator-profile.md",
+    "nmcsn/2026-08-26_nmcsn-munoz_deck-split.md",
+    "nmcsn/2026-08-26_nmcsn-funding_arkansas-numbers.md",
+    "nmcsn/2026-08-20-funding-max-level-playbook.md",
+    "nmcsn/2026-09-08_nmcsn-munoz_doh-secretary-meeting.md",
+    "nmcsn/2026-09-09_nmcsn-munoz_counterpart-briefs-sep11.md",
+    "nmcsn/2026-09-09_nmcsn_counterpart-brief-pete-campos.md",
+    "nmcsn/2026-09-09_nmcsn-funding_rh-data-hub-rfp-open.md",
+    "nmcsn/NMCSN-MUNOZ-Session-2026-09-11.md",
+    "nmcsn/nmcsn-alignment-strategy-nm-wealth.md",
+    "nmcsn/sponsors-index.md"
+   ]
+  },
+  {
+   "id": "E_governance",
+   "engine": "governance",
+   "title": "Governance, legal & IP",
+   "milestones": [
+    {
+     "id": "M20",
+     "title": "Papering the organisation — bylaws, COI, NDAs",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P35",
+       "title": "Ward's NDA package to execution",
+       "state": "sprint",
+       "tasks": [
+        {
+         "id": "T76",
+         "title": "Fill the blanks and make the three decisions in the NDA package",
+         "owner": "ray",
+         "state": "active"
+        },
+        {
+         "id": "T77",
+         "title": "Release the NDA for Vincent Ward to circulate to members, per the 9/8 meeting action",
+         "owner": "ray",
+         "state": "active"
+        },
+        {
+         "id": "T78",
+         "title": "Execute the bylaws — the 'Final, Adopted April 2026' signature blocks are still blank",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T79",
+         "title": "Write the standalone COI policy the Form 1023 plan requires, and name an independent reviewer",
+         "owner": "counsel-prep",
+         "state": "backlog"
+        }
+       ]
+      },
+      {
+       "id": "P36",
+       "title": "Board seats against bylaws v2.1",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T80",
+         "title": "Resolve Basir's Cardiology Societies vote — Article II defines only four named Ambassador seats",
+         "owner": "ray",
+         "state": "active"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M21",
+     "title": "IP ownership and company structure",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P37",
+       "title": "Who owns ONE CALL",
+       "state": "sprint",
+       "tasks": [
+        {
+         "id": "T81",
+         "title": "Counsel session on platform IP, a holding entity and the NMCSN New Mexico licence",
+         "owner": "ray",
+         "state": "active"
+        },
+        {
+         "id": "T82",
+         "title": "Read the Ardent employment agreement's inventions clause before any assignment",
+         "owner": "ray",
+         "state": "active"
+        },
+        {
+         "id": "T83",
+         "title": "Decide the provisional filing timing and trademark clearance in the invention disclosure",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T84",
+         "title": "Hold the backer brief, term sheet and structure sections back from board, backers and the State until Ray sets direction",
+         "owner": "steward",
+         "state": "active"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M22",
+     "title": "Regulatory scoping for an untested app in care delivery",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P38",
+       "title": "Counsel's answers to the 18 questions",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T85",
+         "title": "Track Ward's response to the legal scoping memo sent 2026-09-09",
+         "owner": "counsel-prep",
+         "state": "active"
+        },
+        {
+         "id": "T86",
+         "title": "Get the FDA CDS classification of the ECG image read before it is described in public",
+         "owner": "counsel-prep",
+         "state": "active"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M201",
+     "title": "Governance session 2026-09-08 open items",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P201",
+       "title": "Open items",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T207",
+         "title": "Send the Ward email (bylaws v2.1 draft-for-signature + Board NDA; Articles-vs-bylaws mismatch; empty Ambassador seats) — drafted, not sent",
+         "owner": "ray",
+         "state": "sprint"
+        },
+        {
+         "id": "T208",
+         "title": "Decide: refill or redesign the Ambassador tier (UNM and CHRISTUS remain; Lovelace vacant; Presbyterian out)",
+         "owner": "ray",
+         "state": "sprint"
+        },
+        {
+         "id": "T209",
+         "title": "Eddie Brown's status after the Presbyterian move",
+         "owner": "growth",
+         "state": "backlog"
+        },
+        {
+         "id": "T210",
+         "title": "Pull a working copy of the live nmcsn.org index.html from Bluehost (none exists on the Mac)",
+         "owner": "builder",
+         "state": "sprint"
+        },
+        {
+         "id": "T211",
+         "title": "Board NDAs for incoming members before the fundraising push",
+         "owner": "steward",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "files": [
+    "nmcsn/nmcsn-governance_HUB.md",
+    "nmcsn/2026-08-26_nmcsn-governance_bylaws-canonical.md",
+    "nmcsn/2026-08-30_nmcsn-governance_bylaws-coi-nda-appraisal.md",
+    "nmcsn/2026-09-09_nmcsn-governance_nda-review.md",
+    "nmcsn/governance-bylaws-summary.md",
+    "nmcsn/2026-09-09_nmcsn-one-call_invention-disclosure.md",
+    "nmcsn/2026-09-08_nmcsn-one-call_legal-scoping-memo.md",
+    "nmcsn/2026-09-11_systems-of-care-company_backer-term-sheet.md",
+    "nmcsn/2026-09-11_ray_decision-roadmap.html",
+    "nmcsn/cardiovascular-advisory-group-llc.md",
+    "wiki/entities/Cardiovascular-Advisory-Group.md",
+    "nmcsn/nmcsn-roster_HUB.md",
+    "Yau-Vault/NMCSN-Governance-Session-2026-09-08.md",
+    "Yau-Vault/NMCSN-personal/perplexity/02 - Governance & NDAs.md"
+   ]
+  },
+  {
+   "id": "E_website",
+   "engine": "website",
+   "title": "nmcsn.org website",
+   "milestones": [
+    {
+     "id": "M23",
+     "title": "Partner-ready site",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P39",
+       "title": "Shipped in August",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T87",
+         "title": "Contact routing off Ray's personal inbox — 12 CTAs, not the 5 the appraisal found",
+         "owner": "builder",
+         "state": "done"
+        },
+        {
+         "id": "T88",
+         "title": "'Our Model' four-tier hub-and-spoke section with the corrected map",
+         "owner": "builder",
+         "state": "done"
+        },
+        {
+         "id": "T89",
+         "title": "'Shock team', never 'shock physician' — 9 occurrences across 5 files",
+         "owner": "builder",
+         "state": "done"
+        }
+       ]
+      },
+      {
+       "id": "P40",
+       "title": "Open website work",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T90",
+         "title": "Ship the family-expectations section and the ESC 2026 statements",
+         "owner": "producer",
+         "state": "backlog"
+        },
+        {
+         "id": "T91",
+         "title": "Mirror the roster changes on the public site — Banks removed, Presbyterian not carried as a seat",
+         "owner": "builder",
+         "state": "backlog"
+        },
+        {
+         "id": "T92",
+         "title": "Get the website source code into the vault — still an open item since May",
+         "owner": "scribe",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M24",
+     "title": "Statewide facility map",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P41",
+       "title": "Map v3 — geocoded marker positions",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T93",
+         "title": "Replace inherited approximate markers with verified facility coordinates",
+         "owner": "builder",
+         "state": "backlog"
+        },
+        {
+         "id": "T94",
+         "title": "Reconcile 56 hospitals (vision board) against 55 (website tiers)",
+         "owner": "scribe",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "files": [
+    "nmcsn/nmcsn-web_HUB.md",
+    "nmcsn/2026-08-16-website-session-log.md",
+    "nmcsn/2026-08-18-website-our-model-section.md",
+    "nmcsn/2026-08-20-website-shock-team-language.md",
+    "nmcsn/2026-08-21-partner-section-spacing-fix.md",
+    "nmcsn/2026-08-30_nmcsn-web_family-expectations-section.html",
+    "nmcsn/2026-08-30_nmcsn-web_esc-2026-linkedin-statement.html",
+    "nmcsn/2026-08-30_nmcsn-web_esc-2026-shock-recommendations_v2.html",
+    "nmcsn/NMCSN Website — 2026-08-16 Contact Routing.md",
+    "nmcsn/How to Work the NMCSN Website.md",
+    "nmcsn/NMCSN Statewide Facility Map — Project Record.md",
+    "nmcsn/nmcsn-website-bluehost-recovery-key.md",
+    "nmcsn/website-and-AI-development.md"
+   ]
+  },
+  {
+   "id": "E_staffing",
+   "engine": "staffing",
+   "title": "Staffing & the Executive Director",
+   "milestones": [
+    {
+     "id": "M25",
+     "title": "Phase 1 staffing plan to a board decision",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P42",
+       "title": "The eight outstanding board decisions",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T95",
+         "title": "Take the eight board decisions on roles, W-2 structure and benefits design",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T96",
+         "title": "Fix the $80,000 arithmetic gap in the plan's own Core total",
+         "owner": "builder",
+         "state": "backlog"
+        },
+        {
+         "id": "T97",
+         "title": "Resolve the paid/volunteer title collision against the roster",
+         "owner": "scribe",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M26",
+     "title": "Executive Director / Chief of Staff",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P43",
+       "title": "The Henry Valdez proposal and the ED search",
+       "state": "sprint",
+       "tasks": [
+        {
+         "id": "T98",
+         "title": "Reply to Henry Valdez — unanswered since Sep 4, counsel was cc'd",
+         "owner": "ray",
+         "state": "active"
+        },
+        {
+         "id": "T99",
+         "title": "Set the ED search rule: NDA from all candidates before names circulate",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T100",
+         "title": "Fill the legislative liaison and operations/contracts manager roles named on 9/8",
+         "owner": "ray",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "files": [
+    "nmcsn/2026-08-29_nmcsn-staffing_phase1-plan.md",
+    "nmcsn/2026-09-08_nmcsn-governance_valdez-executive-director-proposal.md",
+    "nmcsn/nmcsn-roster_HUB.md",
+    "presentations/2026-08-24_nmcsn-mcs-intensivist_role-deck.md",
+    "nmcsn/meetings/2026-09-08_nmcsn-statewide-meeting_minutes.md"
+   ]
+  },
+  {
+   "id": "E_education",
+   "engine": "education",
+   "title": "AI physician education",
+   "milestones": [
+    {
+     "id": "M27",
+     "title": "AI Mastery Curriculum — 5 tiers × 4 pathways",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P44",
+       "title": "Revive and refresh the curriculum",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T101",
+         "title": "Decide whether to revive the monthly curriculum-update protocol — archived 9/8 because it never ran past its own creation",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T102",
+         "title": "Refresh the Tier 1 ethics / hallucinations module against current data",
+         "owner": "clinical-reviewer",
+         "state": "backlog"
+        },
+        {
+         "id": "T103",
+         "title": "Use the factory bots and the Systems Builder method as the Tier 3–4 worked example",
+         "owner": "retro",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "files": [
+    "nmcsn/AI-Mastery-Curriculum.md",
+    "nmcsn/AI-Ethics-Hallucinations-Module.md",
+    "_archive/2026-06_curriculum-update-protocol_never-ran.md",
+    "nmcsn/website-and-AI-development.md"
+   ]
+  },
+  {
+   "id": "E_partnerships",
+   "engine": "partnerships",
+   "title": "Partnerships & policy",
+   "milestones": [
+    {
+     "id": "M28",
+     "title": "Institutional partners inside New Mexico",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P45",
+       "title": "UNM, Presbyterian, IHS and tribal contracting",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T104",
+         "title": "Contact Lauren Ely (IHS) on tribal involvement — Ray's action from the 9/8 meeting",
+         "owner": "ray",
+         "state": "active"
+        },
+        {
+         "id": "T105",
+         "title": "Get Robert Sanchez onto the Mike Richards call on institutional alignment",
+         "owner": "ray",
+         "state": "active"
+        },
+        {
+         "id": "T106",
+         "title": "Carry UNM forward as registry site #2 per the 8/29 record",
+         "owner": "steward",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M29",
+     "title": "Out-of-state ECMO programs — Missoula",
+     "state": "done",
+     "projects": [
+      {
+       "id": "P46",
+       "title": "Providence St. Patrick talk, Aug 24",
+       "state": "done",
+       "tasks": [
+        {
+         "id": "T107",
+         "title": "Abbott compliance edits applied to deck v2",
+         "owner": "producer",
+         "state": "done"
+        },
+        {
+         "id": "T108",
+         "title": "Montana network slide rebuilt as a drive-time catchment map",
+         "owner": "builder",
+         "state": "done"
+        },
+        {
+         "id": "T109",
+         "title": "Decide whether Missoula becomes an ongoing partnership or closes",
+         "owner": "ray",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "files": [
+    "nmcsn/2026-08-20-missoula-ecmo-compliance-edits-v2.md",
+    "nmcsn/2026-08-24-missoula-ecmo-network-map-slide.md",
+    "nmcsn/partners-briefing-sanchez-malouf.md",
+    "nmcsn/meetings/2026-09-08_nmcsn-statewide-meeting_minutes.md",
+    "nmcsn/lovelace-cs-working-group.md",
+    "nmcsn/nmcsn-alignment-strategy-nm-wealth.md"
+   ]
+  },
+  {
+   "id": "E_network-ops",
+   "engine": "network-ops",
+   "title": "Network operations",
+   "milestones": [
+    {
+     "id": "M30",
+     "title": "Meeting cadence and the record",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P47",
+       "title": "Statewide, CS QI and house meetings",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T110",
+         "title": "Watch the calendar for the October statewide meeting — the 9/8 meeting set no next date",
+         "owner": "pacer",
+         "state": "active"
+        },
+        {
+         "id": "T111",
+         "title": "Keep the CS QI action tracker current — last filed meeting is 8/25",
+         "owner": "scribe",
+         "state": "active"
+        },
+        {
+         "id": "T112",
+         "title": "Populate the house-meeting Decisions section — still empty",
+         "owner": "scribe",
+         "state": "backlog"
+        }
+       ]
+      },
+      {
+       "id": "P48",
+       "title": "Roster and site onboarding",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T113",
+         "title": "Handle seat changes as in-place roster edits per Ray's 9/9 standing rule — no rebuilds, no new files",
+         "owner": "steward",
+         "state": "active"
+        },
+        {
+         "id": "T114",
+         "title": "Move the next spoke through the onboarding playbook — Cibola first",
+         "owner": "growth",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "files": [
+    "nmcsn/meetings/2026-09-08_nmcsn-statewide-meeting_minutes.md",
+    "nmcsn/meetings/2026-08-04_nmcsn-statewide-meeting_minutes.md",
+    "nmcsn/meetings/2026-06-23_nmcsn-statewide-meeting_minutes.md",
+    "nmcsn/meetings/2026-08-25-CS-QI-Meeting.md",
+    "nmcsn/meetings/CS-QI-Meeting-Action-Tracker.md",
+    "nmcsn/nmcsn-house-meeting_HUB.md",
+    "nmcsn/nmcsn-roster_HUB.md",
+    "nmcsn/hospital-onboarding-playbook.md",
+    "nmcsn/rollout-roadmap.md",
+    "nmcsn/HHNM-5-year-roadmap.md",
+    "nmcsn/Cardiogenic Shock Protocol (HHNM).md",
+    "nmcsn/accomplishments-2026.md"
+   ]
+  },
+  {
+   "id": "E_research-trials",
+   "engine": "research-trials",
+   "title": "Trials, cases & literature",
+   "milestones": [
+    {
+     "id": "M31",
+     "title": "Sponsored trials at the site",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P49",
+       "title": "SUPPORT II (Supira) Site 335 startup",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T115",
+         "title": "Ownership assigned — Ray: 'research will handle supira'; the commitments watch is closed on it",
+         "owner": "ray",
+         "state": "done"
+        },
+        {
+         "id": "T116",
+         "title": "File a standing vault record for SUPPORT II so it is not invisible again",
+         "owner": "scribe",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M32",
+     "title": "OASIS AMI / cardiac trauma case series",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P50",
+       "title": "'From Chest Pain to ECMO' deck and the case master v7",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T117",
+         "title": "Finish the gold-standard edit of the deck",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T118",
+         "title": "Capture anything after 2026-08-08 into the hub — the record is explicitly stale",
+         "owner": "scribe",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M33",
+     "title": "Shock literature scan",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P51",
+       "title": "Weekly scan and the CSWG LinkedIn lane",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T119",
+         "title": "Add the LinkedIn / CSWG lane to scan spec v1.0 §3",
+         "owner": "landscaper",
+         "state": "backlog"
+        },
+        {
+         "id": "T120",
+         "title": "Watch the Sep 15 run — the Aug 31 run ended ABANDONED unnoticed",
+         "owner": "pacer",
+         "state": "active"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "files": [
+    "nmcsn/2026-09-08_support-ii-supira_site-startup-ownership.md",
+    "nmcsn/oasis-ami_HUB.md",
+    "nmcsn/Cases/2026-06 Cardiogenic Shock - Cardiac Trauma Case.md",
+    "nmcsn/2026-08-21-linkedin-cswg-lane.md",
+    "research/literature-index.md",
+    "research/AI-POCUS-LVEF-Systematic-Review-2026.md",
+    "research/DanGer-Shock-Long-Term-Survival.md",
+    "Literature/CS Figure Library/_CS Figure Library Index.md",
+    "nmcsn/bloodless-transplant-shock-parallel.md"
+   ]
+  },
+  {
+   "id": "E_continuum",
+   "engine": "continuum",
+   "title": "Systems of care, beginning to end",
+   "milestones": [
+    {
+     "id": "M300",
+     "title": "Transition pack (first: cheapest, touches everyone, closes the loop to the referring ER)",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P300",
+       "title": "Intake, chain, signer",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T300",
+         "title": "Name the transition pack signer (hub shock team lead with pharmacy and case management)",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T301",
+         "title": "Fill the chain: patient, family, PCP, referring ER, rehab, pharmacy, case management",
+         "owner": "scaffolder",
+         "state": "backlog"
+        },
+        {
+         "id": "T302",
+         "title": "The one-page plan for patient and family: plain words, large type; decide first languages (English, Spanish, Navajo)",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T303",
+         "title": "Discharge letter template to the home clinic and the referring ER; 72-h call, 7-day visit, clinic and rehab booked before discharge",
+         "owner": "builder",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M301",
+     "title": "Recovery pack",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P301",
+       "title": "Intake with the CVICU",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T304",
+         "title": "Signer: AHF/MCS attending + CVICU nursing lead",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T305",
+         "title": "Daily-goals template by phenotype; wean checklists (pressors, pVAD, ECMO) as cited configuration; family meeting at 48 h; rehab referral day 1",
+         "owner": "scaffolder",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M302",
+     "title": "Follow-up and thrive pack",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P302",
+       "title": "Clinic, rehab, dietetics, survivor network",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T306",
+         "title": "Signers: AHF clinic lead, cardiac rehab, dietetics",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T307",
+         "title": "Decide: home-based cardiac rehab in scope for year one (rural distance rule)",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T308",
+         "title": "Decide: survivor network as an NMCSN program or a partner's",
+         "owner": "ray",
+         "state": "backlog"
+        },
+        {
+         "id": "T309",
+         "title": "Registry fields: readmission, rehab enrollment, survival, quality of life, distance traveled, by county",
+         "owner": "steward",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "M303",
+     "title": "Prototype: 'Plan to home' panel on the receiving side at handoff",
+     "state": "backlog",
+     "projects": [
+      {
+       "id": "P303",
+       "title": "After the transition pack is signed",
+       "state": "backlog",
+       "tasks": [
+        {
+         "id": "T310",
+         "title": "Generate the plan-to-home checklist at handoff from the pack config; both screens",
+         "owner": "builder",
+         "state": "backlog"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "files": [
+    "nmcsn/2026-09-13_nmcsn_continuum-of-care.html",
+    "nmcsn/2026-09-03_nmcsn-vision-board_corrected-n313.html",
+    "nmcsn/rollout-roadmap.md",
+    "nmcsn/HHNM-5-year-roadmap.md"
+   ]
+  }
+ ],
+ "thread": [
+  {
+   "t": "2026-09-12 18:05",
+   "who": "ray",
+   "text": "Let's stretch. Work on little simple things like STEMI… make a STEMI gate using the same processes."
+  },
+  {
+   "t": "2026-09-12 18:06",
+   "who": "hey-ray",
+   "text": "Pipeline: pack. Skill: systems-of-care-pack. Signer assumed: Ray (flagged). Tasks T4–T16 opened."
+  },
+  {
+   "t": "2026-09-12 18:40",
+   "who": "ray",
+   "text": "We have to design the system: Level 1, Level 2, PCI-capable or not. Key entry piece is the non-PCI site → interventionalist when lytics are indicated. AI reads the EKG; FDA program exists; fold it or build our own."
+  },
+  {
+   "t": "2026-09-12 18:41",
+   "who": "hey-ray",
+   "text": "Late requirements logged: designations at enrollment, entry piece, ECG reader registry. Builder re-scoped."
+  },
+  {
+   "t": "2026-09-12 19:20",
+   "who": "builder",
+   "text": "v0.22 inserted (45 KB). Syntax clean across 5 script blocks."
+  },
+  {
+   "t": "2026-09-12 19:26",
+   "who": "builder",
+   "text": "Browser run: 16/17 rule tests pass; arrival-time regex failed; out-of-order EKG line fell to fallback. Fixing."
+  },
+  {
+   "t": "2026-09-12 19:34",
+   "who": "builder",
+   "text": "Fixed: arrival regex, out-of-order absorption, reciprocal-change false lateral. Scenarios I and J run end to end. 17/17 tests."
+  },
+  {
+   "t": "2026-09-12 19:38",
+   "who": "scribe",
+   "text": "Prototype republished as 'v0.22 STEMI pack'."
+  },
+  {
+   "t": "2026-09-12 19:40",
+   "who": "hey-ray",
+   "text": "Fan-out: Clinical Safety Reviewer, Code & Test Reviewer, Retro started in parallel on v022.js."
+  },
+  {
+   "t": "2026-09-12 19:41",
+   "who": "producer",
+   "text": "Rendering Scenario I and J with Andrew/Ava."
+  },
+  {
+   "t": "2026-09-12 19:50",
+   "who": "ray",
+   "text": "I need to use the principles and bots of a self-driving business… constant improvement, structured with appropriate feedback. Design me a system like that."
+  },
+  {
+   "t": "2026-09-12 20:10",
+   "who": "retro",
+   "text": "nmcsn-factory skill created: roster of 10 bots, routines, board, workflow script."
+  },
+  {
+   "t": "2026-09-12 20:30",
+   "who": "builder",
+   "text": "Factory floor page in build: floor, sprint, epics, thread, zoom cycle, commentator."
+  },
+  {
+   "t": "2026-09-12 20:48",
+   "who": "clinical-reviewer",
+   "text": "verdict: BLOCK. B1 onset ignored (lytics said for a 20-hour pain). B2 'stroke in June' became an absolute contraindication. B3 'disagree' confirmed the AI read. 15 should-fix."
+  },
+  {
+   "t": "2026-09-12 20:55",
+   "who": "code-reviewer",
+   "text": "verdict: BLOCK. 16 bugs: half-hour parsed as 60, 'type II diabetic' read as inferior STEMI, SCAI letters leaked into the registry, in-house flow left as 'stemi'. Harness attached."
+  },
+  {
+   "t": "2026-09-12 21:05",
+   "who": "retro",
+   "text": "Skill edited: intake must be a file with a named signer; parser tests written before parsers; ask-order robustness; system-design section; late-requirements log."
+  },
+  {
+   "t": "2026-09-12 21:20",
+   "who": "builder",
+   "text": "Fixed all blockers and bugs: onset window, clause-scoped contraindications with read-back, strict ECG confirm, equivocal path, unknown lytic stock asks, STEMI stage namespace. 45/45 tests, scenarios I J K L M pass."
+  },
+  {
+   "t": "2026-09-12 21:22",
+   "who": "scribe",
+   "text": "Prototype republished 'v0.22.1 STEMI pack · after review'. evaluation.json answers all 34 findings (fixed / partial / declined with reason)."
+  },
+  {
+   "t": "2026-09-12 21:30",
+   "who": "ray",
+   "text": "Sent a video of Ryan's panel: KPI block, long progress bar, task rows with status pills, world grid of bots, feed card. 'This box doesn't work for me; he works like this.'"
+  },
+  {
+   "t": "2026-09-12 21:32",
+   "who": "builder",
+   "text": "Floor v2 in build: console layout modeled on the video."
+  },
+  {
+   "t": "2026-09-12 22:05",
+   "who": "ray",
+   "text": "Sent the full recording of Ryan's Self Driving monitor: 'i tried to capture some of ryan genius, should and can adapt this.'"
+  },
+  {
+   "t": "2026-09-12 22:10",
+   "who": "builder",
+   "text": "Floor v3 in build: near-black live graph, tour, waiting-on-you card, engines clusters, sprint board with chip filters, routines."
+  },
+  {
+   "t": "2026-09-12 22:40",
+   "who": "ray",
+   "text": "lets finish the stemi pack first"
+  },
+  {
+   "t": "2026-09-12 22:48",
+   "who": "builder",
+   "text": "Closed S1, S6, S9: per-site anticipated door-to-device, explicit relative-contraindication question, per-site lab hours. 45/45 tests."
+  },
+  {
+   "t": "2026-09-12 22:52",
+   "who": "hey-ray",
+   "text": "Re-reviews launched (clinical, code). Signing sheet with 16 decisions written for Ray; pack.stemi.json and the intake back-filled."
+  },
+  {
+   "t": "2026-09-12 23:20",
+   "who": "clinical-reviewer",
+   "text": "Re-review: PASS-WITH-FIXES. Three required: out-of-order stroke slipped past the check; unknown onset looped; no-crew branch could not finish."
+  },
+  {
+   "t": "2026-09-12 23:40",
+   "who": "builder",
+   "text": "All three fixed: pending question asked first, transfer-onset-unknown strategy, no-crew branch shares the lytic path. Onset now a timestamp. 52/52 tests. v0.22.2 published."
+  },
+  {
+   "t": "2026-09-13 00:05",
+   "who": "code-reviewer",
+   "text": "Re-review: BLOCK. Brain-surgery answer lost its category; 'Within 3 months' chip looped; 'No preference' closed the contraindication screen and stalled Demo I; decisions not frozen on four paths."
+  },
+  {
+   "t": "2026-09-13 00:30",
+   "who": "builder",
+   "text": "All seven fixed. Timing answers resolve against the pending item; every decision frozen and audited; Demo I has its two new turns and completes with the call placed. v0.22.3 published. 60/60."
+  },
+  {
+   "t": "2026-09-13 00:32",
+   "who": "hey-ray",
+   "text": "STEMI pack is code-complete. One thing left and it is not a bot's: Ray answers the 16 signing decisions."
+  },
+  {
+   "t": "2026-09-13 01:10",
+   "who": "ray",
+   "text": "that model is perfect. Need two models: one fully AI, one with more human interaction — people won't be ready for straight AI."
+  },
+  {
+   "t": "2026-09-13 01:12",
+   "who": "ray",
+   "text": "Throw in the model where the receiving interventionalist joins the line and the AI just connects the two."
+  },
+  {
+   "t": "2026-09-13 01:40",
+   "who": "builder",
+   "text": "v0.23: physician-to-physician is the default at enrollment; AI connects the ER physician to the interventionalist (or shock physician), keeps record and clock, shows the guideline read as a card. AI-guided opt-in. Demo P added."
+  },
+  {
+   "t": "2026-09-13 02:10",
+   "who": "ray",
+   "text": "Always design for the user. The AI agent is a tool that connects doctors; these tools connect people, not the AI. Connector with intelligence: is it a STEMI, the accepting physician, the time, lytics are here, and if things fail we go here. All projects geared for New Mexico rural health."
+  },
+  {
+   "t": "2026-09-13 02:30",
+   "who": "builder",
+   "text": "Connector card built: five things on both screens; guideline read behind a tap. Design law written into both skills; ER physician panel added to the roster."
+  },
+  {
+   "t": "2026-09-13 03:05",
+   "who": "ray",
+   "text": "Allow an accelerated pathway: frustrated doctors will just say 'connect me to the interventionalist'. It has to be very nimble."
+  },
+  {
+   "t": "2026-09-13 03:12",
+   "who": "ray",
+   "text": "The agent should be a scribe, not make recommendations; clinical decisions are for real doctors. EKG, STEMI, connect me to the interventionalist, boom. No AI narrative — that's for someone without the understanding."
+  },
+  {
+   "t": "2026-09-13 03:40",
+   "who": "builder",
+   "text": "Scribe is now the default model; Guided is opt-in; Express connects on the first words or one tap. ECG photo → one-line read → dial. 104/104 tests."
+  },
+  {
+   "t": "2026-09-13 04:20",
+   "who": "ray",
+   "text": "Multiple people in the chain: ER physician, charge nurses, house supervisor (beds), receiving ED physician. Who needs to know, what they need, roll out in stages: phones → three-way call → automation. Every condition needs its own team."
+  },
+  {
+   "t": "2026-09-13 04:22",
+   "who": "ray",
+   "text": "Add this as a skill; my development team will integrate it into our Systems Builder."
+  },
+  {
+   "t": "2026-09-13 04:55",
+   "who": "builder",
+   "text": "v0.24: chain config, notifications off events, chain panel, rollout stages. Pack skill gained chain.template.md and SYSTEMS-BUILDER.md. Chain sheet and signing sheet are tap pages."
+  },
+  {
+   "t": "2026-09-13 05:40",
+   "who": "ray",
+   "text": "i signed the stemi pack"
+  },
+  {
+   "t": "2026-09-13 05:45",
+   "who": "scribe",
+   "text": "STEMI pack signed: approved_by Ray Yau, all sixteen defaults kept; signature recomputed; v0.24.1 published."
+  },
+  {
+   "t": "2026-09-13 07:30",
+   "who": "builder",
+   "text": "Command center recolored: deep water, silver ink, sea-glass accent, sand for what waits on a person. Roster gains Pacer (Water), Steward (Earth·Metal), Growth (Wood); every bot now carries its element."
+  },
+  {
+   "t": "2026-09-13 08:50",
+   "who": "scribe",
+   "text": "Team-vault inventory landed: registry, publications, conferences, funding, governance, website, staffing, education, partnerships, network operations, trials & literature. Every task and date is from the notes; caveats in inventoryNotes."
+  },
+  {
+   "t": "2026-09-13 09:40",
+   "who": "ray",
+   "text": "Add the full systems of care, not just acute: post-hospital follow-up, education, cardiac rehab, diet — something for everyone, plans from beginning to end."
+  },
+  {
+   "t": "2026-09-13 10:05",
+   "who": "builder",
+   "text": "Continuum page written (recognize → one call → treat → recover → transition → follow up → thrive; something-for-everyone matrix; three post-acute packs; rural rules). Engine 'Continuum of care' opened with the transition pack first."
+  },
+  {
+   "t": "2026-09-13 10:20",
+   "who": "ray",
+   "text": "The discharge-planning and follow-up piece could be its own app that hospitals buy or license and we distribute."
+  },
+  {
+   "t": "2026-09-13 10:40",
+   "who": "ray",
+   "text": "Table the continuum for now."
+  },
+  {
+   "t": "2026-09-13 10:41",
+   "who": "pacer",
+   "text": "Continuum engine and product line 2 parked in backlog; nothing waits on Ray from them. Live focus stays: STEMI chain sheet, Grok Bot command center, conferences."
+  }
+ ],
+ "sprint": {
+  "name": "STEMI pack sprint (keep board moving)",
+  "from": "2026-09-12",
+  "to": "2026-09-19"
+ },
+ "routines": [
+  {
+   "id": "R1",
+   "name": "Hey Ray spec",
+   "cadence": "per directive",
+   "owner": "hey-ray",
+   "text": "Spoken ask → spec in Ray's words → intake → pipeline → tasks opened"
+  },
+  {
+   "id": "R2",
+   "name": "Pack pipeline",
+   "cadence": "per project",
+   "owner": "builder",
+   "text": "scaffold → build → clinical + code review in parallel → fix → produce → scribe → retro"
+  },
+  {
+   "id": "R3",
+   "name": "Daily sync",
+   "cadence": "every day",
+   "owner": "scribe",
+   "text": "vault + Downloads + hub in sync; thread appended; open evaluations listed"
+  },
+  {
+   "id": "R4",
+   "name": "Weekly retro",
+   "cadence": "every Monday",
+   "owner": "retro",
+   "text": "read the week's evaluation records; edit the skills; log the diff"
+  },
+  {
+   "id": "R5",
+   "name": "Landscape refresh",
+   "cadence": "every week",
+   "owner": "landscaper",
+   "text": "one section: competitor, regulator or precedent, with dates and sources"
+  },
+  {
+   "id": "R6",
+   "name": "Counsel open questions",
+   "cadence": "every week",
+   "owner": "counsel-prep",
+   "text": "refresh the one-page list for Ward; disclosure log current"
+  },
+  {
+   "id": "R7",
+   "name": "Pack signing",
+   "cadence": "per pack",
+   "owner": "ray",
+   "text": "signer confirms thresholds and wording; approved_by filled; signature recomputed"
+  },
+  {
+   "id": "R8",
+   "name": "Floor republish",
+   "cadence": "after every run",
+   "owner": "scribe",
+   "text": "board.json updated; floor artifact republished"
+  }
+ ]
+}
