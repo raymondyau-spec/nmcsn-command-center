@@ -1,5 +1,5 @@
 {
- "asOf": "2026-09-13",
+ "asOf": "2026-09-12T15:49:00-06:00",
  "owner": {
   "name": "Ray Yau",
   "role": "Owner · clinical signer (interventional cardiology) · Hey Ray's original"
@@ -217,8 +217,8 @@
    "name": "Hey Ray",
    "kind": "bot",
    "job": "Founder clone: spec, split, delegate",
-   "status": "idle",
-   "now": "Waiting for the next directive",
+   "status": "active",
+   "now": "Owns board.json; only writer. Claude reads.",
    "element": "Fire · the spark, kept in check by Water"
   },
   {
@@ -308,7 +308,7 @@
    "kind": "human",
    "job": "Owner · clinical signer",
    "status": "blocked-on",
-   "now": "Approve the chain sheet · ER panel names · Ardent agreement · Ryan Drive access",
+   "now": "This week: (1) SCAI T56 agenda answer + T59 Rowing beats 6&7 (2) RH Data Hub RFP go/no-go T44 by Sep 21 17:00 MDT (3) counsel unblock T207 Ward email or T20/T82 Ardent",
    "element": "Fire Snake (1977) · owner and signer"
   },
   {
@@ -343,8 +343,8 @@
    "name": "Pacer",
    "kind": "bot",
    "job": "Sequence the work; guard the drumbeat and Ray's energy; say stop",
-   "status": "sprint",
-   "now": "First run: trim the waiting-on-Ray list to the three that matter this week",
+   "status": "active",
+   "now": "holding Ray’s list at three; SCAI first",
    "element": "Water · temper"
   },
   {
@@ -3164,6 +3164,11 @@
    "t": "2026-09-13 10:41",
    "who": "pacer",
    "text": "Continuum engine and product line 2 parked in backlog; nothing waits on Ray from them. Live focus stays: STEMI chain sheet, Grok Bot command center, conferences."
+  },
+  {
+   "t": "2026-09-12 15:49",
+   "who": "hey-ray",
+   "text": "Pacer first run: waiting-on-Ray held at three this week — SCAI T56+T59, RFP T44 by Sep 21 17:00 MDT, counsel T207 or T20/T82. Continuum tabled. I wrote ray.now and pacer.now. No Ray task marked done."
   }
  ],
  "sprint": {
