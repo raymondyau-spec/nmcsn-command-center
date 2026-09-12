@@ -705,7 +705,12 @@
          "id": "T37",
          "title": "Approve the STEMI chain on the chain sheet (tap page)",
          "owner": "ray",
-         "state": "sprint"
+         "state": "done",
+         "evaluation": {
+          "by": "Ray Yau (owner), via the checklist page",
+          "result": "Ray, spoken 2026-09-13: already done",
+          "at": "2026-09-13"
+         }
         },
         {
          "id": "T38",
@@ -861,7 +866,12 @@
          "id": "T24",
          "title": "Approve Ryan's Drive access request",
          "owner": "ray",
-         "state": "sprint"
+         "state": "done",
+         "evaluation": {
+          "by": "Ray Yau (owner), via the checklist page",
+          "result": "Ray, spoken 2026-09-13: already done",
+          "at": "2026-09-13"
+         }
         }
        ]
       }
@@ -1326,7 +1336,12 @@
          "id": "T212",
          "title": "Assign the four debate topics (Dupont, Brozzi, Afzal, Hockstein) and tell Rachel Pham",
          "owner": "ray",
-         "state": "sprint"
+         "state": "done",
+         "evaluation": {
+          "by": "Ray Yau (owner), via the checklist page",
+          "result": "Ray, spoken 2026-09-13: already done",
+          "at": "2026-09-13"
+         }
         },
         {
          "id": "T213",
@@ -1338,7 +1353,12 @@
          "id": "T214",
          "title": "Book the gap night: Hyatt checkout Sat 9/19, flight Sun 9/20 (free-cancel clock)",
          "owner": "ray",
-         "state": "sprint"
+         "state": "done",
+         "evaluation": {
+          "by": "Ray Yau (owner), via the checklist page",
+          "result": "Ray, spoken 2026-09-13: already done",
+          "at": "2026-09-13"
+         }
         },
         {
          "id": "T215",
@@ -1474,15 +1494,25 @@
          "id": "T314",
          "title": "Confirm PTO Sep 28–Oct 2 and clinical coverage at HHNM for that week (Notion had both as not started)",
          "owner": "ray",
-         "state": "sprint",
-         "src": "notion"
+         "state": "done",
+         "src": "notion",
+         "evaluation": {
+          "by": "Ray Yau (owner), via the checklist page",
+          "result": "Ray, spoken 2026-09-13: already done",
+          "at": "2026-09-13"
+         }
         },
         {
          "id": "T315",
          "title": "Pick Option 1 or Option 2 for the Abiomed / J&J Heart Recovery Q3 educator session — both sit on your calendar Sep 29, during the conference",
          "owner": "ray",
-         "state": "sprint",
-         "src": "calendar"
+         "state": "done",
+         "src": "calendar",
+         "evaluation": {
+          "by": "Ray Yau (owner), via the checklist page",
+          "result": "Ray chose Option 1; accepted on the calendar, Option 2 declined (2026-09-13)",
+          "at": "2026-09-13"
+         }
         },
         {
          "id": "T316",
@@ -1509,8 +1539,13 @@
          "id": "T317",
          "title": "Ask TecSalud (Anapaula Molina Esparza) for the eTicket — nothing received since you sent your passport Aug 11",
          "owner": "ray",
-         "state": "sprint",
-         "src": "notion"
+         "state": "done",
+         "src": "notion",
+         "evaluation": {
+          "by": "Ray Yau (owner), via the checklist page",
+          "result": "Reply sent 2026-09-13 15:32 from raymond.yau@nmcsn.org; ticket still pending",
+          "at": "2026-09-13"
+         }
         },
         {
          "id": "T318",
@@ -1586,8 +1621,13 @@
          "id": "T322",
          "title": "Accept your Speaker Center assignments — still not accepted per your own calendar note",
          "owner": "ray",
-         "state": "sprint",
-         "src": "notion"
+         "state": "done",
+         "src": "notion",
+         "evaluation": {
+          "by": "Ray Yau (owner), via the checklist page",
+          "result": "Ray, spoken 2026-09-13: already done",
+          "at": "2026-09-13"
+         }
         },
         {
          "id": "T323",
