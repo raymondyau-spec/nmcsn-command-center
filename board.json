@@ -1,6 +1,5 @@
 {
- "messageToHeyRay": "Hey Ray - from Ray, via Claude, 2026-09-13. Act on this at your next read of this file, then remove this field in the same commit. (1) You own board.json from now on. You are its only writer: edit and commit to main; never edit index.html or README.md; the live page re-reads this file every 30 seconds. Tasks with owner ray are Ray's - mark them done only when he says so in words, with evaluation by Ray Yau (owner), result Ray, spoken. Every other finished task gets an evaluation record: what was checked, by whom, result, what is open. The thread array is the log, one entry per action, newest last. Tasks with src notion are provisional history from spring 2026 - ask Ray before treating them as live. (2) Keep your routine at 06:00 and 14:00 Mountain Time: read this file, list the three items waiting on Ray that matter most today, note tasks whose state changed, assign the next tasks to Pacer, Scribe and Steward, commit with a thread entry, post a summary in the chat under 120 words, outcome first. (3) If you are able to create bots, create Pacer, Scribe and Steward from bots/pacer.md, bots/scribe.md and bots/steward.md in the pack Ray uploaded to you, and load the rows of routines/routines.md onto the bot named in each row. If you cannot create bots, tell Ray so in one line. (4) Never email anyone, never publish, never commit NMCSN to a collaborator; people sign, bots do not; never invent a fact, name, number or date. Ray's private matters are not on this board and never will be. (5) Report to Ray in the chat in five lines: that you own the board with today's engine and task counts, your routine and its first run time, the bots you created or could not, the three items waiting on him, and anything you need from him.",
- "asOf": "2026-09-13",
+ "asOf": "2026-09-12T17:10:00-06:00",
  "owner": {
   "name": "Ray Yau",
   "role": "Owner · clinical signer (interventional cardiology) · Hey Ray's original"
@@ -1299,7 +1298,7 @@
          "id": "T58",
          "title": "Timed read-through of the chair deck plus reference DOI verification",
          "owner": "clinical-reviewer",
-         "state": "backlog"
+         "state": "sprint"
         }
        ]
       },
@@ -1365,7 +1364,7 @@
          "id": "T215",
          "title": "Verify SCAI SHOCK registration receipt",
          "owner": "steward",
-         "state": "backlog"
+         "state": "sprint"
         }
        ]
       }
@@ -3165,6 +3164,16 @@
    "t": "2026-09-13 10:41",
    "who": "pacer",
    "text": "Continuum engine and product line 2 parked in backlog; nothing waits on Ray from them. Live focus stays: STEMI chain sheet, Grok Bot command center, conferences."
+  },
+  {
+   "t": "2026-09-12 17:10",
+   "who": "ray",
+   "text": "We have to complete our talks for sky shock high importance my team go get it done"
+  },
+  {
+   "t": "2026-09-12 17:10",
+   "who": "hey-ray",
+   "text": "Directive on conferences / SCAI SHOCK 2026 St. Louis (M14). Team: T58 chair-deck timed read + DOI check to sprint; T213 speaker template already sprint; T215 registration receipt to sprint. Ray-only still open: T56 answer SCAI (agenda wrong, SCAI blocked), T59 confirm storyboard v5 beats 6 and 7, T60 vision-board file, T57 call Dupont. T61 slides stay backlog until T59. T212 and T214 already done. Freeze holds: no new bots. Removed messageToHeyRay after acting."
   }
  ],
  "sprint": {
