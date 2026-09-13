@@ -1,5 +1,5 @@
 {
- "asOf": "2026-09-12T17:10:00-06:00",
+ "asOf": "2026-09-13T06:27:00-06:00",
  "owner": {
   "name": "Ray Yau",
   "role": "Owner · clinical signer (interventional cardiology) · Hey Ray's original"
@@ -217,8 +217,8 @@
    "name": "Hey Ray",
    "kind": "bot",
    "job": "Founder clone: spec, split, delegate",
-   "status": "idle",
-   "now": "SCAI SHOCK talks — conferences sprint",
+   "status": "active",
+   "now": "Morning board read — SCAI SHOCK talks still the drumbeat",
    "element": "Fire · the spark, kept in check by Water"
   },
   {
@@ -271,8 +271,8 @@
    "name": "Scribe",
    "kind": "bot",
    "job": "Hub, tests, handoff, vault, artifacts",
-   "status": "active",
-   "now": "Recording the signature; handoff v15",
+   "status": "sprint",
+   "now": "T15 hub/handoff; record SCAI prep status when Ray clears T56/T59",
    "element": "Earth · record"
   },
   {
@@ -344,7 +344,7 @@
    "kind": "bot",
    "job": "Sequence the work; guard the drumbeat and Ray's energy; say stop",
    "status": "sprint",
-   "now": "SCAI sequence locked — Ray T56→T59, team T213/T215/T58, T61 after T59",
+   "now": "Hold SCAI sequence: Ray T56→T59→T60; team T213/T215/T58; watch T120 Sep 15",
    "element": "Water · temper"
   },
   {
@@ -1317,7 +1317,7 @@
          "id": "T60",
          "title": "Supply the personal vision board file the storyboard depends on",
          "owner": "ray",
-         "state": "backlog"
+         "state": "active"
         },
         {
          "id": "T61",
@@ -3179,6 +3179,11 @@
    "t": "2026-09-12 17:10",
    "who": "pacer",
    "text": "Sequence locked. Ray T56 then T59. Team T213/T215/T58. T61 after T59. Hold T57, ABQ, RFP, counsel, continuum. Freeze holds."
+  },
+  {
+   "t": "2026-09-13 06:27",
+   "who": "hey-ray",
+   "text": "Morning board read (first run of this routine). Ray top three today: T56 answer SCAI (agenda wrong), T59 confirm storyboard beats 6–7, T60 vision-board file (set active). Hold T57 per prior Pacer lock. Assigned next: Pacer T120 (Sep 15 watch) + SCAI sequence guard; Scribe T15 hub/handoff sprint; Steward T215 registration receipt sprint. Team still T213/T215/T58; T61 stays backlog until T59. No state diff (first successful run). Freeze holds: no new bots. Notion-src Ray items not treated as live."
   }
  ],
  "sprint": {
