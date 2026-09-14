@@ -1,5 +1,5 @@
 {
- "asOf": "2026-09-13T14:08:00-06:00",
+ "asOf": "2026-09-14T14:01:00-06:00",
  "owner": {
   "name": "Ray Yau",
   "role": "Owner · clinical signer (interventional cardiology) · Hey Ray's original"
@@ -218,7 +218,7 @@
    "kind": "bot",
    "job": "Founder clone: spec, split, delegate",
    "status": "active",
-   "now": "Afternoon board read — SCAI SHOCK talks still the drumbeat",
+   "now": "Afternoon board read — SCAI SHOCK still the drumbeat; fly Sep 16",
    "element": "Fire · the spark, kept in check by Water"
   },
   {
@@ -308,7 +308,7 @@
    "kind": "human",
    "job": "Owner · clinical signer",
    "status": "blocked-on",
-   "now": "T56 then T59 (SCAI SHOCK)",
+   "now": "T56 then T59 (SCAI SHOCK); T60 vision-board file",
    "element": "Fire Snake (1977) · owner and signer"
   },
   {
@@ -3189,6 +3189,16 @@
    "t": "2026-09-13 14:08",
    "who": "hey-ray",
    "text": "Afternoon board read. Ray top three remain T56 answer SCAI (agenda wrong), T59 confirm storyboard beats 6–7, T60 vision-board file. Hold T57 per Pacer lock. No state changes since morning. Reaffirm: Pacer T120 (Sep 15 watch) + SCAI sequence; Scribe T15 hub/handoff sprint; Steward T215 registration receipt sprint. Team still T213/T215/T58; T61 backlog until T59. Freeze holds: no new bots. Notion-src Ray items not treated as live."
+  },
+  {
+   "t": "2026-09-14 06:06",
+   "who": "hey-ray",
+   "text": "Morning board read. Ray top three remain T56 answer SCAI (agenda wrong), T59 confirm storyboard beats 6–7, T60 vision-board file. Hold T57 per Pacer lock. No state changes since afternoon 2026-09-13 14:08. Reaffirm: Pacer T120 (Sep 15 watch) + SCAI sequence; Scribe T15 hub/handoff sprint; Steward T215 registration receipt sprint. Team still T213/T215/T58; T61 backlog until T59. Freeze holds: no new bots. Notion-src Ray items not treated as live."
+  },
+  {
+   "t": "2026-09-14 14:01",
+   "who": "hey-ray",
+   "text": "Afternoon board read. Ray top three remain T56 answer SCAI (agenda wrong), T59 confirm storyboard beats 6–7, T60 vision-board file. Hold T57 per Pacer lock. No state changes since morning. Reaffirm: Pacer T120 (Sep 15 watch) + SCAI sequence; Scribe T15 hub/handoff sprint; Steward T215 registration receipt sprint. Team still T213/T215/T58; T61 backlog until T59. Morning PR #6 still open draft (not on main as of this write). Freeze holds: no new bots. Notion-src Ray items not treated as live."
   }
  ],
  "sprint": {
