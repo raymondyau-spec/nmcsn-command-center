@@ -1,5 +1,5 @@
 {
- "asOf": "2026-09-14T19:05:00-06:00",
+ "asOf": "2026-09-15T14:02:00-06:00",
  "owner": {
   "name": "Ray Yau",
   "role": "Owner · clinical signer (interventional cardiology) · Hey Ray's original"
@@ -218,7 +218,7 @@
    "kind": "bot",
    "job": "Founder clone: spec, split, delegate",
    "status": "active",
-   "now": "VitalEngine Meet logged — Ray to name angles",
+   "now": "Afternoon board read 14:02 — SCAI first; fly tomorrow UA 652; morning PR #9 still open",
    "element": "Fire · the spark, kept in check by Water"
   },
   {
@@ -308,7 +308,7 @@
    "kind": "human",
    "job": "Owner · clinical signer",
    "status": "blocked-on",
-   "now": "T56 then T59 (SCAI); then VitalEngine angles (new T359)",
+   "now": "T56 then T59 (SCAI); then T60; then VitalEngine angles T359",
    "element": "Fire Snake (1977) · owner and signer"
   },
   {
@@ -344,7 +344,7 @@
    "kind": "bot",
    "job": "Sequence the work; guard the drumbeat and Ray's energy; say stop",
    "status": "sprint",
-   "now": "Hold SCAI sequence: Ray T56→T59→T60; team T213/T215/T58; watch T120 Sep 15",
+   "now": "T120 Sep 15 watch due TODAY; hold SCAI sequence T56→T59→T60; team T213/T215/T58",
    "element": "Water · temper"
   },
   {
@@ -3219,6 +3219,16 @@
    "t": "2026-09-14 19:05",
    "who": "hey-ray",
    "text": "VitalEngine Meet held Sep 14 6–7 PM MT; no recording/notes in the record; Ray: good meeting, found their angles (angles not stated — not in the record); board updated; freeze holds."
+  },
+  {
+   "t": "2026-09-15 06:01",
+   "who": "hey-ray",
+   "text": "Morning board read. Ray top three: T56 answer SCAI (agenda wrong), T59 confirm storyboard beats 6–7, T60 vision-board file. State change since prior: T359 opened (VitalEngine angles). Assigned: Pacer T120 (Sep 15 watch TODAY) + SCAI sequence; Scribe T15 hub/handoff sprint; Steward T215 registration receipt sprint. Fly Sep 16 UA 652. Freeze holds: no new bots. Notion-src Ray items not treated as live. (Catch-up: morning PR #9 was still open on main.)"
+  },
+  {
+   "t": "2026-09-15 14:02",
+   "who": "hey-ray",
+   "text": "Afternoon board read. Ray top three remain T56 answer SCAI (agenda wrong), T59 confirm storyboard beats 6–7, T60 vision-board file. No task-state changes on live main since morning (morning PR #9 still open). Reaffirm: Pacer T120 (Sep 15 watch — due TODAY) + SCAI sequence; Scribe T15 hub/handoff sprint; Steward T215 registration receipt sprint. Team still T213/T215/T58; T61 backlog until T59. Fly tomorrow UA 652. Freeze holds: no new bots. Notion-src Ray items not treated as live."
   }
  ],
  "sprint": {
