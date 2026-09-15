@@ -1,5 +1,5 @@
 {
- "asOf": "2026-09-13T14:08:00-06:00",
+ "asOf": "2026-09-14T19:05:00-06:00",
  "owner": {
   "name": "Ray Yau",
   "role": "Owner · clinical signer (interventional cardiology) · Hey Ray's original"
@@ -110,7 +110,7 @@
    "domain": "NMCSN",
    "purpose": "Bring institutions into the network — UNM, Presbyterian, IHS/tribal — and serve the out-of-state programs that ask for the model.",
    "state": "active",
-   "lastTouched": "2026-09-09",
+   "lastTouched": "2026-09-14",
    "color": "teal"
   },
   {
@@ -218,7 +218,7 @@
    "kind": "bot",
    "job": "Founder clone: spec, split, delegate",
    "status": "active",
-   "now": "Afternoon board read — SCAI SHOCK talks still the drumbeat",
+   "now": "VitalEngine Meet logged — Ray to name angles",
    "element": "Fire · the spark, kept in check by Water"
   },
   {
@@ -308,7 +308,7 @@
    "kind": "human",
    "job": "Owner · clinical signer",
    "status": "blocked-on",
-   "now": "T56 then T59 (SCAI SHOCK)",
+   "now": "T56 then T59 (SCAI); then VitalEngine angles (new T359)",
    "element": "Fire Snake (1977) · owner and signer"
   },
   {
@@ -2467,6 +2467,26 @@
        ]
       }
      ]
+    },
+    {
+     "id": "M327",
+     "title": "NMCSN × VitalEngine — shock network platform",
+     "state": "active",
+     "projects": [
+      {
+       "id": "P329",
+       "title": "Meet Mon 2026-09-14 18:00–19:00 America/Denver",
+       "state": "active",
+       "tasks": [
+        {
+         "id": "T359",
+         "title": "Capture VitalEngine angles from Sep 14 Meet and name next ask",
+         "owner": "ray",
+         "state": "active"
+        }
+       ]
+      }
+     ]
     }
    ],
    "files": [
@@ -3189,6 +3209,16 @@
    "t": "2026-09-13 14:08",
    "who": "hey-ray",
    "text": "Afternoon board read. Ray top three remain T56 answer SCAI (agenda wrong), T59 confirm storyboard beats 6–7, T60 vision-board file. Hold T57 per Pacer lock. No state changes since morning. Reaffirm: Pacer T120 (Sep 15 watch) + SCAI sequence; Scribe T15 hub/handoff sprint; Steward T215 registration receipt sprint. Team still T213/T215/T58; T61 backlog until T59. Freeze holds: no new bots. Notion-src Ray items not treated as live."
+  },
+  {
+   "t": "2026-09-14 19:05",
+   "who": "ray",
+   "text": "Dang, I forgot to record, but it's okay. It was a good meeting. Found out their angles. Update my command center about this task. Feed it back to Claude."
+  },
+  {
+   "t": "2026-09-14 19:05",
+   "who": "hey-ray",
+   "text": "VitalEngine Meet held Sep 14 6–7 PM MT; no recording/notes in the record; Ray: good meeting, found their angles (angles not stated — not in the record); board updated; freeze holds."
   }
  ],
  "sprint": {
