@@ -1,5 +1,5 @@
 {
- "asOf": "2026-09-14T19:05:00-06:00",
+ "asOf": "2026-09-15T06:01:00-06:00",
  "owner": {
   "name": "Ray Yau",
   "role": "Owner · clinical signer (interventional cardiology) · Hey Ray's original"
@@ -218,7 +218,7 @@
    "kind": "bot",
    "job": "Founder clone: spec, split, delegate",
    "status": "active",
-   "now": "VitalEngine Meet logged — Ray to name angles",
+   "now": "Morning board read 2026-09-15; SCAI first; fly Sep 16",
    "element": "Fire · the spark, kept in check by Water"
   },
   {
@@ -308,7 +308,7 @@
    "kind": "human",
    "job": "Owner · clinical signer",
    "status": "blocked-on",
-   "now": "T56 then T59 (SCAI); then VitalEngine angles (new T359)",
+   "now": "T56 then T59 (SCAI); then T60; then VitalEngine angles (T359)",
    "element": "Fire Snake (1977) · owner and signer"
   },
   {
@@ -344,7 +344,7 @@
    "kind": "bot",
    "job": "Sequence the work; guard the drumbeat and Ray's energy; say stop",
    "status": "sprint",
-   "now": "Hold SCAI sequence: Ray T56→T59→T60; team T213/T215/T58; watch T120 Sep 15",
+   "now": "Hold SCAI sequence: Ray T56→T59→T60; team T213/T215/T58; T120 Sep 15 watch is TODAY",
    "element": "Water · temper"
   },
   {
@@ -3219,6 +3219,11 @@
    "t": "2026-09-14 19:05",
    "who": "hey-ray",
    "text": "VitalEngine Meet held Sep 14 6–7 PM MT; no recording/notes in the record; Ray: good meeting, found their angles (angles not stated — not in the record); board updated; freeze holds."
+  },
+  {
+   "t": "2026-09-15 06:01",
+   "who": "hey-ray",
+   "text": "Morning board read. Ray top three: T56 answer SCAI (agenda wrong), T59 storyboard beats 6–7, T60 vision-board file. Fly tomorrow Sep 16 UA 652. Since last read: T359 opened (VitalEngine angles; Ray to name next ask — angles not in the record). No other task state changes. Assigned: Pacer T120 (Sep 15 watch — today) + SCAI sequence; Scribe T15 hub/handoff; Steward T215 registration receipt. Team still T213/T215/T58; T61 backlog until T59. Freeze holds. Notion-src not treated as live."
   }
  ],
  "sprint": {
