@@ -163,6 +163,24 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .peoplewrap .detail{position:sticky;top:8px;width:auto;left:auto;bottom:auto}
 .peoplewrap .detail h3{font-size:22px}
 .peoplewrap .detail .d,.peoplewrap .detail .li,.peoplewrap .detail div[style]{font-size:15px!important}
+/* players — humans tied to work, roles and asks only */
+.playerwrap{display:grid;gap:22px}
+.player{display:grid;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink)}
+.player .row{display:flex;gap:12px;align-items:flex-start}
+.player .av{width:40px;height:40px;border-radius:50%;background:var(--yellow);color:#143044;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;flex-shrink:0}
+.player .nm{font-size:20px;font-weight:800;letter-spacing:-.02em;font-family:"Inter Tight",Inter,sans-serif;line-height:1.15;color:var(--ink)}
+.player .job{font-size:15px;color:var(--muted);margin-top:3px}
+.player .now{font-size:16px;color:var(--ink);line-height:1.4}
+.player .asks{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:10px}
+.player .ask{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:start}
+.player .at{font-size:15px;color:var(--ink);font-weight:600;line-height:1.35}
+.player .am{font-size:13px;color:var(--muted);margin-top:2px}
+.engplay{display:grid;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink)}
+.engplay .en{font-size:16px;font-weight:800;letter-spacing:-.02em;font-family:"Inter Tight",Inter,sans-serif;color:var(--ink)}
+.engplay .who{font-size:16px;font-weight:700;color:var(--ink);margin-top:8px}
+.engplay .ts{margin:4px 0 0;padding:0;list-style:none}
+.engplay .ts li{font-size:15px;color:var(--ink);margin:6px 0;line-height:1.35}
+@media (max-width:700px){.player .nm{font-size:22px}.player .at{font-size:16px}}
 /* github source-of-truth panel */
 .gh{display:grid;gap:12px;max-width:760px}
 .gh .card{padding:16px 18px}
@@ -206,6 +224,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
     <button data-v="mine"><span class="ic">☑</span>Mine</button>
     <button data-v="team" class="on"><span class="ic">◉</span>Team</button>
     <button data-v="people"><span class="ic">☺</span>People</button>
+    <button data-v="players"><span class="ic">♟</span>Players</button>
     <button data-v="record" title="Baalda · living record"><span class="ic">▤</span>Baalda</button>
     <button data-v="engines"><span class="ic">◎</span>Engines</button>
     <button data-v="sprint"><span class="ic">▦</span>Sprint</button>
@@ -330,6 +349,13 @@ function people(){ const humans=B.agents.filter(a=>a.kind==='human'); const team
     <section><h3>People who sign</h3><div class="pcards">${humans.map(pcard).join('')||'<div class="empty">None on the board.</div>'}</div></section>
     <section><h3>Grok / bot staff</h3>${groups.map(g=>`<h4>${esc(g.name)}</h4><div class="pcards">${g.agents.map(pcard).join('')}</div>`).join('')}${rest.length?`<h4>Ungrouped</h4><div class="pcards">${rest.map(pcard).join('')}</div>`:''}</section>
   </div><div class="card detail" id="detail" hidden></div></div>`; }
+function tPill(st){ return st==='done'?'live':st==='active'?'live':st==='sprint'?'score':'grey'; }
+function playerCard(a){ const mine=TASKS.filter(t=>t.owner===a.id); const open=mine.filter(t=>t.state!=='done'); const pill=a.status==='active'?'live':a.status==='blocked-on'?'human':'grey'; const sl=a.status==='active'?'live':a.status==='blocked-on'?'waiting on you':(a.status||''); const asks=open.map(t=>{ const eng=E[t.engine]; const en=eng?eng.name.split(' (')[0]:t.engine; const proj=t.pr&&t.pr.title?t.pr.title:''; return `<div class="ask"><span class="pill ${tPill(t.state)}">${esc(t.state)}</span><div><div class="at">${esc(t.title)}</div><div class="am">${esc(en)}${proj?' · '+esc(proj):''}</div></div></div>`; }).join(''); const done=mine.filter(t=>t.state==='done').length; return `<article class="player"><div class="row"><span class="av">${esc(initials(a.name))}</span><div style="min-width:0;flex:1"><div class="nm">${esc(a.name)}</div><div class="job">${esc(a.job||'')}</div></div><span class="meta pill ${pill}">${esc(sl)}</span></div>${a.now?`<div class="now">${esc(a.now)}</div>`:''}${asks?`<div class="asks">${asks}</div>`:'<div class="now note">No open ask on the board.</div>'}${done?`<div class="note">${done} done on the board</div>`:''}</article>`; }
+function players(){ const humans=B.agents.filter(a=>a.kind==='human'); const openN=humans.filter(a=>TASKS.some(t=>t.owner===a.id&&t.state!=='done')).length; const byEng=[]; for(const e of B.engines){ const items=[]; for(const a of humans){ const ts=TASKS.filter(t=>t.engine===e.id&&t.owner===a.id&&t.state!=='done'); if(ts.length) items.push({a,ts}); } if(items.length) byEng.push({e,items}); } return `<div class="top"><div><h2 class="disp">Players <span class="r">on the work</span></h2><div class="sub">${humans.length} people · ${openN} with an open ask · from the board, nothing invented · roles and asks only</div></div></div>
+  <div class="playerwrap">
+    <section class="plist"><h3>People</h3><div class="pcards">${humans.map(playerCard).join('')||'<div class="empty">No people on the board.</div>'}</div></section>
+    <section class="plist"><h3>By engine</h3>${byEng.map(g=>`<article class="engplay"><div class="en">${esc(g.e.name)}</div>${g.items.map(it=>`<div class="who">${esc(it.a.name)} · ${esc(it.a.job||'')}</div><ul class="ts">${it.ts.map(t=>`<li><span class="pill ${tPill(t.state)}">${esc(t.state)}</span> ${esc(t.title)}${t.pr&&t.pr.title?' <span class="note">· '+esc(t.pr.title)+'</span>':''}</li>`).join('')}</ul>`).join('')}</article>`).join('')||'<div class="note">No open asks tied to an engine.</div>'}</section>
+  </div>`; }
 const GH_REPO='raymondyau-spec/nmcsn-command-center';
 let GH={loaded:false,busy:false,err:'',prs:null,commits:null};
 function github(){ const prs=Array.isArray(GH.prs)?GH.prs:null; const commits=Array.isArray(GH.commits)?GH.commits:null; const latest=commits&&commits[0]; const latestMsg=latest&&latest.commit&&latest.commit.message?latest.commit.message.split('\n')[0]:''; return `<div class="top"><div><h2 class="disp">GitHub <span class="r">source of truth</span></h2><div class="sub">This repo hosts the page. Claude writes the board; this page reads board.json.</div></div></div>
@@ -346,7 +372,7 @@ function github(){ const prs=Array.isArray(GH.prs)?GH.prs:null; const commits=Ar
 function loadGithub(){ if(GH.busy||GH.loaded) return; GH.busy=true; const base='https://api.github.com/repos/'+GH_REPO; const grab=(path,key)=>fetch(base+path,{headers:{Accept:'application/vnd.github+json'}}).then(r=>{ if(!r.ok) throw new Error(String(r.status)); return r.json(); }).then(j=>{ GH[key]=Array.isArray(j)?j:null; }).catch(()=>{ GH[key]=null; }); Promise.all([grab('/pulls?state=open&per_page=8','prs'), grab('/commits?sha=main&per_page=5','commits')]).then(()=>{ GH.loaded=true; GH.busy=false; if(!Array.isArray(GH.prs)&&!Array.isArray(GH.commits)) GH.err='could not load'; if(view==='github') render(); }); }
 
 function render(){ document.querySelectorAll('#rail button').forEach(b=>b.classList.toggle('on',b.dataset.v===view)); const st=$('#stage');
-  st.innerHTML=view==='team'?team():view==='people'?people():view==='github'?github():view==='engines'?engines():view==='projects'?projects():view==='sprint'?sprint():view==='board'?board():view==='process'?process():view==='record'?record():view==='mine'?mine():view==='home'?home():setup();
+  st.innerHTML=view==='team'?team():view==='people'?people():view==='players'?players():view==='github'?github():view==='engines'?engines():view==='projects'?projects():view==='sprint'?sprint():view==='board'?board():view==='process'?process():view==='record'?record():view==='mine'?mine():view==='home'?home():setup();
   if(['team','engines'].includes(view)){ buildGraph(view); focus=null; detail(); $('#zoomout').onclick=()=>{ setFocus(null); stopTour(); }; $('#tourbtn').onclick=()=>tour?stopTour():startTour(); }
   if(view==='sprint'){ document.querySelectorAll('[data-e]').forEach(b=>b.onclick=()=>{ F.engine=b.dataset.e; render(); }); document.querySelectorAll('[data-b]').forEach(b=>b.onclick=()=>{ F.bot=b.dataset.b; render(); }); }
   if(view==='projects'){ document.querySelectorAll('[data-pd]').forEach(b=>b.onclick=()=>{ Pfilt.done=b.dataset.pd==='1'; render(); }); }
