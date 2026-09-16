@@ -36,7 +36,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 #rail button{display:flex;flex-direction:column;align-items:center;gap:3px;padding:10px 4px;border-radius:9px;font-size:10px;color:var(--dim);letter-spacing:.02em}
 #rail button .ic{font-size:17px;line-height:1}
 #rail button.on{color:var(--ink);background:var(--panel)} #rail button:hover{color:var(--ink)}
-#stage{position:relative;min-width:0;min-height:600px;padding:18px 22px 22px;display:flex;flex-direction:column;gap:12px}
+#stage{position:relative;min-width:0;min-height:600px;padding:18px 22px 22px;display:flex;flex-direction:column;gap:12px;overflow:auto}
 .top{display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap}
 .top h2{font-size:28px} .top .sub{color:var(--muted);font-size:12.5px;margin-top:4px}
 .top .sp{flex:1}
@@ -61,8 +61,8 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 /* graph */
 #graph{flex:1;width:100%;min-height:440px;border-radius:14px;background:radial-gradient(1200px 600px at 60% 40%,#DEEAF0 0%,#F6FAFC 70%);animation:tide 18s ease-in-out infinite alternate}
 @keyframes tide{from{background-position:0 0}to{background-position:40px 20px}}
-#graph text{font-family:Inter,sans-serif;fill:#F4F8FA;font-size:11px;font-weight:600}
-#graph .lab2{fill:#9DB6C6;font-size:9.5px;font-weight:500}
+#graph text{font-family:Inter,sans-serif;fill:var(--ink);font-size:11px;font-weight:600}
+#graph .lab2{fill:var(--muted);font-size:9.5px;font-weight:500}
 .legend{display:flex;gap:16px;font-size:11.5px;color:var(--muted)} .legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
 
 /* sprint */
@@ -110,7 +110,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .ecard .n{font-weight:700;font-size:14.5px;display:flex;justify-content:space-between;gap:8px;align-items:center}
 .ecard .p{font-size:12px;color:var(--muted)}
 .ecard .m{display:flex;gap:6px;flex-wrap:wrap}
-.ecard .next{font-size:12.5px;color:#E8F1F5;border-top:1px solid var(--line);padding-top:6px}
+.ecard .next{font-size:12.5px;color:var(--ink);border-top:1px solid var(--line);padding-top:6px}
 .ecard .next b{color:var(--red-2);font-weight:600}
 .ecard.private{border-style:dashed}
 /* mine */
@@ -127,10 +127,10 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .hit{background:var(--panel);border-radius:10px;padding:10px 12px;cursor:pointer;border:1px solid transparent}
 .hit:hover,.hit.on{border-color:var(--red)}
 .hit .t{font-weight:600;font-size:13.5px} .hit .p{font-size:11px;color:var(--muted);font-family:"Inter Tight",Inter,sans-serif}
-.note{background:var(--panel);border-radius:12px;padding:18px 20px;overflow:auto;max-height:78vh;font-size:14px;line-height:1.55;color:#E8F1F5}
-.note h1,.note h2,.note h3{color:var(--ink);margin:14px 0 6px} .note h1{font-size:20px}.note h2{font-size:16px}.note h3{font-size:14px}
-.note p{margin:0 0 10px} .note code{background:var(--panel-2);padding:1px 5px;border-radius:4px;font-size:12.5px} .note li{margin:2px 0}
-.note table{border-collapse:collapse;font-size:12.5px;margin:8px 0} .note td,.note th{border:1px solid var(--line);padding:4px 8px;vertical-align:top}
+#recnote{background:var(--panel);border-radius:12px;padding:18px 20px;overflow:auto;max-height:78vh;font-size:14px;line-height:1.55;color:var(--ink)}
+#recnote h1,#recnote h2,#recnote h3{color:var(--ink);margin:14px 0 6px} #recnote h1{font-size:20px}#recnote h2{font-size:16px}#recnote h3{font-size:14px}
+#recnote p{margin:0 0 10px} #recnote code{background:var(--panel-2);padding:1px 5px;border-radius:4px;font-size:12.5px} #recnote li{margin:2px 0}
+#recnote table{border-collapse:collapse;font-size:12.5px;margin:8px 0} #recnote td,#recnote th{border:1px solid var(--line);padding:4px 8px;vertical-align:top}
 /* feed */
 #feedcol{border-left:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
 #feedcol .fh{padding:16px 16px 10px;border-bottom:1px solid var(--line)} #feedcol .fh b{font-size:13.5px;display:flex;gap:8px;align-items:center} #feedcol .fh small{display:block;color:var(--dim);font-size:11px;margin-top:2px}
@@ -140,7 +140,42 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .post .av{width:26px;height:26px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700}
 .post.human .av{background:var(--yellow);color:#143044}
 .post .n{font-size:12.5px;font-weight:600} .post .n small{color:var(--dim);font-weight:400;margin-left:6px;font-size:10.5px}
-.post p{margin:2px 0 0;font-size:12.5px;color:#D8E4EB;line-height:1.4}
+.post p{margin:2px 0 0;font-size:12.5px;color:var(--ink);line-height:1.4}
+
+#rail{overflow-y:auto;-webkit-overflow-scrolling:touch}
+/* people roster — large type for phone */
+.peoplewrap{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.85fr);gap:14px;align-items:start;flex:1;min-height:0}
+@media (max-width:800px){.peoplewrap{grid-template-columns:1fr}.peoplewrap .detail{order:-1}}
+.plist{display:grid;gap:18px;min-width:0}
+.plist h3{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700;margin:0 0 8px}
+.plist h4{font-size:15px;font-weight:700;color:var(--ink);margin:12px 0 8px}
+.pcards{display:grid;gap:10px}
+.pcard{display:grid;gap:8px;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink);width:100%}
+.pcard:hover,.pcard.on{border-color:var(--red)}
+.pcard.on{box-shadow:0 0 0 2px rgba(58,156,168,.28)}
+.pcard .row{display:flex;gap:12px;align-items:flex-start}
+.pcard .av{width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;flex-shrink:0}
+.pcard.human .av{background:var(--yellow);color:#143044}
+.pcard .nm{font-size:20px;font-weight:800;letter-spacing:-.02em;font-family:"Inter Tight",Inter,sans-serif;line-height:1.15}
+.pcard .job{font-size:15px;color:var(--muted);margin-top:3px}
+.pcard .now{font-size:16px;color:var(--ink);line-height:1.4;border-top:1px solid var(--line);padding-top:8px}
+.pcard .meta{margin-left:auto;flex-shrink:0}
+.peoplewrap .detail{position:sticky;top:8px;width:auto;left:auto;bottom:auto}
+.peoplewrap .detail h3{font-size:22px}
+.peoplewrap .detail .d,.peoplewrap .detail .li,.peoplewrap .detail div[style]{font-size:15px!important}
+/* github source-of-truth panel */
+.gh{display:grid;gap:12px;max-width:760px}
+.gh .card{padding:16px 18px}
+.gh .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:8px}
+.gh a{color:var(--red-2);font-weight:600;font-size:16px;text-decoration:none;word-break:break-word}
+.gh a:hover{text-decoration:underline}
+.gh .links{display:grid;gap:10px}
+.gh .links a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.gh p{font-size:16px;color:var(--ink);margin:0;line-height:1.45}
+.gh ul{margin:0;padding-left:18px}
+.gh li{font-size:15.5px;color:var(--ink);margin:8px 0;line-height:1.4}
+.gh .empty{color:var(--muted);font-size:15px}
+@media (max-width:700px){.top h2{font-size:24px}.pcard .nm{font-size:22px}.pcard .now{font-size:17px}#hdr .wm{font-size:17px}}
 </style>
 
 <header id="hdr">
@@ -157,12 +192,14 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
     <button data-v="home"><span class="ic">⌂</span>Home</button>
     <button data-v="mine"><span class="ic">☑</span>Mine</button>
     <button data-v="team" class="on"><span class="ic">◉</span>Team</button>
+    <button data-v="people"><span class="ic">☺</span>People</button>
     <button data-v="engines"><span class="ic">◎</span>Engines</button>
     <button data-v="sprint"><span class="ic">▦</span>Sprint</button>
     <button data-v="board"><span class="ic">≣</span>Board</button>
     <button data-v="projects"><span class="ic">⌗</span>Projects</button>
     <button data-v="process"><span class="ic">↻</span>Process</button>
     <button data-v="record"><span class="ic">▤</span>Record</button>
+    <button data-v="github"><span class="ic">⌘</span>GitHub</button>
     <button data-v="setup"><span class="ic">⚙</span>Setup</button>
   </nav>
   <main id="stage"></main>
@@ -185,7 +222,7 @@ const F={engine:'',bot:''};
 
 /* ---------- ticker + feed ---------- */
 function ticker(){ const items=B.thread.slice(-12).reverse().map(ev=>`<span><b>${esc(ag(ev.who).name)}</b> · ${esc(ev.text)}</span>`).join(''); $('#track').innerHTML=items+items; }
-function feed(){ const th=B.thread.slice().reverse(); const fid=focus&&focus.kind==='bot'?focus.id:null; const list=fid?th.filter(e=>e.who===fid).concat(th.filter(e=>e.who!==fid)):th;
+function feed(){ const th=B.thread.slice().reverse(); const fid=focus&&(focus.kind==='bot'||focus.kind==='human')?((focus.ref&&focus.ref.id)||focus.id):null; const list=fid?th.filter(e=>e.who===fid).concat(th.filter(e=>e.who!==fid)):th;
   $('#fhb').innerHTML=fid?esc(ag(fid).name)+' <span class="pill live">live</span>':'What\'s happening'; $('#fhs').textContent=fid?(ag(fid).job):'watching along · the team talking';
   $('#feed').innerHTML=list.slice(0,14).map((ev,i)=>{ const a=ag(ev.who); return `<div class="post ${i===0?'lead':''} ${a.kind}"><div class="av">${esc(initials(a.name))}</div><div><div class="n">${esc(a.name)}<small>${esc(ev.t.slice(11))}</small></div><p>${esc(ev.text)}</p></div></div>`; }).join(''); }
 function say(t){ if(!speak||!('speechSynthesis' in window)) return; try{ speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(t); u.rate=1.03; const v=speechSynthesis.getVoices().find(v=>/Samantha|Ava|Zira|Google US English/.test(v.name)); if(v) u.voice=v; speechSynthesis.speak(u); }catch(e){} }
@@ -212,11 +249,11 @@ function drawGraph(){ const g=$('#graph'); if(!g) return; simStep(0.15); simT++;
   const dim=n=>focus&&focus.id!==n.id&&!EDGES.some(([a,b])=>(a===focus&&b===n)||(b===focus&&a===n));
   g.innerHTML=`<defs><filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="glowr" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>`+
     EDGES.map(([a,b])=>a&&b?`<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="${(focus&&(a===focus||b===focus))?'#4FB3BF':'#1C3447'}" stroke-opacity="${(focus&&(a===focus||b===focus))?.9:.7}" stroke-width="${(focus&&(a===focus||b===focus))?1.6:1}"/>`:'').join('')+
-    NODES.map(n=>{ const st=n.ref.status; const glow=n.kind==='engine'?'url(#glowr)':(n.glow?'url(#glow)':'none'); const stroke=n.kind==='human'?(st==='blocked-on'?'#D9B77A':'#9DB6C6'):(n.id===(focus&&focus.id)?'#D9B77A':'none');
+    NODES.map(n=>{ const st=n.ref.status; const glow=n.kind==='engine'?'url(#glowr)':(n.glow?'url(#glow)':'none'); const stroke=n.kind==='human'?(st==='blocked-on'?'#C4964A':'#143044'):n.kind==='bot'?(n.id===(focus&&focus.id)?'#C4964A':'#3A9CA8'):(n.id===(focus&&focus.id)?'#C4964A':'none');
       const sc=n.kind==='bot'||n.kind==='human'?score(TASKS.filter(t=>t.owner===n.ref.id)):n.kind==='engine'?score(TASKS.filter(t=>t.engine===n.ref.id)):n.kind==='project'?score(n.ref.tasks):null;
-      return `<g data-id="${n.id}" opacity="${dim(n)?.28:1}" style="cursor:pointer"><circle cx="${n.x}" cy="${n.y}" r="${n.r}" fill="${col(n)}" fill-opacity="${n.kind==='project'?.9:1}" stroke="${stroke}" stroke-width="2" filter="${glow}"/>${n.kind==='bot'&&st==='blocked-on'?`<circle cx="${n.x}" cy="${n.y}" r="${n.r+5}" fill="none" stroke="#D9B77A" stroke-width="1.5"/>`:''}${(n.kind!=='project'&&n.kind!=='process')||view==='projects'||n.id===(focus&&focus.id)?`<text x="${n.x+n.r+6}" y="${n.y+3}">${esc(n.label.length>26?n.label.slice(0,25)+'…':n.label)}</text>`:''}${sc&&(n.kind!=='project'||view==='projects')?`<text class="lab2" x="${n.x+n.r+6}" y="${n.y+15}" fill="${st==='active'?'#6FCF9F':'#D9B77A'}">${n.kind==='bot'||n.kind==='human'?(st==='active'?'live':st==='blocked-on'?'waiting on you':st):''}${sc.total?' · '+sc.done+'/'+sc.total:''}</text>`:''}</g>`; }).join('');
+      return `<g data-id="${n.id}" opacity="${dim(n)?.28:1}" style="cursor:pointer"><circle cx="${n.x}" cy="${n.y}" r="${n.r}" fill="${col(n)}" fill-opacity="${n.kind==='project'?.9:1}" stroke="${stroke}" stroke-width="2" filter="${glow}"/>${n.kind==='bot'&&st==='blocked-on'?`<circle cx="${n.x}" cy="${n.y}" r="${n.r+5}" fill="none" stroke="#C4964A" stroke-width="1.5"/>`:''}${(n.kind!=='project'&&n.kind!=='process')||view==='projects'||n.id===(focus&&focus.id)?`<text x="${n.x+n.r+6}" y="${n.y+3}">${esc(n.label.length>26?n.label.slice(0,25)+'…':n.label)}</text>`:''}${sc&&(n.kind!=='project'||view==='projects')?`<text class="lab2" x="${n.x+n.r+6}" y="${n.y+15}" fill="${st==='active'?'#2F8A62':st==='blocked-on'?'#C4964A':'#4E6878'}">${n.kind==='bot'||n.kind==='human'?(st==='active'?'live':st==='blocked-on'?'waiting on you':st):''}${sc.total?' · '+sc.done+'/'+sc.total:''}</text>`:''}</g>`; }).join('');
   g.querySelectorAll('[data-id]').forEach(el=>el.onclick=()=>{ setFocus(NODES.find(n=>n.id===el.dataset.id)); stopTour(); }); }
-function setFocus(n){ focus=n; if(n){ const w=420,h=260; vbT={x:n.x-w/2,y:n.y-h/2,w,h}; } else vbT={x:0,y:0,w:1000,h:620}; detail(); feed(); }
+function setFocus(n){ focus=n; if(n&&Number.isFinite(n.x)&&Number.isFinite(n.y)){ const w=420,h=260; vbT={x:n.x-w/2,y:n.y-h/2,w,h}; } else if(!n) vbT={x:0,y:0,w:1000,h:620}; detail(); feed(); }
 function describe(n){ if(!n) return ''; if(n.kind==='bot'||n.kind==='human'){ const a=n.ref; return a.name+', '+a.job.toLowerCase()+'. '+(a.status==='active'?'Live: ':a.status==='blocked-on'?'Waiting on this person: ':'')+a.now; } if(n.kind==='engine'){ const s=score(TASKS.filter(t=>t.engine===n.ref.id)); return n.ref.name+': '+s.done+' of '+s.total+' tasks done and evaluated.'; } if(n.kind==='project'){ const s=score(n.ref.tasks); return 'Project '+n.ref.title+', '+n.ref.state+', '+s.done+' of '+s.total+' done.'; } return 'Routine '+n.ref.name+', '+n.ref.cadence+'. '+n.ref.text; }
 function detail(){ const d=$('#detail'); if(!d) return; if(!focus){ d.hidden=true; return; } d.hidden=false; const n=focus;
   if(n.kind==='bot'||n.kind==='human'){ const a=n.ref; const engs=[...new Set(TASKS.filter(t=>t.owner===a.id).map(t=>t.engine))]; d.innerHTML=`<div class="k">${a.kind==='human'?'person':'bot'} ${a.element?'<span class="pill grey">'+esc(a.element)+'</span> ':''}${a.status==='active'?'<span class="pill live">live</span>':a.status==='blocked-on'?'<span class="pill human">waiting on you</span>':'<span class="pill grey">'+a.status+'</span>'}</div><h3>${esc(a.name)}</h3><div class="d">${esc(a.job)}</div><div class="sec">Engines</div>${engs.map(e=>{ const s=score(TASKS.filter(t=>t.owner===a.id&&t.engine===e)); return `<div class="li"><span>${esc(E[e].name.split(' (')[0])}</span><span class="pill score">${s.done}/${s.total}</span></div>`; }).join('')||'<div class="li"><span class="note">no tasks</span></div>'}<div class="sec">Now</div><div style="font-size:13px">${esc(a.now)}</div>`; }
@@ -231,7 +268,7 @@ function graphView(title, red, sub, kind){ const humans=TASKS.filter(t=>t.state!
   ${kind==='team'&&humans.length?`<div class="card wait"><div class="k">Waiting on you</div>${humans.slice(0,5).map(t=>`<div class="item">${esc(t.title)} <span class="pill human">${esc(ag(t.owner).name.split(' ')[0])}</span></div>`).join('')}</div>`:''}
   <svg id="graph" viewBox="0 0 1000 620" role="img" aria-label="Live graph of bots, engines and projects"></svg>
   <div class="card detail" id="detail" hidden></div>
-  <div class="legend"><span><i style="background:#FBFCFD"></i>bot</span><span><i style="background:none;border:2px solid #9DB6C6;width:7px;height:7px"></i>person</span><span><i style="background:#4FB3BF"></i>engine</span><span><i style="background:#3C7D9C"></i>project</span><span><i style="background:#6E8798"></i>process</span><span class="note">· scores are evaluated work done, nothing invented</span></div>`; }
+  <div class="legend"><span><i style="background:#FBFCFD;border:2px solid #3A9CA8;width:7px;height:7px;box-sizing:border-box"></i>bot</span><span><i style="background:none;border:2px solid #143044;width:7px;height:7px"></i>person</span><span><i style="background:#4FB3BF"></i>engine</span><span><i style="background:#3C7D9C"></i>project</span><span><i style="background:#6E8798"></i>process</span><span class="note">· scores are evaluated work done, nothing invented</span></div>`; }
 function team(){ const n=B.agents.length, live=B.agents.filter(a=>a.status==='active').length, wait=TASKS.filter(t=>t.state!=='done'&&ag(t.owner).kind==='human').length; return graphView('Team is','moving',`NMCSN house · ${n} on the team · ${live} live · ${wait} waiting on a person · ${esc(B.sprint.name)}`,'team'); }
 function engines(){ return graphView(B.engines.length===3?'Three':B.engines.length,'engines','Click a cluster to zoom. Scores are evaluated work done, nothing invented.','engines'); }
 function projects(){ return graphView('Projects','and processes',`${PROJECTS.filter(p=>p.state!=='backlog').length} projects live · ${B.routines.length} processes · scores are milestones and work done`,'projects'); }
@@ -264,14 +301,38 @@ async function recSearch(q){ REC.q=q; REC.hits=[]; REC.err=''; REC.busy=true; re
 async function recOpen(docId){ REC.busy=true; render(); try{ const mcp=await claude.use('mcp'); const r=await mcp.callTool('Baalda-NMCSN','read_note',{docId}); REC.open=r.payload||null; }catch(e){ REC.err='Could not open the note: '+(e&&e.code?e.code:'unavailable'); } REC.busy=false; render(); }
 function setup(){ return `<div class="top"><div><h2 class="disp">Claim <span class="r">your team</span></h2><div class="sub">The board only watches a claimed team. Pick the bots that report to you; remembered on this device.</div></div></div><div class="setup">${B.agents.filter(a=>a.kind==='bot').map(a=>`<label><input type="checkbox" value="${a.id}" ${claimed.includes(a.id)?'checked':''}> ${esc(a.name)} <span class="note">· ${esc(a.job)}</span></label>`).join('')}<div style="margin-top:10px"><button class="btn on" id="claimok">Claim ${claimed.length?'('+claimed.length+' claimed)':''}</button></div></div>`; }
 
+
+function pcard(a){ const on=focus&&focus.ref&&focus.ref.id===a.id; const pill=a.status==='active'?'live':a.status==='blocked-on'?'human':'grey'; const sl=a.status==='active'?'live':a.status==='blocked-on'?'waiting on you':(a.status||''); return `<button type="button" class="pcard ${a.kind} ${on?'on':''}" data-agent="${esc(a.id)}"><div class="row"><span class="av">${esc(initials(a.name))}</span><div style="min-width:0;flex:1"><div class="nm">${esc(a.name)}</div><div class="job">${esc(a.job||'')}</div></div><span class="meta pill ${pill}">${esc(sl)}</span></div>${a.now?`<div class="now">${esc(a.now)}</div>`:''}</button>`; }
+function people(){ const humans=B.agents.filter(a=>a.kind==='human'); const teams=B.teams||[]; const seen=new Set(); const groups=[]; for(const t of teams){ const members=(t.agents||[]).map(id=>A[id]).filter(a=>a&&a.kind==='bot'); if(!members.length) continue; members.forEach(a=>seen.add(a.id)); groups.push({name:t.name, agents:members}); } const rest=B.agents.filter(a=>a.kind==='bot'&&!seen.has(a.id)); const nH=humans.length, nB=B.agents.filter(a=>a.kind==='bot').length; return `<div class="top"><div><h2 class="disp">People <span class="r">on the work</span></h2><div class="sub">${nH} who sign · ${nB} Grok / bot staff · from the board, nothing invented</div></div></div>
+  <div class="peoplewrap"><div class="plist">
+    <section><h3>People who sign</h3><div class="pcards">${humans.map(pcard).join('')||'<div class="empty">None on the board.</div>'}</div></section>
+    <section><h3>Grok / bot staff</h3>${groups.map(g=>`<h4>${esc(g.name)}</h4><div class="pcards">${g.agents.map(pcard).join('')}</div>`).join('')}${rest.length?`<h4>Ungrouped</h4><div class="pcards">${rest.map(pcard).join('')}</div>`:''}</section>
+  </div><div class="card detail" id="detail" hidden></div></div>`; }
+const GH_REPO='raymondyau-spec/nmcsn-command-center';
+let GH={loaded:false,busy:false,err:'',prs:null,commits:null};
+function github(){ const prs=Array.isArray(GH.prs)?GH.prs:null; const commits=Array.isArray(GH.commits)?GH.commits:null; const latest=commits&&commits[0]; const latestMsg=latest&&latest.commit&&latest.commit.message?latest.commit.message.split('\n')[0]:''; return `<div class="top"><div><h2 class="disp">GitHub <span class="r">source of truth</span></h2><div class="sub">This repo hosts the page. Claude writes the board; this page reads board.json.</div></div></div>
+  <div class="gh">
+    <div class="links">
+      <a href="https://github.com/${GH_REPO}" target="_blank" rel="noopener">github.com/${esc(GH_REPO)}</a>
+      <a href="https://raymondyau-spec.github.io/nmcsn-command-center/" target="_blank" rel="noopener">Live Pages · raymondyau-spec.github.io/nmcsn-command-center</a>
+      <a href="https://github.com/${GH_REPO}/blob/main/board.json" target="_blank" rel="noopener">board.json on main</a>
+    </div>
+    <div class="card"><p>Claude writes the board; this page reads <code>board.json</code>.</p></div>
+    <div class="card"><div class="k">Open pull requests</div>${!GH.loaded?'<div class="empty">Loading…</div>':prs? (prs.length?`<ul>${prs.map(p=>`<li><a href="${esc(p.html_url)}" target="_blank" rel="noopener">${esc(p.title||('#'+p.number))}</a></li>`).join('')}</ul>`:'<div class="empty">No open pull requests.</div>'):'<div class="empty">could not load</div>'}</div>
+    <div class="card"><div class="k">Latest on main</div>${!GH.loaded?'<div class="empty">Loading…</div>':commits? (latestMsg?`<p>${esc(latestMsg)}</p><ul>${commits.slice(0,5).map(c=>{ const m=c.commit&&c.commit.message?c.commit.message.split('\n')[0]:''; const url=c.html_url||('https://github.com/'+GH_REPO+'/commit/'+(c.sha||'')); return m?`<li><a href="${esc(url)}" target="_blank" rel="noopener">${esc(m)}</a></li>`:''; }).join('')}</ul>`:'<div class="empty">No commits returned.</div>'):'<div class="empty">could not load</div>'}</div>
+  </div>`; }
+function loadGithub(){ if(GH.busy||GH.loaded) return; GH.busy=true; const base='https://api.github.com/repos/'+GH_REPO; const grab=(path,key)=>fetch(base+path,{headers:{Accept:'application/vnd.github+json'}}).then(r=>{ if(!r.ok) throw new Error(String(r.status)); return r.json(); }).then(j=>{ GH[key]=Array.isArray(j)?j:null; }).catch(()=>{ GH[key]=null; }); Promise.all([grab('/pulls?state=open&per_page=8','prs'), grab('/commits?sha=main&per_page=5','commits')]).then(()=>{ GH.loaded=true; GH.busy=false; if(!Array.isArray(GH.prs)&&!Array.isArray(GH.commits)) GH.err='could not load'; if(view==='github') render(); }); }
+
 function render(){ document.querySelectorAll('#rail button').forEach(b=>b.classList.toggle('on',b.dataset.v===view)); const st=$('#stage');
-  st.innerHTML=view==='team'?team():view==='engines'?engines():view==='projects'?projects():view==='sprint'?sprint():view==='board'?board():view==='process'?process():view==='record'?record():view==='mine'?mine():view==='home'?home():setup();
+  st.innerHTML=view==='team'?team():view==='people'?people():view==='github'?github():view==='engines'?engines():view==='projects'?projects():view==='sprint'?sprint():view==='board'?board():view==='process'?process():view==='record'?record():view==='mine'?mine():view==='home'?home():setup();
   if(['team','engines','projects'].includes(view)){ buildGraph(view); focus=null; detail(); $('#zoomout').onclick=()=>{ setFocus(null); stopTour(); }; $('#tourbtn').onclick=()=>tour?stopTour():startTour(); }
   if(view==='sprint'){ document.querySelectorAll('[data-e]').forEach(b=>b.onclick=()=>{ F.engine=b.dataset.e; render(); }); document.querySelectorAll('[data-b]').forEach(b=>b.onclick=()=>{ F.bot=b.dataset.b; render(); }); }
   if(view==='home'){ document.querySelectorAll('[data-eng]').forEach(c=>c.onclick=()=>{ F.engine=c.dataset.eng; view='sprint'; render(); }); }
   if(view==='mine'){ document.querySelectorAll('[data-done]').forEach(b=>b.onclick=()=>markDone(b.dataset.done)); $('#mineread').onclick=()=>{ const its=TASKS.filter(t=>t.owner==='ray'&&t.state!=='done'); const txt=its.length?its.length+' items are waiting on you. '+its.map((t,i)=>(i+1)+'. '+t.title).join('. '):'Nothing is waiting on you.'; try{ speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(txt); const v=speechSynthesis.getVoices().find(v=>/Ava|Samantha/.test(v.name)); if(v) u.voice=v; speechSynthesis.speak(u); }catch(e){} }; }
   if(view==='record'){ const q=$('#recq'); q.onkeydown=e=>{ if(e.key==='Enter') recSearch(q.value.trim()); }; q.focus(); document.querySelectorAll('[data-doc]').forEach(h=>h.onclick=()=>recOpen(h.dataset.doc)); }
   if(view==='setup'){ $('#claimok').onclick=()=>{ claimed=[...document.querySelectorAll('.setup input:checked')].map(i=>i.value); try{ localStorage.setItem('factory-claimed',JSON.stringify(claimed)); }catch(e){} render(); }; }
+  if(view==='people'){ document.querySelectorAll('[data-agent]').forEach(c=>c.onclick=()=>{ const a=ag(c.dataset.agent); setFocus({id:'a:'+a.id,kind:a.kind==='human'?'human':'bot',ref:a}); document.querySelectorAll('[data-agent]').forEach(x=>x.classList.toggle('on',x.dataset.agent===a.id)); }); if(focus&&focus.ref&&(focus.kind==='bot'||focus.kind==='human')){ detail(); document.querySelectorAll('[data-agent]').forEach(x=>x.classList.toggle('on',x.dataset.agent===focus.ref.id)); } }
+  if(view==='github') loadGithub();
   feed(); }
 document.querySelectorAll('#rail button').forEach(b=>b.onclick=()=>{ stopTour(); view=b.dataset.v; render(); });
 ticker(); render();
