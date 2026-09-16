@@ -3,10 +3,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@400;500;600&display=swap">
 <style>
 /* Adapted from Ryan Kohler's "Self Driving" monitor (2026-09-12): near-black, one red, bots as glowing nodes, a tour, a feed. Single committed look, painted explicitly. */
-:root{ --bg:#F6FAFC; --panel:#FFFFFF; --panel-2:#EEF4F7; --line:#D0DDE4; --ink:#143044; --muted:#4E6878; --dim:#7A93A3; --red:#3A9CA8; --red-2:#2E7F8A; --green:#2F8A62; --yellow:#C4964A; --magenta:#C4964A; --white:#FFFFFF; --grey:#6E8798; }
+:root{ --bg:#F6FAFC; --panel:#FFFFFF; --panel-2:#EEF4F7; --line:#D0DDE4; --ink:#143044; --muted:#4E6878; --dim:#4E6878; --red:#3A9CA8; --red-2:#2E7F8A; --green:#2F8A62; --yellow:#C4964A; --magenta:#C4964A; --white:#FFFFFF; --grey:#6E8798; }
 /* Water and Metal for a Fire Snake (1977): deep water ground, silver ink, sea-glass as the one accent, sand for what waits on a person. No red. */
 *{box-sizing:border-box}
-html,body{margin:0;background:var(--bg);color:var(--ink);font:13.5px/1.45 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
 body{min-height:100vh;display:grid;grid-template-rows:auto auto minmax(0,1fr);}
 h1,h2,h3{margin:0;line-height:1.15}
 button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
@@ -24,8 +24,8 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 #hdr .av{width:26px;height:26px;border-radius:50%;background:var(--red);display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;margin-right:8px}
 
 /* ticker */
-#tick{height:30px;overflow:hidden;position:relative;border-bottom:1px solid var(--line);background:#E8F1F5}
-#tick .track{position:absolute;white-space:nowrap;animation:tick 80s linear infinite;line-height:30px;font-size:12px;color:var(--muted)}
+#tick{height:34px;overflow:hidden;position:relative;border-bottom:1px solid var(--line);background:#E8F1F5}
+#tick .track{position:absolute;white-space:nowrap;animation:tick 80s linear infinite;line-height:34px;font-size:14px;color:var(--ink)}
 #tick .track span{margin-right:56px} #tick .track b{color:var(--ink);font-weight:600}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
@@ -33,41 +33,41 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 #wrap{display:grid;grid-template-columns:72px minmax(0,1fr) 300px;min-height:0}
 @media (max-width:1000px){#wrap{grid-template-columns:72px minmax(0,1fr)}#feedcol{display:none}}
 #rail{border-right:1px solid var(--line);display:flex;flex-direction:column;gap:2px;padding:12px 8px}
-#rail button{display:flex;flex-direction:column;align-items:center;gap:3px;padding:10px 4px;border-radius:9px;font-size:10px;color:var(--dim);letter-spacing:.02em}
+#rail button{display:flex;flex-direction:column;align-items:center;gap:3px;padding:10px 4px;border-radius:9px;font-size:11px;color:var(--muted);letter-spacing:.02em}
 #rail button .ic{font-size:17px;line-height:1}
 #rail button.on{color:var(--ink);background:var(--panel)} #rail button:hover{color:var(--ink)}
 #stage{position:relative;min-width:0;min-height:600px;padding:18px 22px 22px;display:flex;flex-direction:column;gap:12px;overflow:auto}
 .top{display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap}
-.top h2{font-size:28px} .top .sub{color:var(--muted);font-size:12.5px;margin-top:4px}
+.top h2{font-size:28px} .top .sub{color:var(--ink);font-size:14px;margin-top:4px}
 .top .sp{flex:1}
-.btn{border:1px solid var(--line);background:var(--panel);border-radius:9px;padding:8px 12px;font-size:12.5px;color:var(--ink);display:inline-flex;gap:6px;align-items:center}
+.btn{border:1px solid var(--line);background:var(--panel);border-radius:9px;padding:8px 12px;font-size:13px;color:var(--ink);display:inline-flex;gap:6px;align-items:center}
 .btn.on{background:var(--red);border-color:var(--red);color:#fff;font-weight:600}
-.note{color:var(--muted);font-size:12px}
+.note{color:var(--muted);font-size:14px}
 
 /* waiting card + detail card */
 .card{background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:12px;padding:14px 16px;backdrop-filter:blur(6px)}
 .wait{position:absolute;left:22px;top:92px;max-width:420px;z-index:3}
 .wait .k{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:6px}
-.wait div.item{font-size:13px;padding:3px 0}
+.wait div.item{font-size:15px;padding:3px 0;color:var(--ink)}
 .detail{position:absolute;left:22px;bottom:22px;width:300px;z-index:3}
 .detail .k{display:flex;gap:8px;align-items:center;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 .detail h3{font-size:16px;font-weight:700}
-.detail .d{color:var(--muted);font-size:12.5px;margin:4px 0 8px}
-.detail .sec{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin:10px 0 4px}
-.detail .li{display:flex;justify-content:space-between;gap:8px;font-size:12.5px;padding:3px 0}
+.detail .d{color:var(--ink);font-size:14px;margin:4px 0 8px}
+.detail .sec{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:10px 0 4px}
+.detail .li{display:flex;justify-content:space-between;gap:8px;font-size:14px;padding:3px 0;color:var(--ink)}
 .pill{display:inline-block;border-radius:999px;padding:1px 8px;font-size:10.5px;font-weight:700;letter-spacing:.04em}
 .pill.live{background:rgba(111,207,159,.18);color:var(--green)} .pill.score{background:rgba(217,183,122,.2);color:var(--yellow)} .pill.human{background:rgba(217,183,122,.28);color:var(--magenta)} .pill.red{background:rgba(79,179,191,.18);color:var(--red-2)} .pill.grey{background:var(--panel-2);color:var(--muted)}
 
 /* graph */
 #graph{flex:1;width:100%;min-height:440px;border-radius:14px;background:radial-gradient(1200px 600px at 60% 40%,#DEEAF0 0%,#F6FAFC 70%);animation:tide 18s ease-in-out infinite alternate}
 @keyframes tide{from{background-position:0 0}to{background-position:40px 20px}}
-#graph text{font-family:Inter,sans-serif;fill:var(--ink);font-size:11px;font-weight:600}
-#graph .lab2{fill:var(--muted);font-size:9.5px;font-weight:500}
-.legend{display:flex;gap:16px;font-size:11.5px;color:var(--muted)} .legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+#graph text{font-family:Inter,sans-serif;fill:#143044;font-size:22px;font-weight:700;paint-order:stroke fill;stroke:#F6FAFC;stroke-width:4px;stroke-linejoin:round}
+#graph .lab2{fill:#143044;font-size:16px;font-weight:600;stroke-width:3px}
+.legend{display:flex;gap:16px;font-size:13px;color:var(--ink);flex-wrap:wrap} .legend i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;vertical-align:middle}
 
 /* sprint */
 .chips{display:flex;gap:8px;flex-wrap:wrap}
-.chip{border-radius:999px;padding:7px 14px;background:var(--panel);border:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+.chip{border-radius:999px;padding:7px 14px;background:var(--panel);border:1px solid var(--line);font-size:13px;color:var(--ink)}
 .chip.on{background:var(--red);border-color:var(--red);color:#fff;font-weight:600}
 .cols{display:grid;grid-template-columns:repeat(4,minmax(200px,1fr));gap:12px;overflow-x:auto;flex:1}
 .col{background:var(--panel);border-radius:12px;padding:12px;min-height:300px}
@@ -75,7 +75,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .tcard{background:var(--panel-2);border-radius:10px;padding:10px 12px;margin-bottom:8px}
 .tag{display:inline-block;background:rgba(79,179,191,.2);color:var(--red-2);border-radius:5px;padding:1px 6px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
 .tag.proc{background:rgba(110,110,122,.25);color:var(--muted)}
-.tcard .t{font-size:13px;font-weight:600} .tcard .o{font-size:11.5px;color:var(--muted);margin-top:4px}
+.tcard .t{font-size:14.5px;font-weight:600;color:var(--ink)} .tcard .o{font-size:13px;color:var(--muted);margin-top:4px}
 .tcard .ev{font-size:11px;color:var(--green);margin-top:4px} .tcard .ev.no{color:var(--red-2)}
 
 /* board / process / setup */
@@ -83,40 +83,40 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .epic{background:var(--panel);border-radius:12px;padding:14px 16px}
 .epic h3{font-size:15px;font-weight:700;display:flex;justify-content:space-between;gap:10px}
 .bar{height:6px;border-radius:3px;background:var(--panel-2);overflow:hidden;margin:8px 0 6px} .bar i{display:block;height:100%;background:var(--red)}
-.ms{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:10px;padding:6px 0;border-top:1px solid var(--line);font-size:12.5px;align-items:center}
+.ms{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:10px;padding:6px 0;border-top:1px solid var(--line);font-size:14px;align-items:center}
 .routine{display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:12px;align-items:center;background:var(--panel);border-radius:10px;padding:11px 14px}
 .routine .ck{width:18px;height:18px;border-radius:50%;border:2px solid var(--green);display:flex;align-items:center;justify-content:center;color:var(--green);font-size:11px}
-.routine .n{font-weight:600} .routine .c{color:var(--muted);font-size:12px}
+.routine .n{font-weight:600} .routine .c{color:var(--muted);font-size:13px}
 .setup{max-width:560px}
-.setup label{display:flex;gap:10px;align-items:center;padding:9px 12px;background:var(--panel);border-radius:9px;margin-bottom:6px;font-size:13px}
+.setup label{display:flex;gap:10px;align-items:center;padding:9px 12px;background:var(--panel);border-radius:9px;margin-bottom:6px;font-size:14px}
 
 /* Hey Ray console */
 #hey{border-bottom:1px solid var(--line);padding:12px 14px;display:grid;gap:8px;background:#E8F1F5}
 #hey .t{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700}
-#hey textarea{width:100%;min-height:64px;background:var(--panel);border:1px solid var(--line);border-radius:10px;color:var(--ink);font:inherit;font-size:13px;padding:9px 10px;resize:vertical}
+#hey textarea{width:100%;min-height:64px;background:var(--panel);border:1px solid var(--line);border-radius:10px;color:var(--ink);font:inherit;font-size:14px;padding:9px 10px;resize:vertical}
 #hey .row{display:flex;gap:8px;align-items:center}
 #hey .mic{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--panel);font-size:17px}
 #hey .mic.on{background:var(--red);border-color:var(--red);animation:pulse 1.4s infinite}
 #hey .send{flex:1;background:var(--red);color:#fff;border-radius:9px;padding:9px 12px;font-weight:600}
-#hey .st{font-size:11.5px;color:var(--muted)}
-#hey .spec{background:var(--panel);border-radius:10px;padding:10px 12px;font-size:12.5px;line-height:1.45;max-height:220px;overflow:auto;white-space:pre-wrap}
+#hey .st{font-size:14px;color:var(--ink)}
+#hey .spec{background:var(--panel);border-radius:10px;padding:10px 12px;font-size:14px;line-height:1.45;max-height:220px;overflow:auto;white-space:pre-wrap;color:var(--ink)}
 /* home: domains → engines */
 .dom{margin-bottom:18px}
 .dom h3{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;display:flex;gap:10px;align-items:center}
-.dom h3 .cnt{font-family:"Inter Tight",Inter,sans-serif;color:var(--dim)}
+.dom h3 .cnt{font-family:"Inter Tight",Inter,sans-serif;color:var(--muted)}
 .eng{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
 .ecard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;display:grid;gap:6px}
 .ecard:hover{border-color:var(--red)}
 .ecard .n{font-weight:700;font-size:14.5px;display:flex;justify-content:space-between;gap:8px;align-items:center}
-.ecard .p{font-size:12px;color:var(--muted)}
+.ecard .p{font-size:14px;color:var(--ink)}
 .ecard .m{display:flex;gap:6px;flex-wrap:wrap}
-.ecard .next{font-size:12.5px;color:var(--ink);border-top:1px solid var(--line);padding-top:6px}
+.ecard .next{font-size:15px;color:var(--ink);border-top:1px solid var(--line);padding-top:6px}
 .ecard .next b{color:var(--red-2);font-weight:600}
 .ecard.private{border-style:dashed}
 /* mine */
 .mine{display:grid;gap:10px;max-width:760px}
 .mine .it{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;background:var(--panel);border-radius:12px;padding:14px 16px;border-left:4px solid var(--yellow)}
-.mine .it .t{font-weight:600;font-size:15px} .mine .it .w{font-size:12.5px;color:var(--muted);margin-top:2px}
+.mine .it .t{font-weight:600;font-size:15px} .mine .it .w{font-size:13px;color:var(--muted);margin-top:2px}
 .mine .it a,.mine .it button{background:var(--red);color:#143044;border-radius:9px;padding:9px 12px;font-weight:600;font-size:13px;text-decoration:none;white-space:nowrap}
 .mine .empty{color:var(--muted);padding:20px}
 /* record (Baalda vault, read-only) */
@@ -126,21 +126,21 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .rec input{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:10px;color:var(--ink);font:inherit;font-size:14px;padding:11px 12px}
 .hit{background:var(--panel);border-radius:10px;padding:10px 12px;cursor:pointer;border:1px solid transparent}
 .hit:hover,.hit.on{border-color:var(--red)}
-.hit .t{font-weight:600;font-size:13.5px} .hit .p{font-size:11px;color:var(--muted);font-family:"Inter Tight",Inter,sans-serif}
+.hit .t{font-weight:600;font-size:14px;color:var(--ink)} .hit .p{font-size:12px;color:var(--muted);font-family:"Inter Tight",Inter,sans-serif}
 #recnote{background:var(--panel);border-radius:12px;padding:18px 20px;overflow:auto;max-height:78vh;font-size:14px;line-height:1.55;color:var(--ink)}
 #recnote h1,#recnote h2,#recnote h3{color:var(--ink);margin:14px 0 6px} #recnote h1{font-size:20px}#recnote h2{font-size:16px}#recnote h3{font-size:14px}
 #recnote p{margin:0 0 10px} #recnote code{background:var(--panel-2);padding:1px 5px;border-radius:4px;font-size:12.5px} #recnote li{margin:2px 0}
 #recnote table{border-collapse:collapse;font-size:12.5px;margin:8px 0} #recnote td,#recnote th{border:1px solid var(--line);padding:4px 8px;vertical-align:top}
 /* feed */
 #feedcol{border-left:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
-#feedcol .fh{padding:16px 16px 10px;border-bottom:1px solid var(--line)} #feedcol .fh b{font-size:13.5px;display:flex;gap:8px;align-items:center} #feedcol .fh small{display:block;color:var(--dim);font-size:11px;margin-top:2px}
+#feedcol .fh{padding:16px 16px 10px;border-bottom:1px solid var(--line)} #feedcol .fh b{font-size:14px;display:flex;gap:8px;align-items:center;color:var(--ink)} #feedcol .fh small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
 #feed{overflow:auto;padding:8px 12px;display:grid;gap:4px;align-content:start}
 .post{display:grid;grid-template-columns:26px minmax(0,1fr);gap:10px;padding:8px 6px;border-radius:8px}
 .post.lead{background:var(--panel)}
 .post .av{width:26px;height:26px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700}
 .post.human .av{background:var(--yellow);color:#143044}
-.post .n{font-size:12.5px;font-weight:600} .post .n small{color:var(--dim);font-weight:400;margin-left:6px;font-size:10.5px}
-.post p{margin:2px 0 0;font-size:12.5px;color:var(--ink);line-height:1.4}
+.post .n{font-size:14px;font-weight:600} .post .n small{color:var(--muted);font-weight:400;margin-left:6px;font-size:12px}
+.post p{margin:2px 0 0;font-size:14.5px;color:var(--ink);line-height:1.45}
 
 #rail{overflow-y:auto;-webkit-overflow-scrolling:touch}
 /* people roster — large type for phone */
@@ -179,7 +179,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 /* projects — scannable cards, not a graph */
 .projlist{display:grid;gap:20px}
 .projlist h3{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700;margin:0 0 8px;display:flex;gap:10px;align-items:center}
-.projlist h3 .cnt{font-family:"Inter Tight",Inter,sans-serif;color:var(--dim)}
+.projlist h3 .cnt{font-family:"Inter Tight",Inter,sans-serif;color:var(--muted)}
 .proj{display:grid;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--ink)}
 .proj .row{display:flex;gap:10px;align-items:flex-start;justify-content:space-between}
 .proj .nm{font-size:18px;font-weight:800;letter-spacing:-.02em;font-family:"Inter Tight",Inter,sans-serif;line-height:1.2;color:var(--ink)}
@@ -259,18 +259,21 @@ function simStep(k){ for(let i=0;i<NODES.length;i++){ const a=NODES[i]; for(let 
   for(const n of NODES){ n.vx+=(500-n.x)*0.0025*k; n.vy+=(310-n.y)*0.0025*k; n.vx*=0.82; n.vy*=0.82; n.x+=n.vx; n.y+=n.vy; n.x=Math.max(30,Math.min(970,n.x)); n.y=Math.max(30,Math.min(590,n.y)); } }
 function drawGraph(){ const g=$('#graph'); if(!g) return; simStep(0.15); simT++; if(simT%2) for(const n of NODES) if(n.glow){ n.x+=Math.sin(simT/40+n.r)*0.15; n.y+=Math.cos(simT/50+n.r)*0.15; }
   vb.x+=(vbT.x-vb.x)*0.08; vb.y+=(vbT.y-vb.y)*0.08; vb.w+=(vbT.w-vb.w)*0.08; vb.h+=(vbT.h-vb.h)*0.08; g.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
-  const col=n=>n.kind==='engine'?'#4FB3BF':n.kind==='project'?'#3C7D9C':n.kind==='process'?'#6E8798':n.kind==='human'?'none':'#FBFCFD';
+  const col=n=>n.kind==='engine'?'#3A9CA8':n.kind==='project'?'#3C7D9C':n.kind==='process'?'#6E8798':'#FFFFFF';
   const dim=n=>focus&&focus.id!==n.id&&!EDGES.some(([a,b])=>(a===focus&&b===n)||(b===focus&&a===n));
-  g.innerHTML=`<defs><filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="glowr" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>`+
-    EDGES.map(([a,b])=>a&&b?`<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="${(focus&&(a===focus||b===focus))?'#4FB3BF':'#1C3447'}" stroke-opacity="${(focus&&(a===focus||b===focus))?.9:.7}" stroke-width="${(focus&&(a===focus||b===focus))?1.6:1}"/>`:'').join('')+
-    NODES.map(n=>{ const st=n.ref.status; const glow=n.kind==='engine'?'url(#glowr)':(n.glow?'url(#glow)':'none'); const stroke=n.kind==='human'?(st==='blocked-on'?'#C4964A':'#143044'):n.kind==='bot'?(n.id===(focus&&focus.id)?'#C4964A':'#3A9CA8'):(n.id===(focus&&focus.id)?'#C4964A':'none');
+  g.innerHTML=
+    EDGES.map(([a,b])=>a&&b?`<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="${(focus&&(a===focus||b===focus))?'#3A9CA8':'#9BB3C0'}" stroke-opacity="${(focus&&(a===focus||b===focus))?.85:.38}" stroke-width="${(focus&&(a===focus||b===focus))?2:1}"/>`:'').join('')+
+    NODES.map(n=>{ const st=n.ref.status; const focused=n.id===(focus&&focus.id); const faded=dim(n);
+      const stroke=st==='blocked-on'?'#C4964A':n.kind==='bot'?'#3A9CA8':'#143044';
+      const sw=focused||st==='blocked-on'?3:2.5;
       const sc=n.kind==='bot'||n.kind==='human'?score(TASKS.filter(t=>t.owner===n.ref.id)):n.kind==='engine'?score(TASKS.filter(t=>t.engine===n.ref.id)):n.kind==='project'?score(n.ref.tasks):null;
-      return `<g data-id="${n.id}" opacity="${dim(n)?.28:1}" style="cursor:pointer"><circle cx="${n.x}" cy="${n.y}" r="${n.r}" fill="${col(n)}" fill-opacity="${n.kind==='project'?.9:1}" stroke="${stroke}" stroke-width="2" filter="${glow}"/>${n.kind==='bot'&&st==='blocked-on'?`<circle cx="${n.x}" cy="${n.y}" r="${n.r+5}" fill="none" stroke="#C4964A" stroke-width="1.5"/>`:''}${(n.kind!=='project'&&n.kind!=='process')||view==='projects'||n.id===(focus&&focus.id)?`<text x="${n.x+n.r+6}" y="${n.y+3}">${esc(n.label.length>26?n.label.slice(0,25)+'…':n.label)}</text>`:''}${sc&&(n.kind!=='project'||view==='projects')?`<text class="lab2" x="${n.x+n.r+6}" y="${n.y+15}" fill="${st==='active'?'#2F8A62':st==='blocked-on'?'#C4964A':'#4E6878'}">${n.kind==='bot'||n.kind==='human'?(st==='active'?'live':st==='blocked-on'?'waiting on you':st):''}${sc.total?' · '+sc.done+'/'+sc.total:''}</text>`:''}</g>`; }).join('');
+      const lab2c=st==='active'?'#2F8A62':st==='blocked-on'?'#C4964A':'#143044';
+      return `<g data-id="${n.id}" style="cursor:pointer"><circle cx="${n.x}" cy="${n.y}" r="${n.r}" fill="${col(n)}" fill-opacity="${faded?0.55:1}" stroke="${stroke}" stroke-opacity="${faded?0.85:1}" stroke-width="${sw}"/>${n.kind==='bot'&&st==='blocked-on'?`<circle cx="${n.x}" cy="${n.y}" r="${n.r+5}" fill="none" stroke="#C4964A" stroke-width="2" stroke-opacity="${faded?0.85:1}"/>`:''}${(n.kind!=='project'&&n.kind!=='process')||view==='projects'||focused?`<text x="${n.x+n.r+7}" y="${n.y+5}" fill="#143044">${esc(n.label.length>26?n.label.slice(0,25)+'…':n.label)}</text>`:''}${sc&&(n.kind!=='project'||view==='projects')?`<text class="lab2" x="${n.x+n.r+7}" y="${n.y+24}" fill="${lab2c}">${n.kind==='bot'||n.kind==='human'?(st==='active'?'live':st==='blocked-on'?'waiting on you':st):''}${sc.total?' · '+sc.done+'/'+sc.total:''}</text>`:''}</g>`; }).join('');
   g.querySelectorAll('[data-id]').forEach(el=>el.onclick=()=>{ setFocus(NODES.find(n=>n.id===el.dataset.id)); stopTour(); }); }
 function setFocus(n){ focus=n; if(n&&Number.isFinite(n.x)&&Number.isFinite(n.y)){ const w=420,h=260; vbT={x:n.x-w/2,y:n.y-h/2,w,h}; } else if(!n) vbT={x:0,y:0,w:1000,h:620}; detail(); feed(); }
 function describe(n){ if(!n) return ''; if(n.kind==='bot'||n.kind==='human'){ const a=n.ref; return a.name+', '+a.job.toLowerCase()+'. '+(a.status==='active'?'Live: ':a.status==='blocked-on'?'Waiting on this person: ':'')+a.now; } if(n.kind==='engine'){ const s=score(TASKS.filter(t=>t.engine===n.ref.id)); return n.ref.name+': '+s.done+' of '+s.total+' tasks done and evaluated.'; } if(n.kind==='project'){ const s=score(n.ref.tasks); return 'Project '+n.ref.title+', '+n.ref.state+', '+s.done+' of '+s.total+' done.'; } return 'Routine '+n.ref.name+', '+n.ref.cadence+'. '+n.ref.text; }
 function detail(){ const d=$('#detail'); if(!d) return; if(!focus){ d.hidden=true; return; } d.hidden=false; const n=focus;
-  if(n.kind==='bot'||n.kind==='human'){ const a=n.ref; const engs=[...new Set(TASKS.filter(t=>t.owner===a.id).map(t=>t.engine))]; d.innerHTML=`<div class="k">${a.kind==='human'?'person':'bot'} ${a.element?'<span class="pill grey">'+esc(a.element)+'</span> ':''}${a.status==='active'?'<span class="pill live">live</span>':a.status==='blocked-on'?'<span class="pill human">waiting on you</span>':'<span class="pill grey">'+a.status+'</span>'}</div><h3>${esc(a.name)}</h3><div class="d">${esc(a.job)}</div><div class="sec">Engines</div>${engs.map(e=>{ const eng=E[e]; if(!eng) return ''; const s=score(TASKS.filter(t=>t.owner===a.id&&t.engine===e)); return `<div class="li"><span>${esc(eng.name.split(' (')[0])}</span><span class="pill score">${s.done}/${s.total}</span></div>`; }).join('')||'<div class="li"><span class="note">no tasks</span></div>'}<div class="sec">Now</div><div style="font-size:13px">${esc(a.now)}</div>`; }
+  if(n.kind==='bot'||n.kind==='human'){ const a=n.ref; const engs=[...new Set(TASKS.filter(t=>t.owner===a.id).map(t=>t.engine))]; d.innerHTML=`<div class="k">${a.kind==='human'?'person':'bot'} ${a.element?'<span class="pill grey">'+esc(a.element)+'</span> ':''}${a.status==='active'?'<span class="pill live">live</span>':a.status==='blocked-on'?'<span class="pill human">waiting on you</span>':'<span class="pill grey">'+a.status+'</span>'}</div><h3>${esc(a.name)}</h3><div class="d">${esc(a.job)}</div><div class="sec">Engines</div>${engs.map(e=>{ const eng=E[e]; if(!eng) return ''; const s=score(TASKS.filter(t=>t.owner===a.id&&t.engine===e)); return `<div class="li"><span>${esc(eng.name.split(' (')[0])}</span><span class="pill score">${s.done}/${s.total}</span></div>`; }).join('')||'<div class="li"><span class="note">no tasks</span></div>'}<div class="sec">Now</div><div style="font-size:14px;color:#143044">${esc(a.now)}</div>`; }
   else if(n.kind==='engine'){ const e=n.ref; const ts=TASKS.filter(t=>t.engine===e.id); const s=score(ts); const bots=[...new Set(ts.map(t=>t.owner))]; d.innerHTML=`<div class="k">engine <span class="pill score">${s.done}/${s.total}</span></div><h3>${esc(e.name)}</h3><div class="d">${bots.length} on it · ${PROJECTS.filter(p=>p.engine===e.id).length} projects · ${B.routines.filter(r=>bots.includes(r.owner)).length} processes · ${s.done}/${s.total} work done</div><div class="sec">Team</div>${bots.map(b=>`<div class="li"><span>${esc(ag(b).name)}</span>${ag(b).status==='active'?'<span class="pill live">live</span>':ag(b).status==='blocked-on'?'<span class="pill human">waiting</span>':'<span class="pill grey">'+ag(b).status+'</span>'}</div>`).join('')}`; }
   else if(n.kind==='project'){ const p=n.ref; const s=score(p.tasks); d.innerHTML=`<div class="k">project <span class="pill score">${s.done}/${s.total}</span> <span class="pill ${p.state==='active'?'live':'grey'}">${p.state}</span></div><h3>${esc(p.title)}</h3><div class="d">${esc(p.ms.title)} · ${esc(E[p.engine].name.split(' (')[0])}</div><div class="sec">Tasks</div>${p.tasks.map(t=>`<div class="li"><span>${esc(t.title.length>42?t.title.slice(0,41)+'…':t.title)}</span><span class="pill ${t.state==='done'?'live':t.state==='active'?'score':'grey'}">${t.state}</span></div>`).join('')}`; }
   else { const r=n.ref; d.innerHTML=`<div class="k">process <span class="pill grey">${esc(r.cadence)}</span></div><h3>${esc(r.name)}</h3><div class="d">${esc(r.text)}</div><div class="sec">Owner</div><div class="li"><span>${esc(ag(r.owner).name)}</span></div>`; } }
@@ -282,7 +285,7 @@ function graphView(title, red, sub, kind){ const humans=TASKS.filter(t=>t.state!
   ${kind==='team'&&humans.length?`<div class="card wait"><div class="k">Waiting on you</div>${humans.slice(0,5).map(t=>`<div class="item">${esc(t.title)} <span class="pill human">${esc(ag(t.owner).name.split(' ')[0])}</span></div>`).join('')}</div>`:''}
   <svg id="graph" viewBox="0 0 1000 620" role="img" aria-label="Live graph of bots, engines and projects"></svg>
   <div class="card detail" id="detail" hidden></div>
-  <div class="legend"><span><i style="background:#FBFCFD;border:2px solid #3A9CA8;width:7px;height:7px;box-sizing:border-box"></i>bot</span><span><i style="background:none;border:2px solid #143044;width:7px;height:7px"></i>person</span><span><i style="background:#4FB3BF"></i>engine</span><span><i style="background:#3C7D9C"></i>project</span><span><i style="background:#6E8798"></i>process</span><span class="note">· scores are evaluated work done, nothing invented</span></div>`; }
+  <div class="legend"><span><i style="background:#FFFFFF;border:2.5px solid #3A9CA8;box-sizing:border-box"></i>bot</span><span><i style="background:#FFFFFF;border:2.5px solid #143044;box-sizing:border-box"></i>person</span><span><i style="background:#3A9CA8;border:2.5px solid #143044;box-sizing:border-box"></i>engine</span><span><i style="background:#3C7D9C;border:2.5px solid #143044;box-sizing:border-box"></i>project</span><span><i style="background:#6E8798;border:2.5px solid #143044;box-sizing:border-box"></i>process</span><span class="note">· scores are evaluated work done, nothing invented</span></div>`; }
 function team(){ const n=B.agents.length, live=B.agents.filter(a=>a.status==='active').length, wait=TASKS.filter(t=>t.state!=='done'&&ag(t.owner).kind==='human').length; return graphView('Team is','moving',`NMCSN house · ${n} on the team · ${live} live · ${wait} waiting on a person · ${esc(B.sprint.name)}`,'team'); }
 function engines(){ return graphView(B.engines.length===3?'Three':B.engines.length,'engines','Click a cluster to zoom. Scores are evaluated work done, nothing invented.','engines'); }
 function nextOpenTask(tasks){ return (tasks||[]).find(t=>t.state==='active')||(tasks||[]).find(t=>t.state==='sprint')||(tasks||[]).find(t=>t.state!=='done'); }
