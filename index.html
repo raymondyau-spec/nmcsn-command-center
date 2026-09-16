@@ -171,12 +171,14 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .player .nm{font-size:20px;font-weight:800;letter-spacing:-.02em;font-family:"Inter Tight",Inter,sans-serif;line-height:1.15;color:var(--ink)}
 .player .job{font-size:15px;color:var(--muted);margin-top:3px}
 .player .now{font-size:16px;color:var(--ink);line-height:1.4}
+.player .meta{margin-left:auto;flex-shrink:0}
 .player .asks{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:10px}
 .player .ask{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:start}
 .player .at{font-size:15px;color:var(--ink);font-weight:600;line-height:1.35}
 .player .am{font-size:14px;color:var(--muted);margin-top:2px}
 .engplay{display:grid;gap:8px;background:var(--panel);border:2px solid #3A5566;border-radius:12px;padding:14px 16px;color:var(--ink)}
 .engplay .en{font-size:16px;font-weight:800;letter-spacing:-.02em;font-family:"Inter Tight",Inter,sans-serif;color:var(--ink)}
+.engplay .sub{font-size:14px;color:var(--muted);margin-top:-2px}
 .engplay .who{font-size:16px;font-weight:700;color:var(--ink);margin-top:8px}
 .engplay .ts{margin:4px 0 0;padding:0;list-style:none}
 .engplay .ts li{font-size:15px;color:var(--ink);margin:6px 0;line-height:1.35}
@@ -349,10 +351,15 @@ function people(){ const humans=B.agents.filter(a=>a.kind==='human'); const team
   </div><div class="card detail" id="detail" hidden></div></div>`; }
 function tPill(st){ return st==='done'?'live':st==='active'?'live':st==='sprint'?'score':'grey'; }
 function playerCard(a){ const mine=TASKS.filter(t=>t.owner===a.id); const open=mine.filter(t=>t.state!=='done'); const pill=a.status==='active'?'live':a.status==='blocked-on'?'human':'grey'; const sl=a.status==='active'?'live':a.status==='blocked-on'?'waiting on you':(a.status||''); const asks=open.map(t=>{ const eng=E[t.engine]; const en=eng?eng.name.split(' (')[0]:t.engine; const proj=t.pr&&t.pr.title?t.pr.title:''; return `<div class="ask"><span class="pill ${tPill(t.state)}">${esc(t.state)}</span><div><div class="at">${esc(t.title)}</div><div class="am">${esc(en)}${proj?' · '+esc(proj):''}</div></div></div>`; }).join(''); const done=mine.filter(t=>t.state==='done').length; return `<article class="player"><div class="row"><span class="av">${esc(initials(a.name))}</span><div style="min-width:0;flex:1"><div class="nm">${esc(a.name)}</div><div class="job">${esc(a.job||'')}</div></div><span class="meta pill ${pill}">${esc(sl)}</span></div>${a.now?`<div class="now">${esc(a.now)}</div>`:''}${asks?`<div class="asks">${asks}</div>`:'<div class="now note">No open ask on the board.</div>'}${done?`<div class="note">${done} done on the board</div>`:''}</article>`; }
-function players(){ const humans=B.agents.filter(a=>a.kind==='human'); const openN=humans.filter(a=>TASKS.some(t=>t.owner===a.id&&t.state!=='done')).length; const byEng=[]; for(const e of B.engines){ const items=[]; for(const a of humans){ const ts=TASKS.filter(t=>t.engine===e.id&&t.owner===a.id&&t.state!=='done'); if(ts.length) items.push({a,ts}); } if(items.length) byEng.push({e,items}); } return `<div class="top"><div><h2 class="disp">Players <span class="r">on the work</span></h2><div class="sub">${humans.length} people · ${openN} with an open ask · from the board, nothing invented · roles and asks only</div></div></div>
+function players(){ const humans=B.agents.filter(a=>a.kind==='human'); const openN=humans.filter(a=>TASKS.some(t=>t.owner===a.id&&t.state!=='done')).length;
+  const byProj=[]; for(const p of PROJECTS){ const items=[]; for(const a of humans){ const ts=(p.tasks||[]).filter(t=>t.owner===a.id&&t.state!=='done'); if(ts.length) items.push({a,ts}); } if(items.length) byProj.push({p,items,eng:E[p.engine]}); }
+  const byEng=[]; for(const e of B.engines){ const items=[]; for(const a of humans){ const ts=TASKS.filter(t=>t.engine===e.id&&t.owner===a.id&&t.state!=='done'); if(ts.length) items.push({a,ts}); } if(items.length) byEng.push({e,items}); }
+  const who=(it)=>`<div class="who">${esc(it.a.name)} · ${esc(it.a.job||'')}</div><ul class="ts">${it.ts.map(t=>`<li><span class="pill ${tPill(t.state)}">${esc(t.state)}</span> ${esc(t.title)}</li>`).join('')}</ul>`;
+  return `<div class="top"><div><h2 class="disp">Players <span class="r">on the work</span></h2><div class="sub">${humans.length} people · ${openN} with an open ask · ${byProj.length} projects with a person on them · from the board, nothing invented · roles and asks only</div></div></div>
   <div class="playerwrap">
-    <section class="plist"><h3>People</h3><div class="pcards">${humans.map(playerCard).join('')||'<div class="empty">No people on the board.</div>'}</div></section>
-    <section class="plist"><h3>By engine</h3>${byEng.map(g=>`<article class="engplay"><div class="en">${esc(g.e.name)}</div>${g.items.map(it=>`<div class="who">${esc(it.a.name)} · ${esc(it.a.job||'')}</div><ul class="ts">${it.ts.map(t=>`<li><span class="pill ${tPill(t.state)}">${esc(t.state)}</span> ${esc(t.title)}${t.pr&&t.pr.title?' <span class="note">· '+esc(t.pr.title)+'</span>':''}</li>`).join('')}</ul>`).join('')}</article>`).join('')||'<div class="note">No open asks tied to an engine.</div>'}</section>
+    <section class="plist"><h3>By project</h3>${byProj.map(g=>`<article class="engplay"><div class="en">${esc(g.p.title)}</div><div class="sub">${g.eng?esc(g.eng.name):''}${g.p.state?' · '+esc(g.p.state):''}</div>${g.items.map(who).join('')}</article>`).join('')||'<div class="note">No project on the board has a person on an open ask.</div>'}</section>
+    <section class="plist"><h3>By person</h3><div class="pcards">${humans.map(playerCard).join('')||'<div class="empty">No people on the board.</div>'}</div></section>
+    <section class="plist"><h3>By engine</h3>${byEng.map(g=>`<article class="engplay"><div class="en">${esc(g.e.name)}</div>${g.items.map(it=>who(it)).join('')}</article>`).join('')||'<div class="note">No open asks tied to an engine.</div>'}</section>
   </div>`; }
 const GH_REPO='raymondyau-spec/nmcsn-command-center';
 let GH={loaded:false,busy:false,err:'',prs:null,commits:null};
